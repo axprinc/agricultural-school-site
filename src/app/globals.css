@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムフォント設定 */
+@layer base {
+  :root {
+    --font-sans: var(--font-noto-sans-jp), var(--font-inter), system-ui, sans-serif;
+    --font-serif: var(--font-playfair), Georgia, serif;
+  }
+  
+  body {
+    font-family: var(--font-noto-sans-jp), var(--font-inter), system-ui, sans-serif;
+  }
+  
+  .font-elegant {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+}
+
+/* 日本語フォント対応 */
+@layer base {
+  html {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
+
+/* カスタムコンポーネント */
+@layer components {
+  .btn-primary {
+    @apply bg-farm-green-600 hover:bg-farm-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-farm-green-800 mb-6 text-center;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden;
+  }
+} 
