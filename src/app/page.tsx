@@ -137,7 +137,7 @@ export default function Home() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover"
+              className="object-cover transform scale-105 hover:scale-110 transition-transform duration-[8000ms] ease-in-out animate-ken-burns"
               priority={index === 0}
             />
             
@@ -151,7 +151,7 @@ export default function Home() {
             */}
             
             {/* オーバーレイ */}
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-black/20"></div>
           </div>
         ))}
         
@@ -161,28 +161,28 @@ export default function Home() {
 
             
             {/* タイトルはスライドに応じて変更 */}
-            <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight transition-all duration-500 font-elegant">
+            <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight transition-all duration-500 font-elegant animate-fade-in-up">
               {heroImages[currentSlide].title}
-              <span className="block text-harvest-orange-200 font-light">
+              <span className="block text-harvest-orange-200 font-light animate-fade-in-up" style={{animationDelay: '0.3s'}}>
                 {heroImages[currentSlide].subtitle}
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-12 text-farm-green-50 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl mb-12 text-farm-green-50 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               狭いベランダでも大丈夫<br />
               1畳のスペースで家族4人分の野菜を育てる<br />
               新しい家庭菜園のスタイルを学びませんか
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.9s'}}>
+              <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">
+                <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 今すぐ申し込む
               </button>
-              <a href="/home-garden" className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-200 border border-white/30 flex items-center justify-center">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <a href="/home-garden" className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-300 border border-white/30 hover:border-white/50 flex items-center justify-center group transform hover:-translate-y-1 hover:scale-105">
+                <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                 </svg>
                 詳細を見る
@@ -194,7 +194,7 @@ export default function Home() {
         {/* スライドナビゲーション（左右の矢印） */}
         <button
           onClick={() => setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length)}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-200 hover:scale-110"
+          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
           aria-label="前のスライド"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,7 +204,7 @@ export default function Home() {
         
         <button
           onClick={() => setCurrentSlide((prev) => (prev + 1) % heroImages.length)}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-200 hover:scale-110"
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
           aria-label="次のスライド"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

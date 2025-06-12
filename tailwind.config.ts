@@ -55,6 +55,66 @@ const config: Config = {
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'farm-pattern': "url('data:image/svg+xml,%3Csvg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%23dcfce7\" fill-opacity=\"0.1\" fill-rule=\"evenodd\"%3E%3Ccircle cx=\"3\" cy=\"3\" r=\"3\"/%3E%3Ccircle cx=\"13\" cy=\"13\" r=\"3\"/%3E%3C/g%3E%3C/svg%3E')",
       },
+      animation: {
+        'ken-burns': 'kenBurns 20s ease-in-out infinite alternate',
+        'fade-in-up': 'fadeInUp 1s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'parallax': 'parallax 25s linear infinite',
+        'zoom-slow': 'zoomSlow 15s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        kenBurns: {
+          '0%': {
+            transform: 'scale(1.05) translateX(0px) translateY(0px)',
+          },
+          '25%': {
+            transform: 'scale(1.12) translateX(-8px) translateY(-3px)',
+          },
+          '50%': {
+            transform: 'scale(1.18) translateX(-12px) translateY(-6px)',
+          },
+          '75%': {
+            transform: 'scale(1.15) translateX(8px) translateY(3px)',
+          },
+          '100%': {
+            transform: 'scale(1.1) translateX(12px) translateY(6px)',
+          },
+        },
+        fadeInUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(30px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0px)',
+          },
+          '50%': {
+            transform: 'translateY(-10px)',
+          },
+        },
+        parallax: {
+          '0%': {
+            transform: 'scale(1.05) translateX(0px)',
+          },
+          '100%': {
+            transform: 'scale(1.15) translateX(-20px)',
+          },
+        },
+        zoomSlow: {
+          '0%': {
+            transform: 'scale(1.0)',
+          },
+          '100%': {
+            transform: 'scale(1.2)',
+          },
+        },
+      },
     },
   },
   plugins: [],
