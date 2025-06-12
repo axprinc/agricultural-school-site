@@ -626,7 +626,7 @@ export default function HomeGardenPage() {
             <h3 className="text-lg font-semibold mb-4">🌱 優しい家庭菜園の学校</h3>
             <p className="text-farm-green-200 mb-4">家庭菜園で家族の健康と家計を守る</p>
             <div className="text-farm-green-300">
-              <p>&copy; 2024 優しい家庭菜園の学校. All rights reserved.</p>
+              <p>&copy; 2025 優しい家庭菜園の学校. All rights reserved.</p>
             </div>
           </div>
         </div>
