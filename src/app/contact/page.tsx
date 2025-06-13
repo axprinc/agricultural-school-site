@@ -209,27 +209,11 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-green-800 mb-6">お問い合わせ情報</h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <FaEnvelope className="text-green-600 text-xl mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-800">メールアドレス</h3>
-                    <p className="text-gray-600">info@agricultural-school.example.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <FaPhone className="text-green-600 text-xl mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-800">電話番号</h3>
-                    <p className="text-gray-600">03-XXXX-XXXX</p>
-                    <p className="text-sm text-gray-500">受付時間: 平日 9:00-17:00</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
                   <FaMapMarkerAlt className="text-green-600 text-xl mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-800">所在地</h3>
                     <p className="text-gray-600">
-                      〒XXX-XXXX<br />
-                      東京都渋谷区XX-XX-XX
+                      兵庫県洲本市五色町鮎原小山田1065番地
                     </p>
                   </div>
                 </div>
