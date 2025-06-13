@@ -91,7 +91,7 @@ export default function Contact() {
                   href="/"
                   className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
-                  TOP
+                  ホーム
                 </Link>
                 <Link
                   href="/gardening"
@@ -152,7 +152,7 @@ export default function Contact() {
                 className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                TOP
+                ホーム
               </Link>
               <Link
                 href="/gardening"
