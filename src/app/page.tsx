@@ -2,8 +2,12 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
+  // モバイルメニューの状態管理
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   // ヒーロー画像のスライド管理
   const heroImages = [
     {
@@ -36,6 +40,106 @@ export default function Home() {
 
     return () => clearInterval(timer)
   }, [heroImages.length])
+
+  // スクロール位置の監視
+  const [showScrollTop, setShowScrollTop] = useState(false)
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [activeSection, setActiveSection] = useState('home')
+  const [isApplying, setIsApplying] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(false)
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400)
+      
+      // スクロール進捗を計算
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight
+      const progress = (window.scrollY / totalHeight) * 100
+      setScrollProgress(Math.min(progress, 100))
+      
+      // 現在のセクションを判定
+      const sections = ['home', 'programs', 'gallery', 'access']
+      let currentSection = 'home'
+      
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            currentSection = section
+            break
+          }
+        }
+      }
+      setActiveSection(currentSection)
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  const handleApply = () => {
+    setIsApplying(true)
+    // 実際のAPIコールのシミュレーション
+    setTimeout(() => {
+      setIsApplying(false)
+      alert('お申し込みを受け付けました！詳細をメールでお送りいたします。')
+    }, 2000)
+  }
+
+  // 星評価コンポーネント
+  const StarRating = ({ rating }: { rating: number }) => {
+    return (
+      <div className="flex items-center mb-4">
+        {[1, 2, 3, 4, 5].map((star) => (
+          <svg
+            key={star}
+            className={`w-5 h-5 ${
+              star <= rating ? 'text-yellow-400' : 'text-gray-300'
+            }`}
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+        ))}
+        <span className="ml-2 text-sm text-gray-600">({rating}.0)</span>
+      </div>
+    )
+  }
+
+  // FAQ データ
+  const faqData = [
+    {
+      question: "農業経験がまったくありませんが、大丈夫でしょうか？",
+      answer: "はい、全く問題ありません。参加者の約80%が農業未経験者です。基礎的な知識から丁寧に指導いたしますので、安心してご参加ください。"
+    },
+    {
+      question: "ベランダが狭いのですが、本当に野菜が育てられますか？",
+      answer: "1畳程度のスペースがあれば十分です。私たちの「狭小スペース集約栽培法」なら、限られたスペースでも効率的に野菜を栽培できます。実際に1畳で家族4人分の野菜を育てている会員様もいらっしゃいます。"
+    },
+    {
+      question: "入会後のサポート体制はどうなっていますか？",
+      answer: "月替わりのオンライン講座、会員専用コミュニティでの質問受付、緊急時の専門家サポート（月2回まで）など、充実したサポート体制をご用意しています。困ったときはいつでもご相談いただけます。"
+    },
+    {
+      question: "Nパワープラス®は安全ですか？",
+      answer: "はい、完全に安全です。大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心してお使いいただけます。"
+    },
+    {
+      question: "退会したい場合はどうすればよいですか？",
+      answer: "退会をご希望の場合は、いつでもお手続きいただけます。また、入会から3ヶ月以内であれば、満足いただけない場合の全額返金保証もございますので、安心してお試しください。"
+    },
+    {
+      question: "月会費以外に追加料金はかかりますか？",
+      answer: "基本的に月会費（980円）以外の追加料金はかかりません。ただし、追加の種子セットや特別講座をご希望の場合は、別途費用が発生することがあります。事前にご案内いたします。"
+    }
+  ]
 
   // ギャラリー画像のスライド管理
   const galleryImages = [
@@ -93,8 +197,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-farm-green-50 to-white">
+      {/* スクロール進捗バー */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+        <div 
+          className="h-full bg-gradient-to-r from-farm-green-500 to-harvest-orange-500 transition-all duration-300 ease-out"
+          style={{ width: `${scrollProgress}%` }}
+        ></div>
+      </div>
+
       {/* ナビゲーション */}
-      <nav className="bg-white shadow-md sticky top-0 z-50">
+      <nav className="bg-white shadow-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0 flex items-center">
@@ -105,21 +217,84 @@ export default function Home() {
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a href="#home" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</a>
-                <a href="#programs" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">入会特典</a>
-                <a href="#gallery" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">ギャラリー</a>
+                <a href="#home" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors scroll-smooth ${
+                  activeSection === 'home' 
+                    ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
+                    : 'text-farm-green-700 hover:text-farm-green-900'
+                }`}>ホーム</a>
+                <a href="#programs" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors scroll-smooth ${
+                  activeSection === 'programs' 
+                    ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
+                    : 'text-farm-green-700 hover:text-farm-green-900'
+                }`}>入会特典</a>
+                <a href="#gallery" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors scroll-smooth ${
+                  activeSection === 'gallery' 
+                    ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
+                    : 'text-farm-green-700 hover:text-farm-green-900'
+                }`}>ギャラリー</a>
+                <Link href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                  よくあるご質問
+                </Link>
                 <a href="/home-garden" className="text-harvest-orange-600 hover:text-harvest-orange-800 px-3 py-2 rounded-md text-sm font-medium transition-colors font-semibold flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
                   </svg>
                   家庭菜園講座
                 </a>
-                <a href="#access" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">アクセス</a>
-                <a href="#contact" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">お問い合わせ</a>
+                <a href="#access" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors scroll-smooth ${
+                  activeSection === 'access' 
+                    ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
+                    : 'text-farm-green-700 hover:text-farm-green-900'
+                }`}>アクセス</a>
+                <Link href="/contact" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                  お問い合わせ
+                </Link>
               </div>
+            </div>
+            
+            {/* モバイルメニューボタン */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-farm-green-700 hover:text-farm-green-900 inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200"
+                aria-expanded="false"
+              >
+                <span className="sr-only">メニューを開く</span>
+                {!isMobileMenuOpen ? (
+                  <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                ) : (
+                  <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+              </button>
             </div>
           </div>
         </div>
+        
+        {/* モバイルメニュー */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200 shadow-lg">
+              <a href="#home" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ホーム</a>
+              <a href="#programs" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">入会特典</a>
+              <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ギャラリー</a>
+              <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">よくあるご質問</Link>
+              <a href="/home-garden" onClick={() => setIsMobileMenuOpen(false)} className="text-harvest-orange-600 hover:text-harvest-orange-800 block px-3 py-2 rounded-md text-base font-medium font-semibold flex items-center">
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                家庭菜園講座
+              </a>
+              <a href="#access" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">アクセス</a>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                お問い合わせ
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* ヒーローセクション - スライドショー対応 */}
@@ -175,11 +350,31 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.9s'}}>
-              <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group">
-                <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
+              <button 
+                onClick={handleApply}
+                disabled={isApplying}
+                className={`py-4 px-10 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group ${
+                  isApplying 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-semibold'
+                }`}
+              >
+                {isApplying ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    申し込み中...
+                  </>
+                ) : (
+                  <>
+                    <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                今すぐ申し込む
+                    今すぐ申し込む
+                  </>
+                )}
               </button>
               <a href="/home-garden" className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-300 border border-white/30 hover:border-white/50 flex items-center justify-center group transform hover:-translate-y-1 hover:scale-105">
                 <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 24 24">
@@ -321,7 +516,7 @@ export default function Home() {
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
                     </div>
-                    <p className="text-gray-700 leading-relaxed">「これ、お父さん（お母さん）が育てたの！？」と家族に尊敬される喜び</p>
+                    <p className="text-gray-700 leading-relaxed">"これ、お父さん（お母さん）が育てたの！？"と家族に尊敬される喜び</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-harvest-orange-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
@@ -436,7 +631,29 @@ export default function Home() {
           {/* Nパワープラス特典 */}
           <div className="bg-gradient-to-r from-harvest-orange-100 to-farm-green-100 rounded-2xl p-8 mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「<a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-800 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>」を無料プレゼント！</h3>
+              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「
+                <span className="relative inline-block">
+                  <a 
+                    href="https://smilefarming.stores.jp/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-farm-green-800 hover:text-harvest-orange-600 underline transition-colors"
+                    onMouseEnter={() => setShowTooltip(true)}
+                    onMouseLeave={() => setShowTooltip(false)}
+                  >
+                    Nパワープラス®
+                  </a>
+                  {showTooltip && (
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-gray-800 text-white text-sm rounded-lg shadow-lg z-10 w-64">
+                      <div className="text-center">
+                        <p className="font-semibold mb-1">微生物栄養剤</p>
+                        <p className="text-xs">土壌の微生物を活性化させ、植物の成長を促進する天然由来の栄養剤です</p>
+                      </div>
+                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
+                    </div>
+                  )}
+                </span>
+                」を無料プレゼント！</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 今回、期間限定の特別特典として、植物の生育を飛躍的に向上させる微生物栄養剤「<a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>」（250ml・通常価格5,500円）を1本無料でプレゼントいたします！
               </p>
@@ -557,8 +774,26 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-6 px-12 rounded-lg text-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4">
-                ＼今すぐ申し込む／
+              <button 
+                onClick={handleApply}
+                disabled={isApplying}
+                className={`py-6 px-12 rounded-lg text-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4 flex items-center justify-center mx-auto ${
+                  isApplying 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold'
+                }`}
+              >
+                {isApplying ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-6 w-6 text-white" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    申し込み中...
+                  </>
+                ) : (
+                  '＼今すぐ申し込む／'
+                )}
               </button>
               <p className="text-gray-600 text-sm">※お申し込み後、詳細をメールでお送りします</p>
             </div>
@@ -624,6 +859,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-8">
+                <StarRating rating={5} />
                 <p className="text-gray-600 leading-relaxed">
                   「マンションの南向きベランダ2畳スペースで始めて半年。今では家族が食べる野菜の7割はベランダ産です。子どもたちも野菜嫌いが治り、食事の時間が楽しくなりました。何より毎月の食費が2万円も減りました！」
                 </p>
@@ -645,6 +881,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-8">
+                <StarRating rating={5} />
                 <p className="text-gray-600 leading-relaxed">
                   「園芸の経験はゼロでしたが、動画マニュアルをそのまま真似るだけで簡単に始められました。最初は半信半疑でしたが、3ヶ月目からはほぼ毎日何かしらの収穫があり、家計の強い味方になっています。特に最近の野菜高騰でその価値を実感しています」
                 </p>
@@ -666,6 +903,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-8">
+                <StarRating rating={4} />
                 <p className="text-gray-600 leading-relaxed">
                   「仕事のストレスで不眠症だった私が、朝晩の水やりと収穫の時間を楽しみに規則正しい生活を送れるようになりました。健康的な食生活と趣味が見つかり、人生が変わったと言っても過言ではありません」
                 </p>
@@ -779,7 +1017,7 @@ export default function Home() {
       </section>
 
       {/* アクセスセクション */}
-      <section id="access" className="py-20 bg-white">
+      <section id="access" className="py-20 bg-gradient-to-br from-farm-green-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-farm-green-800 mb-6 font-elegant flex items-center justify-center">
@@ -837,7 +1075,7 @@ export default function Home() {
                        </svg>
                        お車でお越しの場合
                      </h4>
-                     <p className="text-gray-600">神戸淡路鳴門自動車道「津名一宮IC」から約20分<br />無料駐車場完備（30台）</p>
+                     <p className="text-gray-600">神戸淡路鳴門自動車道「津名一宮IC」から約20分</p>
                    </div>
                  </div>
               </div>
@@ -871,40 +1109,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* お問い合わせセクション */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white relative overflow-hidden">
-        {/* 背景装飾 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/20 to-purple-900/20"></div>
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-purple-400/10 rounded-full blur-xl"></div>
-          <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-green-400/10 to-blue-400/10 rounded-full blur-xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-gradient-to-br from-purple-400/5 to-pink-400/5 rounded-full blur-2xl"></div>
-        </div>
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 font-elegant flex items-center justify-center">
-            <svg className="w-8 h-8 mr-3 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
-            </svg>
-            まずは気軽にお問い合わせください
-          </h2>
-          <p className="text-xl mb-8 text-slate-200">
-            体験内容や料金について、お気軽にご相談ください
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center mx-auto sm:mx-0">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              電話で問い合わせ
-            </button>
-            <button className="bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 border border-white/20 hover:border-white/30 font-bold py-4 px-10 rounded-lg text-lg transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center mx-auto sm:mx-0">
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              メールで問い合わせ
-            </button>
-          </div>
+      {/* スクロールトップボタン */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-farm-green-600 text-white p-3 rounded-full shadow-lg hover:bg-farm-green-700 transition-colors duration-200 z-50"
+          aria-label="トップへ戻る"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </button>
+      )}
+
+      {/* お問い合わせCTAセクション */}
+      <section className="py-16 bg-farm-green-50">
+        <div className="max-w-2xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-farm-green-800 mb-4 font-elegant">まずはお気軽にお問合せ下さい</h2>
+          <p className="text-lg text-gray-700 mb-8">ご質問やご相談など、どんなことでもお気軽にご連絡ください。<br className="hidden md:inline" />スタッフが丁寧にご案内いたします。</p>
+          <a
+            href="/contact"
+            className="inline-block px-8 py-4 bg-farm-green-600 text-white text-lg font-semibold rounded-full shadow-md hover:bg-farm-green-700 transition-colors duration-200"
+          >
+            お問い合わせページへ
+          </a>
         </div>
       </section>
 
@@ -927,9 +1155,9 @@ export default function Home() {
               <ul className="space-y-2 text-gray-300">
                 <li><a href="#home" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</a></li>
                 <li><a href="#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</a></li>
-                <li><a href="#gallery" className="hover:text-harvest-orange-300 transition-colors duration-200">ギャラリー</a></li>
+                <li><Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</Link></li>
                 <li><a href="#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</a></li>
-                <li><a href="#contact" className="hover:text-harvest-orange-300 transition-colors duration-200">お問い合わせ</a></li>
+                <li><Link href="/contact" className="hover:text-harvest-orange-300 transition-colors duration-200">お問い合わせ</Link></li>
               </ul>
             </div>
             <div>
