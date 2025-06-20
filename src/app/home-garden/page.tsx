@@ -16,8 +16,12 @@ export default function HomeGardenPage() {
                 <a href="#about" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">講座について</a>
                 <a href="#testimonials" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">お客様の声</a>
                 <a href="#offer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">特別オファー</a>
-                <a href="/contact" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">お問い合わせ</a>
-                <a href="/gallery" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">ギャラリー</a>
+                <a href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center">
+                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                  </svg>
+                  LINE相談
+                </a>
                 <a href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">よくあるご質問</a>
               </div>
             </div>
@@ -319,7 +323,7 @@ export default function HomeGardenPage() {
               <div className="flex items-start">
                 <div className="text-2xl mr-4">🌿</div>
                 <p className="text-gray-700">
-                  添加物や農薬を気にせず、安全で新鮮な野菜を家族に食べさせられる安心
+                  添加物や農薩を気にせず、安全で新鮮な野菜を家族に食べさせられる安心
                 </p>
               </div>
               <div className="flex items-start">
@@ -421,7 +425,7 @@ export default function HomeGardenPage() {
             <div className="card p-8">
               <div className="text-4xl mb-4">🌱</div>
               <h3 className="text-xl font-semibold text-farm-green-800 mb-4">四季の種子セット（年4回お届け）</h3>
-              <p className="text-gray-600 mb-4">その季節に最適な、有機・無農薬の高品質種子をセレクト。市場では手に入らない希少品種も含む充実のセット。</p>
+              <p className="text-gray-600 mb-4">その季節に最適な、有機・無農薩の高品質種子をセレクト。市場では手に入らない希少品種も含む充実のセット。</p>
             </div>
           </div>
 
@@ -434,87 +438,6 @@ export default function HomeGardenPage() {
               植物の異変や急な質問に、園芸のプロが24時間以内に回答。失敗のリスクを最小限に抑えます。
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* 特別特典セクション */}
-      <section className="py-20 bg-gradient-to-r from-harvest-orange-400 to-harvest-orange-600 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">🎁 驚きの特典</h2>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              植物の成長を劇的に促進する「Nパワープラス®」を無料プレゼント！
-            </h3>
-          </div>
-
-          <div className="bg-white text-gray-800 p-8 rounded-xl shadow-2xl">
-            <div className="text-center mb-8">
-              <p className="text-lg mb-6">
-                今回、期間限定の特別特典として、植物の生育を飛躍的に向上させる微生物栄養剤「Nパワープラス®」（250ml・通常価格5,500円）を1本無料でプレゼントいたします！
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-xl font-semibold text-farm-green-800 mb-4">Nパワープラス®の革命的な発想</h4>
-                <p className="text-gray-700 mb-4">
-                  Nパワープラス®は、20年以上の研究から生まれた革命的な植物栄養剤です。従来の「外から微生物を入れる」という考え方を根本から変え、「すでにその土地に住む微生物に栄養を与え、活性化させる」という画期的な発想で開発されました。
-                </p>
-                
-                <h5 className="font-semibold text-farm-green-800 mb-3">このNパワープラス®を使うと：</h5>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    土が柔らかく変化し、指で簡単に掘れるようになります
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    植物の根張りが驚くほど良くなり、養分をしっかり吸収します
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    健全な微生物バランスにより、害虫が自然と減少します
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    栄養をしっかり吸収した植物は、より多くの実をつけます
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-green-500 mr-2">✓</span>
-                    本来の栄養バランスで育った作物は、味も香りも格別です
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="bg-farm-green-50 p-6 rounded-lg">
-                <h4 className="font-semibold text-farm-green-800 mb-4">安心・安全・簡単</h4>
-                <p className="text-gray-700 mb-4">
-                  Nパワープラス®は大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心して使えます。
-                </p>
-                
-                <h5 className="font-semibold text-farm-green-800 mb-2">使い方も驚くほど簡単です</h5>
-                <p className="text-sm text-gray-600 mb-4">
-                  500倍〜1000倍に薄めて（250mlボトルなら125L〜250Lの水に対応）、通常の水やりの代わりに月に1〜2回使用するだけ。家庭菜園なら約6ヶ月分、プランター10個分に対応できます。
-                </p>
-                
-                <div className="bg-harvest-orange-100 p-4 rounded-lg text-center">
-                  <p className="text-harvest-orange-700 font-bold">
-                    ベランダ菜園には、この「Nパワープラス®」が最適なのです！
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 保証制度セクション */}
-      <section className="py-12 bg-farm-green-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-farm-green-800 mb-6">✅ 安心の保証制度</h3>
-          <p className="text-lg text-gray-700">
-            もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、全額返金いたします。あなたにはリスクがありません。
-          </p>
         </div>
       </section>
 
@@ -622,15 +545,90 @@ export default function HomeGardenPage() {
         </div>
       </section>
 
+      {/* 花岡先生からのメッセージセクション */}
+      <section className="py-20 bg-farm-green-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="flex flex-col md:flex-row items-center mb-8">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-6 md:mb-0 md:mr-8">
+                <img 
+                  src="/images/teacher/hanooka-sensei.jpg" 
+                  alt="花岡先生" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡先生からのメッセージ</h3>
+                <p className="text-gray-600">農業指導者・家庭菜園専門家</p>
+              </div>
+            </div>
+            
+            <div className="space-y-6 text-gray-700">
+              <p className="text-lg leading-relaxed">
+                近年、世界的な食料危機が深刻化し、日本でも食料自給率の低下が大きな問題となっています。野菜の価格高騰は、私たちの日常生活に直接的な影響を与え、多くの家庭で家計を圧迫しています。
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                しかし、この状況を変える方法があります。それは、私たち一人ひとりが自給自足の意識を持つことです。小さなベランダでも、正しい知識と技術があれば、家族の食卓を支える十分な野菜を育てることができます。
+              </p>
+              
+              <p className="text-lg leading-relaxed">
+                私が長年研究してきた「狭小スペース集約栽培法」は、限られたスペースでも最大限の収穫を得られる方法です。この技術を多くの方に伝えることで、日本の食料自給率向上に貢献したいと考えています。
+              </p>
+              
+              <div className="bg-farm-green-100 p-6 rounded-lg border-l-4 border-farm-green-400">
+                <p className="text-farm-green-800 font-semibold text-lg">
+                  「自分で育てる」という選択が、あなたの家族の健康と家計を守り、ひいては日本の食料安全保障を支えることにつながります。一緒に、持続可能な未来を築いていきましょう。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* フッター */}
       <footer className="bg-farm-green-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h3 className="text-lg font-semibold mb-4">🌱 優しい家庭菜園の学校</h3>
-            <p className="text-farm-green-200 mb-4">家庭菜園で家族の健康と家計を守る</p>
-            <div className="text-farm-green-300">
-              <p>&copy; 2025 優しい家庭菜園の学校. All rights reserved.</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold mb-4 flex items-center">
+                <svg className="w-6 h-6 mr-2 text-harvest-orange-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
+                </svg>
+                優しい家庭菜園の学校
+              </h3>
+              <p className="text-gray-300">自然と触れ合い、農業の楽しさを体験できるスクールです。</p>
             </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4 text-harvest-orange-300">リンク</h4>
+              <ul className="space-y-2 text-gray-300">
+                <li><a href="/#home" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</a></li>
+                <li><a href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</a></li>
+                <li><a href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</a></li>
+                <li><a href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</a></li>
+                <li><a href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer" className="hover:text-harvest-orange-300 transition-colors duration-200 flex items-center">
+                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                  </svg>
+                  LINE相談
+                </a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4 text-harvest-orange-300">お問い合わせ</h4>
+              <div className="text-gray-300 space-y-2">
+                <p className="flex items-start hover:text-harvest-orange-300 transition-colors duration-200">
+                  <svg className="w-4 h-4 mr-2 mt-1 text-harvest-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  兵庫県洲本市五色町鮎原小山田1065番地
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 優しい家庭菜園の学校. All rights reserved.</p>
           </div>
         </div>
       </footer>
