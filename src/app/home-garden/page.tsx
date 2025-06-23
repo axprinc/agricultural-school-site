@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function HomeGardenPage() {
   return (
@@ -418,25 +419,27 @@ export default function HomeGardenPage() {
 
             <div className="card p-8">
               <div className="text-4xl mb-4">👥</div>
-              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">会員専用コミュニティアクセス権</h3>
-              <p className="text-gray-600 mb-4">同じ志を持つ仲間との情報交換の場。質問し放題の専門家サポートつき。孤独な家庭菜園とはおさらばです。</p>
+              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">会員専用コミュニティ（Facebookグループ）</h3>
+              <p className="text-gray-600 mb-4">同じ志を持つ仲間との情報交換の場。質問し放題の専門家サポートつき。一人で悩む家庭菜園はもう終わりです。</p>
             </div>
 
             <div className="card p-8">
-              <div className="text-4xl mb-4">🌱</div>
-              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">四季の種子セット（年4回お届け）</h3>
-              <p className="text-gray-600 mb-4">その季節に最適な、有機・無農薩の高品質種子をセレクト。市場では手に入らない希少品種も含む充実のセット。</p>
+              <div className="text-4xl mb-4">🏕️</div>
+              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">1泊2日農業体験ツアー参加権（別途費用）</h3>
+              <p className="text-gray-600 mb-4">花岡昭治による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
             </div>
-          </div>
 
-          <div className="bg-gradient-to-r from-harvest-orange-50 to-harvest-orange-100 p-8 rounded-xl">
-            <div className="flex items-center mb-4">
-              <span className="text-4xl mr-4">🆘</span>
-              <h3 className="text-2xl font-semibold text-farm-green-800">緊急時専門家サポート（月2回まで）</h3>
+            <div className="card p-8">
+              <div className="text-4xl mb-4">📦</div>
+              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">野菜のパッケージ・配送サービス</h3>
+              <p className="text-gray-600 mb-4">提携農家で収穫された新鮮な野菜を、ご自宅までお届けします。</p>
             </div>
-            <p className="text-gray-700">
-              植物の異変や急な質問に、園芸のプロが24時間以内に回答。失敗のリスクを最小限に抑えます。
-            </p>
+
+            <div className="card p-8">
+              <div className="text-4xl mb-4">🤝</div>
+              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">全国各地のオフ会開催</h3>
+              <p className="text-gray-600 mb-4">淡路島と複数の提携農家で定期的にオフ会を開催。実際に会って交流し、栽培のコツを学べます。</p>
+            </div>
           </div>
         </div>
       </section>
@@ -448,7 +451,7 @@ export default function HomeGardenPage() {
           
           <div className="bg-white text-gray-800 p-8 rounded-xl shadow-2xl mb-8">
             <p className="text-lg mb-8 text-center">
-              通常、「優しい家庭菜園の学校」の入会金は30,000円（月会費980円別途）ですが、この春の会員拡大キャンペーンとして、<span className="text-red-600 font-bold">5月15日までにお申し込みの方限定で入会金20,000円</span>にてご案内しています。
+              通常、「優しい家庭菜園の学校」の入会金は50,000円（年会費19,800円別途）ですが、<span className="text-red-600 font-bold">先着50名様限定で入会金無料</span>にてご案内しています。
             </p>
             
             <div className="grid md:grid-cols-2 gap-8">
@@ -457,11 +460,11 @@ export default function HomeGardenPage() {
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
                     <span>入会金</span>
-                    <span className="line-through text-gray-500">30,000円</span>
+                    <span className="line-through text-gray-500">50,000円</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>月会費</span>
-                    <span>980円</span>
+                    <span>年会費</span>
+                    <span>19,800円</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Nパワープラス®</span>
@@ -470,23 +473,23 @@ export default function HomeGardenPage() {
                 </div>
               </div>
               <div className="text-left">
-                <h3 className="text-2xl font-bold text-harvest-orange-600 mb-4">特別価格（5月15日まで）</h3>
+                <h3 className="text-2xl font-bold text-harvest-orange-600 mb-4">特別価格（先着50名様限定）</h3>
                 <div className="space-y-2 mb-4">
                   <div className="flex justify-between">
                     <span>入会金</span>
-                    <span className="text-2xl font-bold text-harvest-orange-600">20,000円</span>
+                    <span className="text-2xl font-bold text-harvest-orange-600">無料</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>月会費</span>
-                    <span>980円</span>
+                    <span>年会費</span>
+                    <span>19,800円</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Nパワープラス®</span>
-                    <span className="text-green-600 font-bold">無料プレゼント!</span>
+                    <span className="text-green-600 font-bold">1本無料プレゼント!</span>
                   </div>
                 </div>
                 <div className="bg-harvest-orange-100 p-3 rounded text-center">
-                  <span className="text-harvest-orange-600 font-bold">10,000円 + 5,500円 = 15,500円お得！</span>
+                  <span className="text-harvest-orange-600 font-bold">50,000円 + 5,500円 = 55,500円お得！</span>
                 </div>
               </div>
             </div>
@@ -496,11 +499,18 @@ export default function HomeGardenPage() {
                 さらに、今だけの特別特典として、植物の成長を劇的に促進する「Nパワープラス®」（通常価格5,500円）を1本無料でプレゼント！
               </p>
             </div>
+            
+            <div className="bg-blue-50 rounded-lg p-4 mt-8">
+              <h4 className="font-bold text-blue-800 mb-2">安心の保証制度</h4>
+              <p className="text-blue-700 text-sm">
+                もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、Nパワープラス®を未開封の状態でご返送いただければ、年会費を全額返金いたします。
+              </p>
+            </div>
           </div>
 
           <div className="bg-red-600 text-white p-6 rounded-xl mb-8">
-            <h3 className="text-xl font-bold mb-2">⚠️ 先着50名様限定！今すぐお申し込みください</h3>
-            <p>この特別オファーは、先着50名様限定です。毎回このキャンペーンは数日で定員に達してしまうため、今すぐのお申し込みをおすすめします。</p>
+            <h3 className="text-xl font-bold mb-2">⚠️ 定員に達し次第締め切り！今すぐお申し込みください</h3>
+            <p>この特別オファーは、先着50名様限定です。定員に達し次第、この価格でのご案内は終了となります。毎回このキャンペーンは数日で定員に達してしまうため、今すぐのお申し込みをおすすめします。</p>
           </div>
 
           <div className="space-y-6">
@@ -545,21 +555,26 @@ export default function HomeGardenPage() {
         </div>
       </section>
 
-      {/* 花岡先生からのメッセージセクション */}
+      {/* 花岡昭治からのメッセージセクション */}
       <section className="py-20 bg-farm-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-xl shadow-lg">
-            <div className="flex flex-col md:flex-row items-center mb-8">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-6 md:mb-0 md:mr-8">
-                <img 
+            <div className="flex flex-col items-center mb-8">
+              <div className="w-[400px] h-[250px] rounded-lg overflow-hidden mb-6">
+                <Image 
                   src="/images/teacher/hanooka-sensei.jpg" 
-                  alt="花岡先生" 
+                  alt="花岡昭治" 
                   className="w-full h-full object-cover"
+                  width={800}
+                  height={500}
+                  quality={100}
+                  sizes="400px"
+                  priority
                 />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡先生からのメッセージ</h3>
-                <p className="text-gray-600">農業指導者・家庭菜園専門家</p>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡昭治からのメッセージ</h3>
+                <p className="text-gray-600 mb-6">農業指導者・家庭菜園専門家</p>
               </div>
             </div>
             

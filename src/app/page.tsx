@@ -600,34 +600,47 @@ export default function Home() {
                     <span className="text-2xl font-bold text-white">3</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">会員専用コミュニティアクセス権</h3>
-                    <p className="text-gray-600 leading-relaxed">同じ志を持つ仲間との情報交換の場。質問し放題の専門家サポートつき。孤独な家庭菜園とはおさらばです。</p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">会員専用コミュニティ（Facebookグループ）</h3>
+                    <p className="text-gray-600 leading-relaxed">同じ志を持つ仲間との情報交換の場。日々の栽培の様子を共有したり、質問し放題の専門家サポートつき。一人で悩む家庭菜園はもう終わりです。</p>
                   </div>
                 </div>
               </div>
 
-              {/* 四季の種子セット */}
+              {/* 1泊2日農業体験ツアー */}
               <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                 <div className="flex items-start">
                   <div className="w-16 h-16 bg-farm-green-500 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
                     <span className="text-2xl font-bold text-white">4</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">四季の種子セット（年4回お届け）</h3>
-                    <p className="text-gray-600 leading-relaxed">その季節に最適な、有機・無農薬の高品質種子をセレクト。市場では手に入らない希少品種も含む充実のセット。</p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">1泊2日農業体験ツアー参加権（別途費用）</h3>
+                    <p className="text-gray-600 leading-relaxed">花岡昭治による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
                   </div>
                 </div>
               </div>
 
-              {/* 緊急時専門家サポート */}
+              {/* 収穫野菜パッケージサービス */}
               <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
                 <div className="flex items-start">
                   <div className="w-16 h-16 bg-farm-green-500 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
                     <span className="text-2xl font-bold text-white">5</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">緊急時専門家サポート（月2回まで）</h3>
-                    <p className="text-gray-600 leading-relaxed">植物の異変や急な質問に、園芸のプロが24時間以内に回答。失敗のリスクを最小限に抑えます。</p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">野菜のパッケージ・配送サービス</h3>
+                    <p className="text-gray-600 leading-relaxed">提携農家で収穫された新鮮な野菜を、ご自宅までお届けします。</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 全国各地のオフ会 */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-start">
+                  <div className="w-16 h-16 bg-farm-green-500 rounded-lg flex items-center justify-center mr-6 flex-shrink-0">
+                    <span className="text-2xl font-bold text-white">6</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">全国各地のオフ会開催</h3>
+                    <p className="text-gray-600 leading-relaxed">淡路島と複数の提携農家で定期的にオフ会を開催。実際に会って交流し、栽培のコツを学べます。</p>
                   </div>
                 </div>
               </div>
@@ -749,32 +762,63 @@ export default function Home() {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">期間限定・特別オファー</h3>
               <div className="bg-red-100 rounded-lg p-4 mb-6">
-                <p className="text-red-800 font-semibold">先着50名様限定！5月15日まで</p>
+                <p className="text-red-800 font-semibold">先着50名様限定！定員に達し次第締め切り</p>
               </div>
               
-              <div className="flex justify-center items-center space-x-8 mb-6">
-                <div className="text-center">
-                  <div className="text-gray-500 line-through text-lg">通常価格</div>
-                  <div className="text-gray-500 line-through text-2xl font-bold">30,000円</div>
+              <p className="text-lg mb-8 text-center">
+                通常、「優しい家庭菜園の学校」の入会金は50,000円（年会費19,800円別途）ですが、<span className="text-red-600 font-bold">先着50名様限定で入会金無料</span>にてご案内しています。
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="text-left">
+                  <h4 className="text-xl font-bold text-gray-800 mb-4">通常価格</h4>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex justify-between">
+                      <span>入会金</span>
+                      <span className="line-through text-gray-500">50,000円</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>年会費</span>
+                      <span>19,800円</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Nパワープラス®</span>
+                      <span className="line-through text-gray-500">5,500円</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-4xl text-harvest-orange-500">→</div>
-                <div className="text-center">
-                  <div className="text-harvest-orange-600 text-lg">特別価格</div>
-                  <div className="text-harvest-orange-600 text-4xl font-bold">20,000円</div>
-                  <div className="text-gray-600 text-sm">+ 月会費 980円</div>
+                <div className="text-left">
+                  <h4 className="text-xl font-bold text-harvest-orange-600 mb-4">特別価格（先着50名様限定）</h4>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex justify-between">
+                      <span>入会金</span>
+                      <span className="text-2xl font-bold text-harvest-orange-600">無料</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>年会費</span>
+                      <span>19,800円</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Nパワープラス®</span>
+                      <span className="text-green-600 font-bold">1本無料プレゼント!</span>
+                    </div>
+                  </div>
+                  <div className="bg-harvest-orange-100 p-3 rounded text-center">
+                    <span className="text-harvest-orange-600 font-bold">50,000円 + 5,500円 = 55,500円お得！</span>
+                  </div>
                 </div>
               </div>
               
-              <div className="bg-harvest-orange-50 rounded-lg p-4 mb-6">
-                <p className="text-harvest-orange-800 font-semibold">
-                  さらに！「Nパワープラス®」（5,500円相当）を無料プレゼント
+              <div className="text-center mb-8">
+                <p className="text-harvest-orange-600 font-bold text-lg">
+                  さらに、今だけの特別特典として、植物の成長を劇的に促進する「Nパワープラス®」（通常価格5,500円）を1本無料でプレゼント！
                 </p>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-4 mb-8">
                 <h4 className="font-bold text-blue-800 mb-2">安心の保証制度</h4>
                 <p className="text-blue-700 text-sm">
-                  もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、全額返金いたします。あなたにはリスクがありません。
+                  もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、Nパワープラス®を未開封の状態でご返送いただければ、年会費を全額返金いたします。
                 </p>
               </div>
             </div>
@@ -919,7 +963,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 花岡先生からのメッセージセクション */}
+      {/* 花岡昭治からのメッセージセクション */}
       <section className="py-20 bg-gradient-to-br from-harvest-orange-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -927,26 +971,30 @@ export default function Home() {
               <svg className="w-8 h-8 mr-3 text-harvest-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-              花岡先生からのメッセージ
+              花岡昭治からのメッセージ
             </h2>
           </div>
           <div className="max-w-2xl mx-auto bg-white rounded-xl p-8 shadow-lg">
-            <div className="flex flex-col md:flex-row items-center mb-6">
-              <div className="w-[200px] h-[200px] rounded-lg overflow-hidden mr-0 md:mr-8 shadow-xl border-4 border-harvest-orange-200 flex-shrink-0">
+            <div className="flex flex-col items-center mb-6">
+              <div className="w-[400px] h-[250px] rounded-lg overflow-hidden mb-6 shadow-xl flex-shrink-0">
                 <Image
                   src="/images/teacher/hanooka-sensei.jpg"
-                  alt="花岡先生"
-                  width={200}
-                  height={200}
+                  alt="花岡昭治"
+                  width={800}
+                  height={500}
+                  quality={100}
+                  sizes="400px"
+                  priority
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex-1 text-center md:text-left mt-6 md:mt-0">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡昭治からのメッセージ</h3>
                 <p className="text-xl font-semibold text-farm-green-800 mb-4 leading-relaxed">
                   食糧危機は必ず来る。農業を学び自給自足ができる状況を作る。そしてその学びを他に人にも教えてあげて欲しい
                 </p>
                 <div className="text-right mt-4">
-                  <span className="text-farm-green-800 font-semibold">by 花岡</span>
+                  <span className="text-farm-green-800 font-semibold">by 花岡昭治</span>
                 </div>
               </div>
             </div>
