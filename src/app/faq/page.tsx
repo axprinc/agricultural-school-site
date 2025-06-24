@@ -90,7 +90,35 @@ export default function FAQ() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-farm-green-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-farm-green-50 via-white to-harvest-orange-50 relative overflow-hidden">
+      {/* 装飾的な背景要素 */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* 左上の装飾 */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-farm-green-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-20 left-20 w-16 h-16 bg-harvest-orange-200 rounded-full opacity-30 animate-bounce"></div>
+        
+        {/* 右上の装飾 */}
+        <div className="absolute top-16 right-16 w-24 h-24 bg-farm-green-300 rounded-full opacity-15 animate-pulse"></div>
+        <div className="absolute top-8 right-8 w-12 h-12 bg-harvest-orange-300 rounded-full opacity-25 animate-bounce"></div>
+        
+        {/* 左下の装飾 */}
+        <div className="absolute bottom-20 left-16 w-20 h-20 bg-farm-green-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-32 left-8 w-10 h-10 bg-harvest-orange-200 rounded-full opacity-30 animate-bounce"></div>
+        
+        {/* 右下の装飾 */}
+        <div className="absolute bottom-16 right-12 w-28 h-28 bg-farm-green-300 rounded-full opacity-15 animate-pulse"></div>
+        <div className="absolute bottom-8 right-20 w-14 h-14 bg-harvest-orange-300 rounded-full opacity-25 animate-bounce"></div>
+        
+        {/* 中央の小さな装飾 */}
+        <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-farm-green-200 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute top-2/3 right-1/3 w-6 h-6 bg-harvest-orange-200 rounded-full opacity-30 animate-bounce"></div>
+        
+        {/* 葉っぱの装飾 */}
+        <div className="absolute top-1/4 right-1/3 text-4xl text-farm-green-300 opacity-20 animate-pulse">🌱</div>
+        <div className="absolute bottom-1/4 left-1/3 text-3xl text-harvest-orange-300 opacity-25 animate-bounce">🌿</div>
+        <div className="absolute top-1/2 left-1/6 text-2xl text-farm-green-400 opacity-20 animate-pulse">🍃</div>
+      </div>
+
       {/* スクロール進捗バー */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
         <div 
@@ -100,7 +128,7 @@ export default function FAQ() {
       </div>
 
       {/* ヘッダー */}
-      <nav className="bg-white shadow-md sticky top-0 z-40">
+      <nav className="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-40 border-b border-farm-green-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* ロゴ */}
@@ -108,7 +136,7 @@ export default function FAQ() {
               <svg className="w-8 h-8 mr-3 text-farm-green-600" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
               </svg>
-              <h1 className="text-xl font-bold text-farm-green-800 font-elegant">優しい家庭菜園の学校</h1>
+              <Link href="/" className="text-xl font-bold text-farm-green-800 font-elegant">優しい家庭菜園の学校</Link>
             </div>
 
             {/* デスクトップナビゲーション */}
@@ -210,66 +238,90 @@ export default function FAQ() {
       </AnimatePresence>
 
       {/* メインコンテンツ */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-farm-green-900 mb-4 font-elegant">よくあるご質問</h1>
-          <p className="text-lg text-gray-600">家庭菜園スクールについて、よくいただくご質問と回答をご紹介いたします。</p>
-        </div>
+      <div className="relative z-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* ヘッダー */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-farm-green-800 mb-4">
+              よくあるご質問
+            </h1>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              家庭菜園スクールについて、よくいただくご質問と回答をご紹介いたします。
+            </p>
+          </div>
 
-        <div className="max-w-3xl mx-auto space-y-4">
-          {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-              initial={false}
-              animate={{ height: "auto" }}
-            >
-              <button
-                onClick={() => toggleFaq(index)}
-                className="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-farm-green-500 focus:ring-opacity-50"
-              >
-                <div className="flex justify-between items-center">
-                  <h3 className="text-lg font-medium text-farm-green-900">{faq.question}</h3>
-                  {expandedFaq === index ? (
-                    <FaChevronUp className="text-farm-green-600" />
-                  ) : (
-                    <FaChevronDown className="text-farm-green-600" />
-                  )}
-                </div>
-              </button>
-              {expandedFaq === index && (
+          {/* FAQカード */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-farm-green-100 p-8 md:p-12">
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
                 <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="px-6 pb-4"
+                  key={index}
+                  className="bg-white/60 backdrop-blur-sm rounded-xl shadow-md overflow-hidden border border-farm-green-100 hover:shadow-lg transition-all duration-300"
+                  initial={false}
+                  animate={{ height: "auto" }}
                 >
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-4 text-left focus:outline-none focus:ring-2 focus:ring-farm-green-500 focus:ring-opacity-50 hover:bg-farm-green-50/50 transition-colors duration-200"
+                  >
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-lg font-medium text-farm-green-900">{faq.question}</h3>
+                      {expandedFaq === index ? (
+                        <FaChevronUp className="text-farm-green-600 transition-transform duration-200" />
+                      ) : (
+                        <FaChevronDown className="text-farm-green-600 transition-transform duration-200" />
+                      )}
+                    </div>
+                  </button>
+                  {expandedFaq === index && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="px-6 pb-4 bg-farm-green-50/30"
+                    >
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </motion.div>
+                  )}
                 </motion.div>
-              )}
-            </motion.div>
-          ))}
-        </div>
+              ))}
+            </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">その他のご質問がございましたら、お気軽にLINE相談ください。</p>
-          <a
-            href="https://line.me/R/ti/p/@your-line-id"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-farm-green-600 hover:bg-farm-green-700 transition-colors duration-200"
-          >
-            <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
-            </svg>
-            LINE相談ページへ
-          </a>
+            {/* お問い合わせセクション */}
+            <div className="text-center mt-12 pt-8 border-t border-farm-green-200">
+              <p className="text-gray-600 mb-6">その他のご質問がございましたら、お気軽にLINE相談ください。</p>
+              <a
+                href="https://line.me/R/ti/p/@your-line-id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-farm-green-500 to-farm-green-600 text-white font-semibold rounded-xl hover:from-farm-green-600 hover:to-farm-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+                </svg>
+                LINE相談ページへ
+              </a>
+            </div>
+          </div>
+
+          {/* ホームに戻るボタン */}
+          <div className="text-center mt-12">
+            <Link 
+              href="/" 
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-farm-green-500 to-farm-green-600 text-white font-semibold rounded-lg hover:from-farm-green-600 hover:to-farm-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+              ホームに戻る
+            </Link>
+          </div>
         </div>
-      </main>
+      </div>
 
       {/* フッター */}
-      <footer className="bg-farm-green-900 text-white py-12">
+      <footer className="bg-farm-green-900 text-white py-12 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
@@ -283,18 +335,19 @@ export default function FAQ() {
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4 text-harvest-orange-300">リンク</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li><a href="/#home" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</a></li>
-                <li><a href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</a></li>
-                <li><Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</Link></li>
-                <li><a href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</a></li>
-                <li><a href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer" className="hover:text-harvest-orange-300 transition-colors duration-200 flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
-                  </svg>
-                  LINE相談
-                </a></li>
-              </ul>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2">
+                <ul className="space-y-2 text-gray-300">
+                  <li><a href="/#home" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</a></li>
+                  <li><a href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</a></li>
+                  <li><Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</Link></li>
+                  <li><a href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</a></li>
+                </ul>
+                <ul className="space-y-2 text-gray-300">
+                  <li><a href="/tokuteishyou" className="hover:text-harvest-orange-300 transition-colors duration-200">特定商取引法に基づく表示</a></li>
+                  <li><a href="/privacy" className="hover:text-harvest-orange-300 transition-colors duration-200">プライバシーポリシー</a></li>
+                  <li><a href="/terms" className="hover:text-harvest-orange-300 transition-colors duration-200">利用規約</a></li>
+                </ul>
+              </div>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4 text-harvest-orange-300">お問い合わせ</h4>
