@@ -621,7 +621,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">1泊2日農業体験ツアー参加権（別途費用）</h3>
-                    <p className="text-gray-600 leading-relaxed">花岡昭治による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
+                    <p className="text-gray-600 leading-relaxed">花岡正侍による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
                   </div>
                 </div>
               </div>
@@ -657,40 +657,18 @@ export default function Home() {
           {/* Nパワープラス特典 */}
           <div className="bg-gradient-to-r from-harvest-orange-100 to-farm-green-100 rounded-2xl p-8 mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「
-                <span className="relative inline-block">
-                  <a 
-                    href="https://smilefarming.stores.jp/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-farm-green-800 hover:text-harvest-orange-600 underline transition-colors"
-                    onMouseEnter={() => setShowTooltip(true)}
-                    onMouseLeave={() => setShowTooltip(false)}
-                  >
-                    Nパワープラス®
-                  </a>
-                  {showTooltip && (
-                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-gray-800 text-white text-sm rounded-lg shadow-lg z-10 w-64">
-                      <div className="text-center">
-                        <p className="font-semibold mb-1">微生物栄養剤</p>
-                        <p className="text-xs">土壌の微生物を活性化させ、植物の成長を促進する天然由来の栄養剤です</p>
-                      </div>
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
-                    </div>
-                  )}
-                </span>
-                」を無料プレゼント！</h3>
+              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「Nパワープラス®」を無料プレゼント！</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
-                今回、期間限定の特別特典として、植物の生育を飛躍的に向上させる微生物栄養剤「<a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>」（250ml・通常価格5,500円）を1本無料でプレゼントいたします！
+                今回、期間限定の特別特典として、植物の生育を飛躍的に向上させる微生物栄養剤「Nパワープラス®」（250ml・通常価格5,500円）を1本無料でプレゼントいたします！
               </p>
             </div>
             
             <div className="bg-white rounded-xl p-6 mb-6">
               <p className="text-gray-700 mb-4 leading-relaxed">
-                <a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>は、20年以上の研究から生まれた革命的な植物栄養剤です。従来の「外から微生物を入れる」という考え方を根本から変え、「すでにその土地に住む微生物に栄養を与え、活性化させる」という画期的な発想で開発されました。
+                Nパワープラス®は、20年以上の研究から生まれた革命的な植物栄養剤です。従来の「外から微生物を入れる」という考え方を根本から変え、「すでにその土地に住む微生物に栄養を与え、活性化させる」という画期的な発想で開発されました。
               </p>
               
-              <h4 className="font-bold text-gray-800 mb-3">この<a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>を使うと：</h4>
+              <h4 className="font-bold text-gray-800 mb-3">このNパワープラス®を使うと：</h4>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-farm-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
@@ -737,7 +715,7 @@ export default function Home() {
             
             <div className="bg-farm-green-50 rounded-lg p-6">
               <p className="text-gray-700 mb-4 leading-relaxed">
-                <a href="https://smilefarming.stores.jp/" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-harvest-orange-600 underline transition-colors">Nパワープラス®</a>は大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心して使えます。
+                Nパワープラス®は大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心して使えます。
               </p>
               <p className="text-gray-700 leading-relaxed">
                 使い方も驚くほど簡単です。500倍〜1000倍に薄めて（250mlボトルなら125L〜250Lの水に対応）、通常の水やりの代わりに月に1〜2回使用するだけ。家庭菜園なら約6ヶ月分、プランター10個分に対応できます。
@@ -745,23 +723,7 @@ export default function Home() {
               <p className="text-center font-bold text-farm-green-800 mt-4">ベランダ菜園には、この「Nパワープラス®」が最適なのです！</p>
             </div>
             
-            {/* Nパワープラス詳細リンク */}
-            <div className="text-center mt-6">
-              <a 
-                href="https://smilefarming.stores.jp/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-farm-green-600 hover:bg-farm-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-1"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Nパワープラス®の詳細についてはこちら
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
-            </div>
+
           </div>
 
           {/* 価格・申込セクション */}
@@ -970,7 +932,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 花岡昭治からのメッセージセクション */}
+      {/* 花岡正侍からのメッセージセクション */}
       <section className="py-20 bg-gradient-to-br from-harvest-orange-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -978,7 +940,7 @@ export default function Home() {
               <svg className="w-8 h-8 mr-3 text-harvest-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
-              花岡昭治からのメッセージ
+              花岡正侍からのメッセージ
             </h2>
           </div>
           <div className="max-w-2xl mx-auto bg-white rounded-xl p-8 shadow-lg">
@@ -986,7 +948,7 @@ export default function Home() {
               <div className="w-[400px] h-[250px] rounded-lg overflow-hidden mb-6 shadow-xl flex-shrink-0">
                 <Image
                   src="/images/teacher/hanooka-sensei.jpg"
-                  alt="花岡昭治"
+                  alt="花岡正侍"
                   width={800}
                   height={500}
                   quality={100}
@@ -996,12 +958,12 @@ export default function Home() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡昭治からのメッセージ</h3>
+                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡正侍からのメッセージ</h3>
                 <p className="text-xl font-semibold text-farm-green-800 mb-4 leading-relaxed">
                   食糧危機は必ず来る。農業を学び自給自足ができる状況を作る。そしてその学びを他に人にも教えてあげて欲しい
                 </p>
                 <div className="text-right mt-4">
-                  <span className="text-farm-green-800 font-semibold">by 花岡昭治</span>
+                  <span className="text-farm-green-800 font-semibold">by 花岡正侍</span>
                 </div>
               </div>
             </div>

@@ -445,7 +445,7 @@ export default function HomeGardenPage() {
             <div className="card p-8">
               <div className="text-4xl mb-4">🏕️</div>
               <h3 className="text-xl font-semibold text-farm-green-800 mb-4">1泊2日農業体験ツアー参加権（別途費用）</h3>
-              <p className="text-gray-600 mb-4">花岡昭治による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
+              <p className="text-gray-600 mb-4">花岡正侍による講義が生で聞ける。畑で収穫した農作物をその場で調理して食べれる。淡路島と複数の提携農家で開催。</p>
             </div>
 
             <div className="card p-8">
@@ -574,7 +574,7 @@ export default function HomeGardenPage() {
         </div>
       </section>
 
-      {/* 花岡昭治からのメッセージセクション */}
+      {/* 花岡正侍からのメッセージセクション */}
       <section className="py-20 bg-farm-green-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white p-8 rounded-xl shadow-lg">
@@ -582,7 +582,7 @@ export default function HomeGardenPage() {
               <div className="w-[400px] h-[250px] rounded-lg overflow-hidden mb-6">
                 <Image 
                   src="/images/teacher/hanooka-sensei.jpg" 
-                  alt="花岡昭治" 
+                  alt="花岡正侍" 
                   className="w-full h-full object-cover"
                   width={800}
                   height={500}
@@ -592,7 +592,7 @@ export default function HomeGardenPage() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡昭治からのメッセージ</h3>
+                <h3 className="text-2xl font-bold text-farm-green-800 mb-2">花岡正侍からのメッセージ</h3>
                 <p className="text-gray-600 mb-6">農業指導者・家庭菜園専門家</p>
               </div>
             </div>
