@@ -88,22 +88,6 @@ export default function TokuteishyouPage() {
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">3</span>
-                  電話番号
-                </h2>
-                <p className="text-gray-700 ml-9">080-XXXX-XXXX</p>
-              </div>
-
-              <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">4</span>
-                  運営統括責任者
-                </h2>
-                <p className="text-gray-700 ml-9"></p>
-              </div>
-
-              <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">5</span>
                   商品代金以外の必要料金
                 </h2>
                 <p className="text-gray-700 ml-9">送料：お客様負担<br />振込手数料：お客様負担</p>
@@ -111,7 +95,7 @@ export default function TokuteishyouPage() {
 
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">6</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">4</span>
                   交換の方法、引渡し時期
                 </h2>
                 <p className="text-gray-700 ml-9">お申し込み後、1週間以内に商品をお届けいたします。</p>
@@ -119,7 +103,7 @@ export default function TokuteishyouPage() {
 
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">7</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">5</span>
                   支払い方法・時期
                 </h2>
                 <p className="text-gray-700 ml-9">銀行振込：商品到着後7日以内</p>
@@ -127,7 +111,7 @@ export default function TokuteishyouPage() {
 
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">8</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">6</span>
                   販売価格
                 </h2>
                 <p className="text-gray-700 ml-9">入会金：50,000円（特別オファーで無料）<br />年会費：19,800円</p>
@@ -135,7 +119,7 @@ export default function TokuteishyouPage() {
 
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">9</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">7</span>
                   返品・キャンセルについて
                 </h2>
                 <div className="ml-9 space-y-3 text-gray-700">
@@ -154,7 +138,7 @@ export default function TokuteishyouPage() {
 
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">10</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">8</span>
                   サービス内容
                 </h2>
                 <p className="text-gray-700 ml-9">家庭菜園指導、オンライン講座、会員コミュニティ、農業体験ツアー等</p>
@@ -162,7 +146,7 @@ export default function TokuteishyouPage() {
 
               <div className="pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
-                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">11</span>
+                  <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">9</span>
                   利用規約・プライバシーポリシー
                 </h2>
                 <p className="text-gray-700 ml-9">サービス利用時にお送りする資料に記載いたします。</p>
