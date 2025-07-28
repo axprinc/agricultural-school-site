@@ -61,6 +61,11 @@ const config: Config = {
         'float': 'float 6s ease-in-out infinite',
         'parallax': 'parallax 25s linear infinite',
         'zoom-slow': 'zoomSlow 15s ease-in-out infinite alternate',
+        'parallax-slide-in-left': 'parallaxSlideInLeft 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+        'parallax-slide-in-right': 'parallaxSlideInRight 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+        'parallax-slide-out-left': 'parallaxSlideOutLeft 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+        'parallax-slide-out-right': 'parallaxSlideOutRight 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+        'parallax-zoom': 'parallaxZoom 12s ease-in-out infinite alternate',
       },
       keyframes: {
         kenBurns: {
@@ -112,6 +117,63 @@ const config: Config = {
           },
           '100%': {
             transform: 'scale(1.2)',
+          },
+        },
+        parallaxSlideInLeft: {
+          '0%': {
+            transform: 'translateX(-100%) scale(1.2)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0%) scale(1.0)',
+            opacity: '1',
+          },
+        },
+        parallaxSlideInRight: {
+          '0%': {
+            transform: 'translateX(100%) scale(1.2)',
+            opacity: '0',
+          },
+          '100%': {
+            transform: 'translateX(0%) scale(1.0)',
+            opacity: '1',
+          },
+        },
+        parallaxSlideOutLeft: {
+          '0%': {
+            transform: 'translateX(0%) scale(1.0)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateX(-100%) scale(0.9)',
+            opacity: '0',
+          },
+        },
+        parallaxSlideOutRight: {
+          '0%': {
+            transform: 'translateX(0%) scale(1.0)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'translateX(100%) scale(0.9)',
+            opacity: '0',
+          },
+        },
+        parallaxZoom: {
+          '0%': {
+            transform: 'scale(1.05) translateX(-10px) translateY(-5px)',
+          },
+          '25%': {
+            transform: 'scale(1.1) translateX(8px) translateY(-3px)',
+          },
+          '50%': {
+            transform: 'scale(1.15) translateX(-5px) translateY(7px)',
+          },
+          '75%': {
+            transform: 'scale(1.12) translateX(12px) translateY(-8px)',
+          },
+          '100%': {
+            transform: 'scale(1.08) translateX(-8px) translateY(5px)',
           },
         },
       },

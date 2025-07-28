@@ -11,22 +11,34 @@ export default function Home() {
   // ヒーロー画像のスライド管理
   const heroImages = [
     {
-      src: '/images/hero/LINE_ALBUM_2025.6_250612_1.jpg',
-      alt: '家庭菜園の様子',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg',
+      alt: 'オープンファーム - 農業体験の様子',
       title: '小さなスペースで',
       subtitle: '大きな収穫を'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.6_250612_2.jpg', 
-      alt: '家庭菜園での活動',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_2.jpg', 
+      alt: 'オープンファーム - 家庭菜園指導',
       title: '毎日の食卓に',
       subtitle: '自家製野菜を届ける'
     },
     {
-      src: '/images/hero/iStock-1169145715.jpg',
-      alt: '美しい農場風景',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_3.jpg',
+      alt: 'オープンファーム - 参加者との交流',
       title: '家族みんなで',
       subtitle: '収穫の喜びを分かち合う'
+    },
+    {
+      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_4.jpg',
+      alt: 'オープンファーム - 農場での実習',
+      title: '土に触れ',
+      subtitle: '自然とのつながりを感じる'
+    },
+    {
+      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_17.jpg',
+      alt: 'オープンファーム - イベントの様子',
+      title: 'みんなで学び',
+      subtitle: '一緒に成長する'
     }
   ]
 
@@ -148,55 +160,55 @@ export default function Home() {
     }
   ]
 
-  // ギャラリー画像のスライド管理
+  // メインページ用ギャラリー画像（厳選8枚）
   const galleryImages = [
     {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_4.jpg',
-      alt: '淡路島の農場風景',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg',
+      alt: 'オープンファーム - 野菜栽培の様子',
+      title: '野菜栽培',
+      bgColor: 'bg-farm-green-400'
+    },
+    {
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_3.jpg',
+      alt: 'オープンファーム - 農場風景',
       title: '農場風景',
       bgColor: 'bg-earth-brown-300'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_5.jpg',
-      alt: '参加者の皆さまとの活動',
-      title: '体験活動',
-      bgColor: 'bg-farm-green-400'
-    },
-    {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_6.jpg',
-      alt: '野菜栽培の様子',
-      title: '野菜栽培',
-      bgColor: 'bg-harvest-orange-400'
-    },
-    {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_1.jpg',
-      alt: '農場での収穫体験の様子',
-      title: '収穫体験',
-      bgColor: 'bg-farm-green-300'
-    },
-    {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_7.jpg',
-      alt: '農場での作業風景',
-      title: '作業風景',
-      bgColor: 'bg-earth-brown-400'
-    },
-    {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_8.jpg',
-      alt: '収穫した野菜たち',
-      title: '収穫物',
-      bgColor: 'bg-farm-green-500'
-    },
-    {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_9.jpg',
-      alt: '農業体験の楽しい時間',
-      title: '楽しい体験',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_5.jpg',
+      alt: 'オープンファーム - 農業体験',
+      title: '農業体験',
       bgColor: 'bg-harvest-orange-500'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.6_250612_10.jpg',
-      alt: '農場での活動風景',
-      title: '活動風景',
-      bgColor: 'bg-earth-brown-500'
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_7.jpg',
+      alt: 'オープンファーム - 野菜の成長',
+      title: '野菜の成長',
+      bgColor: 'bg-earth-brown-400'
+    },
+    {
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_9.jpg',
+      alt: 'オープンファーム - 収穫の喜び',
+      title: '収穫の喜び',
+      bgColor: 'bg-farm-green-600'
+    },
+    {
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_11.jpg',
+      alt: 'オープンファーム - 家族での参加',
+      title: '家族での参加',
+      bgColor: 'bg-earth-brown-600'
+    },
+    {
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_13.jpg',
+      alt: 'オープンファーム - 講師による指導',
+      title: '講師による指導',
+      bgColor: 'bg-harvest-orange-700'
+    },
+    {
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_15.jpg',
+      alt: 'オープンファーム - 農作業実践',
+      title: '農作業実践',
+      bgColor: 'bg-farm-green-800'
     }
   ]
 
@@ -234,11 +246,7 @@ export default function Home() {
                     ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
                     : 'text-farm-green-700 hover:text-farm-green-900'
                 }`}>入会特典</a>
-                <a href="#gallery" className={`px-3 py-2 rounded-md text-sm font-medium transition-colors scroll-smooth ${
-                  activeSection === 'gallery' 
-                    ? 'bg-farm-green-100 text-farm-green-900 font-semibold' 
-                    : 'text-farm-green-700 hover:text-farm-green-900'
-                }`}>ギャラリー</a>
+                <Link href="/gallery" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">ギャラリー</Link>
                 <a href="/home-garden" className="text-harvest-orange-600 hover:text-harvest-orange-800 px-3 py-2 rounded-md text-sm font-medium transition-colors font-semibold flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
@@ -290,7 +298,7 @@ export default function Home() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200 shadow-lg">
               <a href="#home" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ホーム</a>
               <a href="#programs" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">入会特典</a>
-              <a href="#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ギャラリー</a>
+                              <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ギャラリー</Link>
               <a href="/home-garden" onClick={() => setIsMobileMenuOpen(false)} className="text-harvest-orange-600 hover:text-harvest-orange-800 block px-3 py-2 rounded-md text-base font-medium font-semibold flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
@@ -328,15 +336,6 @@ export default function Home() {
               className="object-cover transform scale-105 hover:scale-110 transition-transform duration-[8000ms] ease-in-out animate-ken-burns"
               priority={index === 0}
             />
-            
-            {/* グラデーション背景は画像使用時はコメントアウト */}
-            {/* 
-            <div className={`absolute inset-0 ${
-              index === 0 ? 'bg-gradient-to-r from-farm-green-400 to-farm-green-600' :
-              index === 1 ? 'bg-gradient-to-r from-harvest-orange-400 to-earth-brown-500' :
-              'bg-gradient-to-r from-earth-brown-400 to-farm-green-500'
-            }`}></div>
-            */}
             
             {/* オーバーレイ */}
             <div className="absolute inset-0 bg-black/20"></div>
@@ -1050,8 +1049,8 @@ export default function Home() {
           </div>
 
           {/* サムネイルギャラリー */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {galleryImages.slice(0, 8).map((image, index) => (
+                      <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
+            {galleryImages.map((image, index) => (
               <div 
                 key={index}
                 onClick={() => setCurrentGallerySlide(index)}
@@ -1070,6 +1069,18 @@ export default function Home() {
             ))}
           </div>
 
+          {/* もっとみるボタン */}
+          <div className="text-center mt-12">
+            <Link 
+              href="/gallery"
+              className="inline-flex items-center justify-center bg-farm-green-600 hover:bg-farm-green-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg group"
+            >
+              もっとみる
+              <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
 
         </div>
       </section>
