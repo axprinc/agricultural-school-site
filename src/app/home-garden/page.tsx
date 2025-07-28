@@ -22,49 +22,49 @@ export default function HomeGardenPage() {
   // ギャラリー画像の管理（topページと重複しない写真を使用）
   const galleryImages = [
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_2.jpg',
-      alt: 'オープンファーム - 収穫体験',
-      title: '収穫体験'
+      src: '/images/gallery/LINE_ALBUM1 (19).jpg',
+      alt: '家庭菜園での収穫',
+      title: '毎日の収穫'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_4.jpg',
-      alt: 'オープンファーム - 参加者の皆さま',
-      title: '参加者の皆さま'
+      src: '/images/gallery/LINE_ALBUM1 (3).jpg',
+      alt: '野菜の栽培',
+      title: '野菜の成長'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_6.jpg',
-      alt: 'オープンファーム - 家庭菜園指導',
-      title: '家庭菜園指導'
+      src: '/images/gallery/LINE_ALBUM1 (5).jpg',
+      alt: '家庭菜園の指導',
+      title: 'プロの指導'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_8.jpg',
-      alt: 'オープンファーム - 実習風景',
-      title: '実習風景'
+      src: '/images/gallery/LINE_ALBUM1 (7).jpg',
+      alt: '実習の様子',
+      title: '実践学習'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_14.jpg',
-      alt: 'オープンファーム - 参加者同士の交流',
-      title: '参加者同士の交流'
+      src: '/images/gallery/LINE_ALBUM1 (13).jpg',
+      alt: '農業体験',
+      title: '体験学習'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_12.jpg',
-      alt: 'オープンファーム - 農場見学',
-      title: '農場見学'
+      src: '/images/gallery/LINE_ALBUM1 (11).jpg',
+      alt: '収穫体験',
+      title: '収穫の喜び'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_17.jpg',
-      alt: '収穫した新鮮な野菜',
-      title: '収穫した新鮮な野菜'
+      src: '/images/gallery/LINE_ALBUM1 (16).jpg',
+      alt: 'イベントの様子',
+      title: '楽しいイベント'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_18.jpg',
-      alt: '新鮮な収穫野菜',
-      title: '新鮮な収穫野菜'
+      src: '/images/gallery/LINE_ALBUM1 (17).jpg',
+      alt: '新鮮な野菜',
+      title: '収穫成果'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_20.jpg',
-      alt: '収穫体験の成果',
-      title: '収穫体験の成果'
+      src: '/images/gallery/LINE_ALBUM1 (18).jpg',
+      alt: '豊富な収穫',
+      title: '豊かな収穫'
     }
   ]
 
@@ -159,7 +159,7 @@ export default function HomeGardenPage() {
         {/* ヒーロー背景画像 */}
         <div className="absolute inset-0">
           <Image 
-            src="/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg" 
+            src="/images/hero/LINE_ALBUM_2025.7.27 _250728_1.jpg" 
             alt="オープンファーム - 農業体験の様子" 
             fill
             className="object-cover"
