@@ -17,6 +17,11 @@ jobs:
         node-version: '18'
         cache: 'npm'
     
+    - name: Install Heroku CLI
+      run: |
+        curl https://cli-assets.heroku.com/install.sh | sh
+        export PATH="/usr/local/bin:$PATH"
+    
     - name: Install dependencies
       run: npm ci
     
@@ -24,10 +29,9 @@ jobs:
       run: npm run build
     
     - name: Deploy to Heroku
-      uses: akhileshns/heroku-deploy@v3.12.14
-      with:
-        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: "agricultural-school-site"
-        heroku_email: "info@a-medical-clinic.jp"
-        usedocker: false
-        dontautocreate: true 
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        export PATH="/usr/local/bin:$PATH"
+        heroku git:remote -a agricultural-school-site
+        git push heroku main 
