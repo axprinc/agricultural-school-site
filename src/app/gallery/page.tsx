@@ -10,115 +10,115 @@ export default function GalleryPage() {
   // ギャラリー画像の管理
   const galleryImages = [
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (2).jpg',
       alt: 'オープンファーム - 野菜栽培の様子',
       title: '野菜栽培',
       description: '参加者の皆さまが実際に野菜を栽培している様子です。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_2.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (19).jpg',
       alt: 'オープンファーム - 収穫体験',
       title: '収穫体験',
       description: '新鮮な野菜を収穫する喜びを体験していただけます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_3.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (1).jpg',
       alt: 'オープンファーム - 農場風景',
       title: '農場風景',
       description: '美しい自然に囲まれた農場の風景をお楽しみください。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_4.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (3).jpg',
       alt: 'オープンファーム - 参加者の皆さま',
       title: '参加者の皆さま',
       description: '和やかな雰囲気の中で農業体験を楽しんでいます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_5.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (4).jpg',
       alt: 'オープンファーム - 農業体験',
       title: '農業体験',
       description: '実際の農作業を通じて農業の楽しさを学びます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_6.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (5).jpg',
       alt: 'オープンファーム - 家庭菜園指導',
       title: '家庭菜園指導',
       description: 'プロの農家による丁寧な家庭菜園の指導を行います。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_7.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (6).jpg',
       alt: 'オープンファーム - 野菜の成長',
       title: '野菜の成長',
       description: '育てている野菜の成長過程を観察できます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_8.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (7).jpg',
       alt: 'オープンファーム - 実習風景',
       title: '実習風景',
       description: '実際の農作業の実習を通じて技術を身につけます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_9.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (8).jpg',
       alt: 'オープンファーム - 収穫の喜び',
       title: '収穫の喜び',
       description: '自分で育てた野菜を収穫する喜びは格別です。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_10.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (9).jpg',
       alt: 'オープンファーム - 栽培技術指導',
       title: '栽培技術指導',
       description: '効果的な栽培技術について詳しく指導いたします。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_11.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (10).jpg',
       alt: 'オープンファーム - 家族での参加',
       title: '家族での参加',
       description: 'ご家族皆さまでお楽しみいただけるプログラムです。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_12.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (11).jpg',
       alt: 'オープンファーム - 農場見学',
       title: '農場見学',
       description: '農場全体を見学し、農業について学べます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_13.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (12).jpg',
       alt: 'オープンファーム - 講師による指導',
       title: '講師による指導',
       description: '経験豊富な講師が丁寧に指導いたします。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_14.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (13).jpg',
       alt: 'オープンファーム - 参加者同士の交流',
       title: '参加者同士の交流',
       description: '参加者同士の交流も農業体験の魅力の一つです。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_15.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (14).jpg',
       alt: 'オープンファーム - 農作業実践',
       title: '農作業実践',
       description: '実際の農作業を体験していただきます。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_16.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (15).jpg',
       alt: 'オープンファーム - イベントの様子',
       title: 'イベントの様子',
       description: '楽しいイベントの雰囲気をお伝えします。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_17.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (16).jpg',
       alt: '収穫した新鮮な野菜',
       title: '収穫した新鮮な野菜',
       description: '参加者の皆さまが収穫した新鮮な野菜です。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_18.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (17).jpg',
       alt: '新鮮な収穫野菜',
       title: '新鮮な収穫野菜',
       description: '色とりどりの新鮮な収穫野菜をご覧ください。'
     },
     {
-      src: '/images/gallery/LINE_ALBUM_2025.7.27 オープンファーム_250728_20.jpg',
+      src: '/images/gallery/LINE_ALBUM1 (18).jpg',
       alt: '収穫体験の成果',
       title: '収穫体験の成果',
       description: '収穫体験での豊かな成果物です。'
@@ -215,7 +215,7 @@ export default function GalleryPage() {
       <section className="relative bg-gradient-to-r from-farm-green-600 to-farm-green-800 text-white py-20">
         <div className="absolute inset-0">
           <Image 
-            src="/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_2.jpg" 
+            src="/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg" 
             alt="オープンファーム - ギャラリー" 
             fill
             className="object-cover"

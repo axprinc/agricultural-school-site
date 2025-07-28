@@ -11,31 +11,31 @@ export default function Home() {
   // ヒーロー画像のスライド管理
   const heroImages = [
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_1.jpg',
       alt: 'オープンファーム - 農業体験の様子',
       title: '小さなスペースで',
       subtitle: '大きな収穫を'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_2.jpg', 
+      src: '/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg', 
       alt: 'オープンファーム - 家庭菜園指導',
       title: '毎日の食卓に',
       subtitle: '自家製野菜を届ける'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_3.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_3.jpg',
       alt: 'オープンファーム - 参加者との交流',
       title: '家族みんなで',
       subtitle: '収穫の喜びを分かち合う'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_4.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg',
       alt: 'オープンファーム - 農場での実習',
       title: '土に触れ',
       subtitle: '自然とのつながりを感じる'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 オープンファーム_250728_17.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_17.jpg',
       alt: 'オープンファーム - イベントの様子',
       title: 'みんなで学び',
       subtitle: '一緒に成長する'
@@ -163,49 +163,49 @@ export default function Home() {
   // メインページ用ギャラリー画像（厳選8枚）
   const galleryImages = [
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_1.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_1.jpg',
       alt: 'オープンファーム - 野菜栽培の様子',
       title: '野菜栽培',
       bgColor: 'bg-farm-green-400'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_3.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_3.jpg',
       alt: 'オープンファーム - 農場風景',
       title: '農場風景',
       bgColor: 'bg-earth-brown-300'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_5.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_5.jpg',
       alt: 'オープンファーム - 農業体験',
       title: '農業体験',
       bgColor: 'bg-harvest-orange-500'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_7.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_7.jpg',
       alt: 'オープンファーム - 野菜の成長',
       title: '野菜の成長',
       bgColor: 'bg-earth-brown-400'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_9.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_9.jpg',
       alt: 'オープンファーム - 収穫の喜び',
       title: '収穫の喜び',
       bgColor: 'bg-farm-green-600'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_11.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_11.jpg',
       alt: 'オープンファーム - 家族での参加',
       title: '家族での参加',
       bgColor: 'bg-earth-brown-600'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_13.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_13.jpg',
       alt: 'オープンファーム - 講師による指導',
       title: '講師による指導',
       bgColor: 'bg-harvest-orange-700'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 オープンファーム_250728_15.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_15.jpg',
       alt: 'オープンファーム - 農作業実践',
       title: '農作業実践',
       bgColor: 'bg-farm-green-800'
