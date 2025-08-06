@@ -90,7 +90,7 @@ export default function TokuteishyouPage() {
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">3</span>
                   商品代金以外の必要料金
                 </h2>
-                <p className="text-gray-700 ml-9">送料：お客様負担<br />振込手数料：お客様負担</p>
+                <p className="text-gray-700 ml-9">送料：お客様負担<br />（期間限定・特別オファーのNパワープラス®の送料は、弊社で負担いたします）<br />振込手数料：お客様負担</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">

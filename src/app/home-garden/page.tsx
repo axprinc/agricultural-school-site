@@ -652,7 +652,7 @@ export default function HomeGardenPage() {
 
             <div className="card p-8">
               <div className="text-4xl mb-4">📦</div>
-              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">野菜のパッケージ・配送サービス</h3>
+              <h3 className="text-xl font-semibold text-farm-green-800 mb-4">野菜のパッケージ・配送サービス（別途費用）</h3>
               <p className="text-gray-600 mb-4">提携農家で収穫された新鮮な野菜を、ご自宅までお届けします。</p>
             </div>
 
@@ -660,6 +660,19 @@ export default function HomeGardenPage() {
               <div className="text-4xl mb-4">🤝</div>
               <h3 className="text-xl font-semibold text-farm-green-800 mb-4">全国各地のオフ会開催</h3>
               <p className="text-gray-600 mb-4">淡路島と複数の提携農家で定期的にオフ会を開催。実際に会って交流し、栽培のコツを学べます。</p>
+            </div>
+          </div>
+
+          {/* 注意事項 */}
+          <div className="text-center mb-12">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 max-w-4xl mx-auto">
+              <p className="text-gray-700 leading-relaxed">
+                ご家庭でご利用いただく「種、土、プランターなど」は、<br />
+                入会金、年会費には含まれておりませんので<br />
+                ご自身でご準備していただきます。<br /><br />
+                購入の仕方などは、動画や資料で丁寧に<br />
+                説明していますので、ご安心ください。
+              </p>
             </div>
           </div>
         </div>
@@ -674,6 +687,12 @@ export default function HomeGardenPage() {
             <p className="text-lg mb-8 text-center">
               通常、「優しい家庭菜園の学校」の入会金は50,000円（年会費19,800円別途）ですが、<span className="text-red-600 font-bold">先着50名様限定で入会金無料</span>にてご案内しています。
             </p>
+            
+            <div className="text-center mb-8">
+              <p className="text-harvest-orange-600 font-bold text-lg">
+                さらに、今だけの特別特典として、植物の成長を劇的に促進する「Nパワープラス®」（通常価格5,500円）を1本無料でプレゼント！
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-left">
@@ -715,17 +734,11 @@ export default function HomeGardenPage() {
               </div>
             </div>
             
-            <div className="text-center mt-8">
-              <p className="text-harvest-orange-600 font-bold text-lg">
-                さらに、今だけの特別特典として、植物の成長を劇的に促進する「Nパワープラス®」（通常価格5,500円）を1本無料でプレゼント！
-              </p>
-            </div>
-            
             <div className="bg-blue-50 rounded-lg p-4 mt-8">
               <h4 className="font-bold text-blue-800 mb-2">安心の保証制度</h4>
-              <p className="text-blue-700 text-sm">
-                もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、Nパワープラス®を未開封の状態でご返送いただければ、年会費を全額返金いたします。
-              </p>
+                              <p className="text-blue-700 text-sm">
+                  もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、年会費19,800円からNパワープラス®代5,500円を差し引いた金額（14,300円）を返金させていただきます。
+                </p>
             </div>
           </div>
 
