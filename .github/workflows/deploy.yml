@@ -32,4 +32,5 @@ jobs:
         heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
         heroku_app_name: "agricultural-school-site"
         heroku_email: "info@a-medical-clinic.jp"
-        usedocker: false 
+        usedocker: false
+        dontautocreate: true 
