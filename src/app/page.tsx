@@ -261,7 +261,7 @@ export default function Home() {
                 <Link href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   よくあるご質問
                 </Link>
-                <a href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center">
+                <a href="https://lin.ee/gShmItl" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                   </svg>
@@ -307,7 +307,7 @@ export default function Home() {
               </a>
               <a href="#access" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">アクセス</a>
               <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">よくあるご質問</Link>
-              <a href="https://line.me/R/ti/p/@your-line-id" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors flex items-center">
+              <a href="https://lin.ee/gShmItl" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
                 </svg>
@@ -669,7 +669,7 @@ export default function Home() {
           {/* Nパワープラス特典 */}
           <div className="bg-gradient-to-r from-harvest-orange-100 to-farm-green-100 rounded-2xl p-8 mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「Nパワープラス®」を無料プレゼント！</h3>
+              <h3 className="text-2xl font-bold text-farm-green-800 mb-4">驚きの特典 - 植物の成長を劇的に促進する「<a href="https://n-powerplus.com/" target="_blank" rel="noopener noreferrer" className="text-farm-green-800 hover:text-harvest-orange-600 underline transition-colors duration-200">Nパワープラス®</a>」を無料プレゼント！</h3>
               <p className="text-lg text-gray-700 leading-relaxed">
                 今回、期間限定の特別特典として、植物の生育を飛躍的に向上させる微生物栄養剤「Nパワープラス®」（250ml・通常価格5,500円）を1本無料でプレゼントいたします！
               </p>
@@ -1130,6 +1130,22 @@ export default function Home() {
                       <span className="text-farm-green-600 font-semibold w-20">住所:</span>
                       <span className="text-gray-700">〒656-1317<br />兵庫県洲本市五色町鮎原小山田1065番地</span>
                     </div>
+                    
+                    {/* 注意書き */}
+                    <div className="bg-red-50 border-l-4 border-red-400 p-4 rounded-r-lg">
+                      <div className="flex items-start">
+                        <svg className="w-5 h-5 text-red-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <div>
+                          <p className="text-red-800 font-semibold text-sm">重要な注意事項</p>
+                          <p className="text-red-700 text-sm mt-1">
+                            <strong>カーナビはGoogleマップを使用してください！！</strong><br />
+                            車載カーナビでは正しく表示されません。
+                          </p>
+                        </div>
+                      </div>
+                    </div>
 
                 </div>
               </div>
@@ -1211,7 +1227,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-farm-green-800 mb-4 font-elegant">まずはお気軽にLINE相談ください</h2>
           <p className="text-lg text-gray-700 mb-8">ご質問やご相談など、どんなことでもお気軽にご連絡ください。<br className="hidden md:inline" />スタッフが丁寧にご案内いたします。</p>
           <a
-            href="https://line.me/R/ti/p/@your-line-id"
+            href="https://lin.ee/gShmItl"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-farm-green-600 text-white text-lg font-semibold rounded-full shadow-md hover:bg-farm-green-700 transition-colors duration-200 flex items-center justify-center mx-auto"

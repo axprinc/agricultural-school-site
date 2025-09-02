@@ -47,4 +47,97 @@
   .card {
     @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden;
   }
+}
+
+/* カスタムアニメーション */
+@layer utilities {
+  /* Ken Burns効果（ゆっくりとしたズームイン） */
+  @keyframes ken-burns {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .animate-ken-burns {
+    animation: ken-burns 8s ease-in-out infinite alternate;
+  }
+  
+  /* フェードインアップ効果 */
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+  }
+  
+  /* テキスト用のスライドイン効果 */
+  @keyframes slide-in-from-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-from-left 1s ease-out forwards;
+  }
+  
+  /* テキスト用のスケール効果 */
+  @keyframes scale-fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-scale-fade-in {
+    animation: scale-fade-in 1s ease-out forwards;
+  }
+  
+  /* テキスト用のタイプライター効果 */
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: currentColor;
+    }
+  }
+  
+  .animate-typewriter {
+    overflow: hidden;
+    border-right: 2px solid;
+    white-space: nowrap;
+    animation: 
+      typewriter 3s steps(40, end),
+      blink-caret 0.75s step-end infinite;
+  }
 } 
