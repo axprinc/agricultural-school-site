@@ -292,7 +292,7 @@ export default function FAQ() {
             <div className="text-center mt-12 pt-8 border-t border-farm-green-200">
               <p className="text-gray-600 mb-6">その他のご質問がございましたら、お気軽にLINE相談ください。</p>
               <a
-                href="https://line.me/R/ti/p/@your-line-id"
+                href="https://lin.ee/gShmItl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-farm-green-500 to-farm-green-600 text-white font-semibold rounded-xl hover:from-farm-green-600 hover:to-farm-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
