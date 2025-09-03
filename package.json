@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start --port $PORT --hostname 0.0.0.0",
     "lint": "next lint",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "rm -rf .next out && npm run build",
     "heroku-cleanup": "rm -rf .next out"
   },
   "dependencies": {

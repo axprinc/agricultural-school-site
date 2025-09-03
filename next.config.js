@@ -1,17 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Heroku用設定 - output: 'export'は絶対に使用しない
+  // Heroku専用設定 - 静的エクスポートは絶対に使用しない
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  // 本番環境用の設定
   compress: true,
   poweredByHeader: false,
-  // Heroku用の明示的設定
-  experimental: {
-    outputFileTracingRoot: undefined,
-  },
+  // 明示的にoutputを指定しない（デフォルトはstandalone）
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
