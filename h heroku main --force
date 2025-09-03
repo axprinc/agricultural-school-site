@@ -1,0 +1,5 @@
+[33m423b8a4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix GitHub Pages deployment
+[33mc78412c[m Update website design and add N-power plus link
+[33m5f96dde[m GitHub Actionsワークフローを無効化 - 手動デプロイに切り替え
+[33me05e8c2[m[33m ([m[1;31mheroku/main[m[33m, [m[1;31mheroku/HEAD[m[33m)[m 佐藤さんの写真とすべての修正を統合
+[33m909062a[m Herokuデプロイ修正: dontautocreateオプション追加
