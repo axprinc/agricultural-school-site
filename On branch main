@@ -1,0 +1,3 @@
+[33m7fcf385[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31mnakada/main[m[33m, [m[1;31mnakada/HEAD[m[33m)[m Update package-lock.json for Next.js 14.2.5 compatibility
+[33m8da9438[m Force clear Heroku cache and rebuild completely clean
+[33mea7b5b5[m Final Heroku fix: downgrade Next.js and improve start script

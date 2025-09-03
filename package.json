@@ -8,10 +8,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start --port $PORT --hostname 0.0.0.0",
+    "start": "next start -p ${PORT:-3000}",
     "lint": "next lint",
-    "heroku-postbuild": "rm -rf .next out && npm run build",
-    "heroku-cleanup": "rm -rf .next out"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "framer-motion": "^12.17.3",
