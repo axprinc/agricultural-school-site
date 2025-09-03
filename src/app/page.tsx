@@ -1227,7 +1227,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-farm-green-800 mb-4 font-elegant">まずはお気軽にLINE相談ください</h2>
           <p className="text-lg text-gray-700 mb-8">ご質問やご相談など、どんなことでもお気軽にご連絡ください。<br className="hidden md:inline" />スタッフが丁寧にご案内いたします。</p>
           <a
-            href="https://lin.ee/gShmItl"
+            href="/line-qr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-farm-green-600 text-white text-lg font-semibold rounded-full shadow-md hover:bg-farm-green-700 transition-colors duration-200 flex items-center justify-center mx-auto"
