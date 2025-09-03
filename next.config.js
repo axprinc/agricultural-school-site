@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Next.js 15ではappDirはデフォルトで有効なので削除
-  output: 'export',
+  // Heroku用設定: output: 'export'を削除
   trailingSlash: true,
   images: {
     unoptimized: true,
