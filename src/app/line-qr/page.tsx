@@ -57,7 +57,7 @@ export default function LineQRPage() {
             {/* 直接リンクボタン */}
             <div className="space-y-4">
               <a
-                href="https://lin.ee/gShmItl"
+                href="https://line.me/R/ti/p/@650hmqnu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-xl hover:from-green-600 hover:to-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
