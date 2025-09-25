@@ -460,7 +460,7 @@ export default function Home() {
                   でも、「優しい家庭菜園の学校」なら違います。
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  私たちが開発した<span className="font-bold text-farm-green-800 bg-farm-green-100 px-2 py-1 rounded">《狭小スペース集約栽培法》</span>は、たった<span className="font-bold text-harvest-orange-600">"1畳ほど"</span>のベランダスペースがあれば、1年を通して<span className="font-bold text-harvest-orange-600">"家族4人分"</span>の野菜が収穫できるという、まったく新しい方法です。
+                  私たちが開発した<span className="font-bold text-farm-green-800 bg-farm-green-100 px-2 py-1 rounded">《狭小スペース集約栽培法》</span>は、たった<span className="font-bold text-harvest-orange-600">"1畳ほど"</span>のベランダスペースがあれば、1年を通して、自分たちの作った野菜を食卓に並べることができます。
                 </p>
               </div>
 
