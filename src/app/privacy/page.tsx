@@ -70,7 +70,7 @@ export default function PrivacyPage() {
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-farm-green-100 p-8 md:p-12">
             <div className="space-y-8 text-gray-700 leading-relaxed">
               <p>
-                本プライバシーポリシー（以下「本ポリシー」といいます）は、<strong>グリーンハーベスト・ベルジュ株式会社</strong>（以下「当社」といいます）が提供する農業スクール関連サービス（以下「本サービス」といいます）における、お客様の個人情報の取扱い指針を定めるものです。
+                本プライバシーポリシー（以下「本ポリシー」といいます）は、<strong>株式会社グリーンハーベスト</strong>（以下「当社」といいます）が提供する農業スクール関連サービス（以下「本サービス」といいます）における、お客様の個人情報の取扱い指針を定めるものです。
               </p>
 
               <div className="border-t border-farm-green-200 pt-8">
@@ -173,10 +173,10 @@ export default function PrivacyPage() {
               <div className="border-t border-farm-green-200 pt-8">
                 <h2 className="text-2xl font-bold text-farm-green-800 mb-4">8. お問い合わせ窓口</h2>
                 <div className="bg-farm-green-50 p-6 rounded-lg border-l-4 border-farm-green-400">
-                  <p className="font-semibold text-farm-green-800 mb-2">グリーンハーベスト・ベルジュ株式会社 個人情報保護管理担当</p>
+                  <p className="font-semibold text-farm-green-800 mb-2">株式会社グリーンハーベスト 個人情報保護管理担当</p>
                   <p className="mb-2">〒656-0021 兵庫県洲本市五色町鮎原小山田1065番地</p>
-                  <p className="mb-2">メール：info@greenharvest.jp</p>
-                  <p>責任者：代表取締役（ご担当者名を記入）</p>
+                  <p className="mb-2">メール：info@awaji-smilefarm.com</p>
+                  <p>責任者：代表取締役 菊澤拓真</p>
                 </div>
               </div>
 

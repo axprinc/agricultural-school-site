@@ -177,15 +177,17 @@ export default function HomeGardenPage() {
               家庭菜園の基礎から実践まで
             </p>
             <div className="flex justify-center">
-              <button 
-                onClick={scrollToOffer}
+              <a 
+                href="https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-4 px-10 rounded-lg text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center group"
               >
                 <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 今すぐ申し込む
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -748,9 +750,14 @@ export default function HomeGardenPage() {
           </div>
 
           <div className="space-y-6">
-            <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-6 px-12 rounded-xl text-2xl transition-colors duration-200 shadow-2xl hover:shadow-3xl">
+            <a 
+              href="https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-6 px-12 rounded-xl text-2xl transition-colors duration-200 shadow-2xl hover:shadow-3xl"
+            >
               ＼今すぐ申し込む／
-            </button>
+            </a>
           </div>
         </div>
       </section>
