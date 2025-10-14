@@ -743,67 +743,70 @@ export default function Home() {
           {/* 価格・申込セクション */}
           <div id="offer" className="bg-white rounded-2xl p-8 shadow-xl border-2 border-harvest-orange-200 mb-16">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">期間限定・特別オファー</h3>
-              <div className="bg-red-100 rounded-lg p-4 mb-6">
-                <p className="text-red-800 font-semibold">先着50名様限定！定員に達し次第締め切り</p>
+              
+
+              <div className="text-center mb-8 space-y-4">
+                <p className="text-2xl">🌱今だけのおトクな入会キャンペーン！</p>
+                <p className="text-lg">通常 入会金 55,000円 のところ、</p>
+                <p className="text-xl font-bold text-red-600">✨今なら 39,800円（税込）でスタート！✨</p>
+                <p className="text-lg">さらに、毎月のご利用料はたったの <span className="font-semibold">1,500円（税込）</span>。<br />始めやすく、続けやすい価格です。</p>
+                <p className="text-xl font-semibold">🎁 入会特典</p>
+                <p className="text-lg">ご入会の方全員に、<br />土・Nパワー（100ml）・種の3点セットをプレゼント！</p>
+                <p className="text-lg">いま始める絶好のチャンスです。あなたもぜひ、この機会にご参加ください🌿</p>
               </div>
+
               
-              <p className="text-lg mb-8 text-center">
-                通常、「優しい家庭菜園の学校」の入会金は50,000円（年会費19,800円別途）ですが、<span className="text-red-600 font-bold">先着50名様限定で入会金無料</span>にてご案内しています。
-              </p>
               
-              <div className="text-center mb-8">
-                <p className="text-harvest-orange-600 font-bold text-lg">
-                  さらに、今だけの特別特典として、植物の成長を劇的に促進する「Nパワープラス®」（通常価格5,500円）を1本無料でプレゼント！
-                </p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="text-left">
-                  <h4 className="text-xl font-bold text-gray-800 mb-4">通常価格</h4>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between">
-                      <span>入会金</span>
-                      <span className="line-through text-gray-500">50,000円</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>年会費</span>
-                      <span>19,800円</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Nパワープラス®</span>
-                      <span className="line-through text-gray-500">5,500円</span>
-                    </div>
+              <div className="bg-gradient-to-r from-harvest-orange-50 to-farm-green-50 rounded-xl p-6 mb-8">
+                <h4 className="text-xl font-bold text-gray-800 mb-4 text-center">料金</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <p className="text-gray-600 text-sm mb-1">入会金</p>
+                    <p className="text-3xl font-extrabold text-harvest-orange-600">39,800円</p>
+                    <p className="text-xs text-gray-500">税込</p>
+                    <p className="text-xs text-gray-400 mt-1 line-through">通常 55,000円</p>
                   </div>
-                </div>
-                <div className="text-left">
-                  <h4 className="text-xl font-bold text-harvest-orange-600 mb-4">特別価格（先着50名様限定）</h4>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between">
-                      <span>入会金</span>
-                      <span className="text-2xl font-bold text-harvest-orange-600">無料</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>年会費</span>
-                      <span>19,800円</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Nパワープラス®</span>
-                      <span className="text-green-600 font-bold">1本無料プレゼント!</span>
-                    </div>
-                  </div>
-                  <div className="bg-harvest-orange-100 p-3 rounded text-center">
-                    <span className="text-harvest-orange-600 font-bold">50,000円 + 5,500円 = 55,500円お得！</span>
+                  <div className="bg-white border border-gray-200 rounded-lg p-4 text-center">
+                    <p className="text-gray-600 text-sm mb-1">月額</p>
+                    <p className="text-3xl font-extrabold text-farm-green-700">1,500円</p>
+                    <p className="text-xs text-gray-500">税込</p>
                   </div>
                 </div>
               </div>
               
               <div className="bg-blue-50 rounded-lg p-4 mb-8">
                 <h4 className="font-bold text-blue-800 mb-2">安心の保証制度</h4>
-                <p className="text-blue-700 text-sm">
-                  もし入会から3ヶ月以内に「思ったような収穫が得られない」「続けるのが難しい」と感じられた場合、年会費19,800円からNパワープラス®代5,500円を差し引いた金額（14,300円）を返金させていただきます。
-                </p>
+                <p className="text-blue-700 text-sm">内容はお問い合わせください。</p>
               </div>
+
+              {/* 入会までのステップ */}
+              <div className="text-left mt-10">
+                <h4 className="text-xl font-bold text-gray-800 mb-4">入会までの4つのステップ</h4>
+                <div className="grid md:grid-cols-4 gap-4">
+                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-500 font-semibold mb-2">STEP 1</p>
+                    <p className="text-gray-800 font-semibold mb-1">「今すぐ申し込む」をクリック</p>
+                    <p className="text-gray-600 text-sm">お申し込みページへ移動します</p>
+                  </div>
+                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-500 font-semibold mb-2">STEP 2</p>
+                    <p className="text-gray-800 font-semibold mb-1">お客様情報と決済情報の入力</p>
+                    <p className="text-gray-600 text-sm">内容をご確認のうえ送信</p>
+                  </div>
+                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-500 font-semibold mb-2">STEP 3</p>
+                    <p className="text-gray-800 font-semibold mb-1">確認メールを受信</p>
+                    <p className="text-gray-600 text-sm">ご案内に沿って初期設定</p>
+                  </div>
+                  <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-500 font-semibold mb-2">STEP 4</p>
+                    <p className="text-gray-800 font-semibold mb-1">ご利用開始</p>
+                    <p className="text-gray-600 text-sm">会員コンテンツやサポートを活用</p>
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
             
             <div className="text-center">
