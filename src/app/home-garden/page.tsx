@@ -787,39 +787,7 @@ export default function HomeGardenPage() {
         </div>
       </section>
 
-      {/* 最後の押しセクション */}
-      <section className="py-16 bg-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-bold text-farm-green-800 mb-6">P.S.</h3>
-            <div className="space-y-6 text-gray-700">
-              <p>
-                野菜の価格は今後も上昇が予想されています。家庭菜園を始めるなら、今がベストタイミングです。入会特典の「Nパワープラス®」は単なる肥料ではなく、土壌環境全体を改善する革命的な微生物栄養剤です。
-              </p>
-              <p>
-                多くのお客様が「長年放置していた畑で使ったところ、3ヶ月で土が見違えるように変わった」「収穫量が2倍以上になった」と驚きの効果を報告しています。
-              </p>
-              <div className="bg-harvest-orange-50 p-6 rounded-lg border-l-4 border-harvest-orange-400">
-                <p className="font-semibold text-harvest-orange-800 mb-4">
-                  これだけでも5,500円の価値があります。
-                </p>
-                <p className="mb-4">
-                  この機会を逃さず、家族の健康と家計を守る一歩を今日踏み出してください。迷っている時間が、あなたの家計を圧迫し続けています。
-                </p>
-                <p className="font-semibold">
-                  今すぐ下のボタンをクリックして、未来の自分に感謝される選択をしましょう。
-                </p>
-              </div>
-            </div>
-            
-            <div className="text-center mt-8">
-              <button className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-4 px-10 rounded-xl text-xl transition-colors duration-200 shadow-lg hover:shadow-xl">
-                未来の自分に感謝される選択をする
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* 最後の押しセクションは削除 */}
 
 
 
