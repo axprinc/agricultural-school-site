@@ -491,50 +491,69 @@ export default function HomeGardenPage() {
             <h2 className="section-title">💬 会員様の声</h2>
           </div>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-12">
-            <div className="bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-farm-green-100 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-3xl">👨‍💼</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-farm-green-800">佐藤さん（42歳・会社員）</h4>
-                  <p className="text-gray-600">東京都在住</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/testimonials/AdobeStock_516239930_Preview.jpeg"
+                  alt="佐藤さんの写真"
+                  fill
+                  className="object-cover scale-110 object-top"
+                  style={{ objectPosition: '50% 20%' }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold text-lg">佐藤さん</p>
+                  <p className="text-sm opacity-90">東京都在住・42歳・会社員</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                「マンションの南向きベランダ2畳スペースで始めて半年。今では家族が食べる野菜の7割はベランダ産です。子どもたちも野菜嫌いが治り、食事の時間が楽しくなりました。何より毎月の食費が2万円も減りました！」
-              </p>
+              <div className="p-8">
+                <p className="text-gray-600 leading-relaxed">
+                  「マンションの南向きベランダ2畳スペースで始めて半年。今では家族が食べる野菜の7割はベランダ産です。子どもたちも野菜嫌いが治り、食事の時間が楽しくなりました。何より毎月の食費が2万円も減りました！」
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-farm-green-100 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-3xl">👩‍🍳</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-farm-green-800">山田さん（38歳・主婦）</h4>
-                  <p className="text-gray-600">大阪市在住</p>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/testimonials/iStock-1322995729.jpg"
+                  alt="山田さんの写真"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold text-lg">山田さん</p>
+                  <p className="text-sm opacity-90">大阪市在住・38歳・主婦</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                「園芸の経験はゼロでしたが、動画マニュアルをそのまま真似るだけで簡単に始められました。最初は半信半疑でしたが、3ヶ月目からはほぼ毎日何かしらの収穫があり、家計の強い味方になっています。特に最近の野菜高騰でその価値を実感しています」
-              </p>
+              <div className="p-8">
+                <p className="text-gray-600 leading-relaxed">
+                  「園芸の経験はゼロでしたが、動画マニュアルをそのまま真似るだけで簡単に始められました。最初は半信半疑でしたが、3ヶ月目からはほぼ毎日何かしらの収穫があり、家計の強い味方になっています。特に最近の野菜高騰でその価値を実感しています」
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-farm-green-100 rounded-full flex items-center justify-center mr-6">
-                  <span className="text-3xl">👨‍💻</span>
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-farm-green-800">鈴木さん（51歳・自営業）</h4>
-                  <p className="text-gray-600">名古屋市在住</p>
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src="/images/testimonials/iStock-1334059416.jpg"
+                  alt="鈴木さんの写真"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="font-semibold text-lg">鈴木さん</p>
+                  <p className="text-sm opacity-90">名古屋市在住・35歳・自営業</p>
                 </div>
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                「仕事のストレスで不眠症だった私が、朝晩の水やりと収穫の時間を楽しみに規則正しい生活を送れるようになりました。健康的な食生活と趣味が見つかり、人生が変わったと言っても過言ではありません」
-              </p>
+              <div className="p-8">
+                <p className="text-gray-600 leading-relaxed">
+                  「仕事のストレスで不眠症だった私が、朝晩の水やりと収穫の時間を楽しみに規則正しい生活を送れるようになりました。健康的な食生活と趣味が見つかり、人生が変わったと言っても過言ではありません」
+                </p>
+              </div>
             </div>
           </div>
         </div>
