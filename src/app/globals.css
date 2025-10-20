@@ -69,6 +69,20 @@
   .animate-ken-burns-in {
     animation: ken-burns 8s ease-in forwards;
   }
+
+  /* より強いズーム（1.2まで） */
+  @keyframes ken-burns-strong {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  .animate-ken-burns-in-strong {
+    animation: ken-burns-strong 10s ease-in forwards;
+  }
   
   /* フェードインアップ効果 */
   @keyframes fade-in-up {

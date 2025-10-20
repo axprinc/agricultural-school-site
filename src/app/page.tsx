@@ -333,7 +333,7 @@ export default function Home() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover transform scale-105 transition-transform duration-[8000ms] ease-in-out animate-ken-burns-in"
+              className="object-cover transition-transform duration-[10000ms] ease-in-out animate-ken-burns-in-strong"
               priority={index === 0}
             />
             
