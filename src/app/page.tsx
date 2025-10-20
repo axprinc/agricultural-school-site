@@ -325,7 +325,7 @@ export default function Home() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
+              index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
           >
             {/* 実際の画像を使用 */}
@@ -333,7 +333,7 @@ export default function Home() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover transform scale-105 hover:scale-110 transition-transform duration-[8000ms] ease-in-out animate-ken-burns"
+              className="object-cover transform scale-105 transition-transform duration-[8000ms] ease-in-out animate-ken-burns-in"
               priority={index === 0}
             />
             

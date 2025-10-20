@@ -65,6 +65,11 @@
     animation: ken-burns 8s ease-in-out infinite alternate;
   }
   
+  /* 一方向だけズームするKen Burns（戻らない） */
+  .animate-ken-burns-in {
+    animation: ken-burns 8s ease-in forwards;
+  }
+  
   /* フェードインアップ効果 */
   @keyframes fade-in-up {
     0% {
