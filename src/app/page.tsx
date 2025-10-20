@@ -348,24 +348,24 @@ export default function Home() {
 
             
             {/* タイトルはスライドに応じて変更 */}
-            <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight transition-all duration-500 font-elegant animate-fade-in-up">
+            <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight font-elegant">
               {heroImages[currentSlide].title}
-              <span className="block text-harvest-orange-200 font-light animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <span className="block text-harvest-orange-200 font-light">
                 {heroImages[currentSlide].subtitle}
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl mb-12 text-farm-green-50 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.6s'}}>
+            <p className="text-xl md:text-2xl mb-12 text-farm-green-50 max-w-3xl mx-auto leading-relaxed">
               狭いベランダでも大丈夫<br />
               1畳のスペースで家族4人分の野菜を育てる<br />
               新しい家庭菜園のスタイルを学びませんか
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{animationDelay: '0.9s'}}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={scrollToOffer}
                 disabled={isApplying}
-                className={`py-4 px-10 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center group ${
+                className={`py-4 px-10 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl flex items-center justify-center ${
                   isApplying 
                     ? 'bg-gray-400 cursor-not-allowed' 
                     : 'bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-semibold'
@@ -381,15 +381,15 @@ export default function Home() {
                   </>
                 ) : (
                   <>
-                    <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                     今すぐ申し込む
                   </>
                 )}
               </button>
-              <a href="/home-garden" className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 font-semibold py-4 px-10 rounded-lg text-lg transition-all duration-300 border border-white/30 hover:border-white/50 flex items-center justify-center group transform hover:-translate-y-1 hover:scale-105">
-                <svg className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 24 24">
+              <a href="/home-garden" className="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 font-semibold py-4 px-10 rounded-lg text-lg transition-colors duration-200 border border-white/30 hover:border-white/50 flex items-center justify-center">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                 </svg>
                 詳細を見る
