@@ -10,7 +10,10 @@
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
     "lint": "next lint",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "push:origin": "git push origin main",
+    "push:heroku": "git push heroku-https main",
+    "deploy:both": "npm run push:origin && npm run push:heroku"
   },
   "dependencies": {
     "framer-motion": "^12.17.3",
