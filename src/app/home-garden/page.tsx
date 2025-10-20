@@ -155,7 +155,7 @@ export default function HomeGardenPage() {
       </nav>
 
       {/* ヒーローセクション */}
-      <section className="relative bg-gradient-to-r from-farm-green-600 to-farm-green-800 text-white">
+      <section className="relative text-white">
         {/* ヒーロー背景画像 */}
         <div className="absolute inset-0">
           <Image 
@@ -165,7 +165,7 @@ export default function HomeGardenPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-farm-green-800/60"></div>
+          {/* カラーオーバーレイは削除し、自然な色味に */}
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
