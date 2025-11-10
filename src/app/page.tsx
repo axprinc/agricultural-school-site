@@ -461,7 +461,7 @@ export default function Home() {
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   私たちが開発した<span className="font-bold text-farm-green-800 bg-farm-green-100 px-2 py-1 rounded">《狭小スペース集約栽培法》</span>は、<br />
-                  たった<span className="font-bold text-harvest-orange-600">"1畳ほど"</span>のベランダスペースがあれば、<br />
+                  たった<span className="font-bold text-harvest-orange-600">&quot;1畳ほど&quot;</span>のベランダスペースがあれば、<br />
                   1年を通して、自分たちの作った野菜を食卓に並べることができます。
                 </p>
               </div>
@@ -497,7 +497,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <h4 className="font-semibold text-gray-800 mb-2">共生栽培</h4>
-                    <p className="text-gray-600 text-sm">植物同士が助け合って育つ"共生栽培"のしくみ</p>
+                    <p className="text-gray-600 text-sm">植物同士が助け合って育つ&nbsp;&quot;共生栽培&quot;&nbsp;のしくみ</p>
                   </div>
                 </div>
                 <p className="text-center text-gray-700 mt-6 font-medium">
@@ -530,7 +530,7 @@ export default function Home() {
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
                     </div>
-                    <p className="text-gray-700 leading-relaxed">"これ、お父さん（お母さん）が育てたの！？"と家族に尊敬される喜び</p>
+                    <p className="text-gray-700 leading-relaxed">&quot;これ、お父さん（お母さん）が育てたの！？&quot;と家族に尊敬される喜び</p>
                   </div>
                   <div className="flex items-start">
                     <div className="w-8 h-8 bg-harvest-orange-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">

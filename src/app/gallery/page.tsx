@@ -142,7 +142,7 @@ export default function GalleryPage() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">ホーム</Link>
-                <a href="/#programs" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">入会特典</a>
+                <Link href="/#programs" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">入会特典</Link>
                 <Link href="/gallery" className="text-farm-green-900 bg-farm-green-100 px-3 py-2 rounded-md text-sm font-medium font-semibold">ギャラリー</Link>
                 <Link href="/home-garden" className="text-harvest-orange-600 hover:text-harvest-orange-800 px-3 py-2 rounded-md text-sm font-medium transition-colors font-semibold flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
@@ -150,7 +150,7 @@ export default function GalleryPage() {
                   </svg>
                   家庭菜園講座
                 </Link>
-                <a href="/#access" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">アクセス</a>
+                <Link href="/#access" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">アクセス</Link>
                 <Link href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   よくあるご質問
                 </Link>
@@ -190,7 +190,7 @@ export default function GalleryPage() {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200 shadow-lg">
               <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">ホーム</Link>
-              <a href="/#programs" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">入会特典</a>
+              <Link href="/#programs" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">入会特典</Link>
               <Link href="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-900 bg-farm-green-100 block px-3 py-2 rounded-md text-base font-medium font-semibold">ギャラリー</Link>
               <Link href="/home-garden" onClick={() => setIsMobileMenuOpen(false)} className="text-harvest-orange-600 hover:text-harvest-orange-800 block px-3 py-2 rounded-md text-base font-medium font-semibold flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -198,7 +198,7 @@ export default function GalleryPage() {
                 </svg>
                 家庭菜園講座
               </Link>
-              <a href="/#access" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">アクセス</a>
+              <Link href="/#access" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">アクセス</Link>
               <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">よくあるご質問</Link>
               <a href="https://line.me/R/ti/p/@650hmqnu" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -323,9 +323,9 @@ export default function GalleryPage() {
               <div className="grid grid-cols-2 gap-x-4 gap-y-2">
                 <ul className="space-y-2 text-gray-300">
                   <li><Link href="/" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</Link></li>
-                  <li><a href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</a></li>
+                  <li><Link href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</Link></li>
                   <li><Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</Link></li>
-                  <li><a href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</a></li>
+                  <li><Link href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</Link></li>
                 </ul>
                 <ul className="space-y-2 text-gray-300">
                   <li><Link href="/tokuteishyou" className="hover:text-harvest-orange-300 transition-colors duration-200">特定商取引法に基づく表示</Link></li>
