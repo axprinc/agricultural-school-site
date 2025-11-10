@@ -3,8 +3,28 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
+import MembershipHandler from '@/components/MembershipHandler'
+import { getMembershipUrl } from '@/lib/membership'
 
 export default function Home() {
+  const [membershipUrl, setMembershipUrl] = useState('https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new')
+
+  // Update membership URL on client side and listen for cookie changes
+  useEffect(() => {
+    const updateUrl = () => setMembershipUrl(getMembershipUrl())
+    updateUrl()
+    
+    // Check for updates every 100ms for a short period after mount
+    // This ensures we catch the cookie being set by MembershipHandler
+    const interval = setInterval(updateUrl, 100)
+    const timeout = setTimeout(() => clearInterval(interval), 1000)
+    
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
+  }, [])
   // モバイルメニューの状態管理
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
@@ -216,6 +236,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-farm-green-50 to-white">
+      {/* Membership handler - monitors URL params and sets cookies */}
+      <Suspense fallback={null}>
+        <MembershipHandler />
+      </Suspense>
+      
       {/* スクロール進捗バー */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
         <div 
@@ -805,7 +830,7 @@ export default function Home() {
             
             <div className="text-center">
               <a 
-                href="https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new"
+                href={membershipUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block py-6 px-12 rounded-lg text-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mb-4 bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold"
