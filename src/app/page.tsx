@@ -651,14 +651,31 @@ export default function Home() {
 
           {/* 注意事項 */}
           <div className="text-center mb-16">
-            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 max-w-4xl mx-auto">
-              <p className="text-gray-700 leading-relaxed">
-                ご家庭でご利用いただく「種、土、プランターなど」は、<br />
-                入会金、年会費には含まれておりませんので<br />
-                ご自身でご準備していただきます。<br /><br />
-                購入の仕方などは、動画や資料で丁寧に<br />
-                説明していますので、ご安心ください。
-              </p>
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-8 max-w-4xl mx-auto text-left shadow-sm">
+              <div className="flex items-center text-yellow-800 font-semibold mb-4">
+                <svg className="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01M4.93 4.93l14.14 14.14M12 2a10 10 0 100 20 10 10 0 000-20z" />
+                </svg>
+                ご準備のお願い
+              </div>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <div>
+                  <p className="font-semibold text-yellow-900 mb-2">入会費には含まれません</p>
+                  <p>
+                    ご家庭でお使いいただく<span className="font-semibold">「種・土・プランターなどの資材」</span>は、入会金・年会費には含まれていません。
+                    必要に応じて、ご自身でご準備ください。
+                  </p>
+                </div>
+                <div className="bg-white/70 border border-yellow-200 rounded-md p-4">
+                  <p className="font-semibold text-yellow-900 mb-2">どうやって揃えるの？</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>おすすめ資材リストを動画・資料でご案内</li>
+                    <li>購入先リンクや選び方のポイントをステップごとに解説</li>
+                    <li>迷ったときは講師にチャットで質問できます</li>
+                  </ul>
+                  <p className="mt-3">サポートが整っていますので、初めての方も安心して準備できます。</p>
+                </div>
+              </div>
             </div>
           </div>
 
