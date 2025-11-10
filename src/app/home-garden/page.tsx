@@ -2,14 +2,34 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Suspense } from 'react'
+import MembershipHandler from '@/components/MembershipHandler'
+import { getMembershipUrl } from '@/lib/membership'
 
 export default function HomeGardenPage() {
   // モバイルメニューの状態管理
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [membershipUrl, setMembershipUrl] = useState('https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new')
   
   // ページタイトルの設定
   useEffect(() => {
     document.title = '家庭菜園講座について - 優しい家庭菜園の学校'
+  }, [])
+  
+  // Update membership URL on client side and listen for cookie changes
+  useEffect(() => {
+    const updateUrl = () => setMembershipUrl(getMembershipUrl())
+    updateUrl()
+    
+    // Check for updates every 100ms for a short period after mount
+    // This ensures we catch the cookie being set by MembershipHandler
+    const interval = setInterval(updateUrl, 100)
+    const timeout = setTimeout(() => clearInterval(interval), 1000)
+    
+    return () => {
+      clearInterval(interval)
+      clearTimeout(timeout)
+    }
   }, [])
   
   const scrollToOffer = () => {
@@ -72,6 +92,11 @@ export default function HomeGardenPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-farm-green-50 to-white">
+      {/* Membership handler - monitors URL params and sets cookies */}
+      <Suspense fallback={null}>
+        <MembershipHandler />
+      </Suspense>
+      
       {/* ナビゲーション */}
       <nav className="bg-white shadow-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -178,7 +203,7 @@ export default function HomeGardenPage() {
             </p>
             <div className="flex justify-center">
               <a 
-                href="https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new"
+                href={membershipUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-4 px-10 rounded-lg text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center group"
@@ -776,7 +801,7 @@ export default function HomeGardenPage() {
 
           <div className="space-y-6">
             <a 
-              href="https://order.awaji-smilefarm.com/memberships/ms_smashkovmdwhladc/subscriptions/new"
+              href={membershipUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-harvest-orange-500 hover:bg-harvest-orange-600 text-white font-bold py-6 px-12 rounded-xl text-2xl transition-colors duration-200 shadow-2xl hover:shadow-3xl"
