@@ -1129,7 +1129,12 @@ export default function Home() {
               <div className="bg-harvest-orange-50 rounded-xl p-8">
                 <h3 className="text-2xl font-semibold text-farm-green-800 mb-6 flex items-center">
                   <svg className="w-6 h-6 mr-3 text-harvest-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.8}
+                      d="M6.75 18a2.25 2.25 0 11-4.5 0m4.5 0a2.25 2.25 0 11-4.5 0m4.5 0h10.5m-12 0V5.25c0-.414.336-.75.75-.75h10.5c.414 0 .75.336.75.75V18m-12-6.75h12m-12-3h12m-4.5 9.75a2.25 2.25 0 104.5 0"
+                    />
                   </svg>
                   交通手段
                 </h3>
