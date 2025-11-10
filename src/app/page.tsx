@@ -554,12 +554,6 @@ export default function Home() {
           </div>
         </div>
         {/* 装飾用の自然要素 */}
-        <div className="absolute top-10 right-10 opacity-10">
-          <div className="text-8xl text-farm-green-300">🌾</div>
-        </div>
-        <div className="absolute bottom-10 left-10 opacity-10">
-          <div className="text-6xl text-harvest-orange-300">🌻</div>
-        </div>
       </section>
 
       {/* 入会案内セクション */}
@@ -838,16 +832,6 @@ export default function Home() {
         </div>
         
         {/* 背景装飾 */}
-        <div className="absolute top-20 right-20 opacity-5">
-          <svg className="w-24 h-24 text-farm-green-400" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
-          </svg>
-        </div>
-        <div className="absolute bottom-20 left-20 opacity-5">
-          <svg className="w-20 h-20 text-harvest-orange-400" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2L13.5 8.5L20 7L14.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L9.5 12L4 7L10.5 8.5L12 2Z"/>
-          </svg>
-        </div>
       </section>
 
       {/* お客様の声セクション */}
