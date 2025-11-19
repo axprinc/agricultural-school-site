@@ -138,16 +138,6 @@ const StarRating = ({ rating }: { rating: number }) => {
 // --- MAIN PRODUCT PAGE ---
 export default function TonerProductPage() {
   const [quantity, setQuantity] = useState(1)
-  const [isAddingToCart, setIsAddingToCart] = useState(false)
-
-  const handleAddToCart = () => {
-    setIsAddingToCart(true)
-    // 実際のカート機能はここに実装
-    setTimeout(() => {
-      setIsAddingToCart(false)
-      alert('カートに追加しました')
-    }, 1000)
-  }
 
   return (
     <div className="font-sans antialiased bg-[#FAFAFA] text-gray-900">
@@ -243,28 +233,15 @@ export default function TonerProductPage() {
                       </button>
                     </div>
                   </div>
-                  <button
-                    onClick={handleAddToCart}
-                    disabled={isAddingToCart}
-                    className={`w-full py-4 px-8 text-lg font-bold text-white bg-gray-900 hover:bg-gray-700 transition-colors border border-gray-900 rounded-lg flex items-center justify-center gap-2 ${
-                      isAddingToCart ? 'opacity-50 cursor-not-allowed' : ''
-                    }`}
+                  <a
+                    href="https://order.awaji-smilefarm.com/products/pd_2zs1guqpebsmqs3p/purchases/new"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-4 px-8 text-lg font-bold text-white bg-gray-900 hover:bg-gray-700 transition-colors border border-gray-900 rounded-lg flex items-center justify-center gap-2"
                   >
-                    {isAddingToCart ? (
-                      <>
-                        <svg className="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        追加中...
-                      </>
-                    ) : (
-                      <>
-                        <ShoppingCart className="w-5 h-5" />
-                        カートに追加
-                      </>
-                    )}
-                  </button>
+                    <ShoppingCart className="w-5 h-5" />
+                    今すぐ購入する
+                  </a>
                 </FadeInSection>
               </div>
             </div>
@@ -395,16 +372,9 @@ export default function TonerProductPage() {
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
                 本質的な調和こそが、時代を超えて残る真の輝き。
               </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 未来のために。あなたの肌のために。
               </p>
-              <button
-                onClick={handleAddToCart}
-                className="inline-flex items-center px-8 py-4 text-lg font-bold text-gray-900 bg-white hover:bg-gray-100 transition-colors border border-white rounded-lg"
-              >
-                今すぐ購入する
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </button>
             </FadeInSection>
           </div>
         </section>
