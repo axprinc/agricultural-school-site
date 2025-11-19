@@ -188,7 +188,8 @@ export default function TonerProductPage() {
               <div>
                 <FadeInSection>
                   <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight leading-none text-gray-900 mb-6">
-                    {PRODUCT_DATA.name}
+                    <span className="block">ナチュラル・ピュア</span>
+                    <span className="block">化粧水</span>
                   </h1>
                 </FadeInSection>
                 <FadeInSection delay="delay-200">
