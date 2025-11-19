@@ -11,7 +11,7 @@ const HERO_HEIGHT_CLASS = 'min-h-[80vh]'
 const MAX_WIDTH_CLASS = 'max-w-7xl'
 
 // --- UTILITY: SCROLL FADE-IN HOOK ---
-const useInView = (threshold = 0.1) => {
+const useInView = (threshold = 0.1): [React.RefObject<HTMLDivElement>, boolean] => {
   const ref = useRef<HTMLDivElement>(null)
   const [inView, setInView] = useState(false)
   
@@ -24,12 +24,13 @@ const useInView = (threshold = 0.1) => {
   }, [])
 
   useEffect(() => {
-    if (!ref.current) return
+    const currentRef = ref.current
+    if (!currentRef) return
     const observer = new IntersectionObserver(callback, { threshold })
-    observer.observe(ref.current)
+    observer.observe(currentRef)
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current)
+      if (currentRef) {
+        observer.unobserve(currentRef)
       }
     }
   }, [callback, threshold])
