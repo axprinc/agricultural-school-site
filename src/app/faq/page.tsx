@@ -22,7 +22,14 @@ export default function FAQ() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const faqs = [
+  interface FAQ {
+    question: string
+    answer: string
+    link?: string
+    linkText?: string
+  }
+
+  const faqs: FAQ[] = [
     {
       question: "初心者でも大丈夫ですか？",
       answer: "はい、もちろんです！当スクールは初心者の方でも安心して始められるよう、基礎から丁寧に指導いたします。必要な道具や知識は全てスクールで提供・説明いたしますので、ご安心ください。"
@@ -82,6 +89,12 @@ export default function FAQ() {
     {
       question: "雨が降ったら、Nパワープラスは薄まりますか？",
       answer: "雨が降っても薄まることはありません。"
+    },
+    {
+      question: "Nパワーの成分が入った化粧水ありますか？",
+      answer: "はい、ございます！Nパワーの成分を配合した化粧水をご用意しております。自然の力を、最も純粋な形で肌に届けるスキンケア製品です。詳しくは製品ページをご覧ください。",
+      link: "/naturalpure",
+      linkText: "化粧水の詳細を見る"
     }
   ]
 
@@ -281,7 +294,18 @@ export default function FAQ() {
                       transition={{ duration: 0.3 }}
                       className="px-6 pb-4 bg-farm-green-50/30"
                     >
-                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      <p className="text-gray-700 leading-relaxed mb-4">{faq.answer}</p>
+                      {faq.link && (
+                        <Link
+                          href={faq.link}
+                          className="inline-flex items-center px-4 py-2 bg-farm-green-600 text-white font-semibold rounded-lg hover:bg-farm-green-700 transition-colors duration-200 text-sm"
+                        >
+                          {faq.linkText || "詳細を見る"}
+                          <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </Link>
+                      )}
                     </motion.div>
                   )}
                 </motion.div>
