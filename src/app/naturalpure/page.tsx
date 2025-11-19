@@ -58,7 +58,7 @@ const FadeInSection = ({ children, delay = 'delay-0', className = '' }) => {
 
 // --- PRODUCT DATA ---
 const PRODUCT_DATA = {
-  name: 'ナチュラルピュア 化粧水',
+  name: 'ナチュラル・ピュア ライフスタイルウォーター',
   subtitle: '肌が、呼吸を忘れていたことを知る。',
   description: '自然の力を、最も純粋な形で。肌本来の美しさを静かに呼び覚ます、スイス発のミニマルなスキンケア。',
   price: 5500,
