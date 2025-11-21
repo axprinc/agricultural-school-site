@@ -61,8 +61,8 @@ const PRODUCT_DATA = {
   name: 'ナチュラル・ピュア ライフスタイルウォーター',
   subtitle: '肌が、呼吸を忘れていたことを知る。',
   description: '自然の力を、最も純粋な形で。肌本来の美しさを静かに呼び覚ます、スイス発のミニマルなスキンケア。',
-  price: 5500,
-  originalPrice: 6800,
+  price: 1980,
+  originalPrice: 3300,
   capacity: '200ml',
   features: [
     {
@@ -160,17 +160,15 @@ export default function TonerProductPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Product Image */}
               <FadeInSection>
-                <div className="relative aspect-square bg-white rounded-3xl shadow-2xl p-8 flex items-center justify-center">
-                  <div className="w-full h-full bg-gradient-to-br from-green-100 to-green-50 rounded-2xl flex items-center justify-center">
-                    <Droplet className="w-48 h-48 text-[#228B22] opacity-30" />
-                  </div>
-                  {/* 実際の画像がある場合は以下を使用 */}
-                  {/* <Image
-                    src="/images/products/toner.jpg"
+                <div className="relative aspect-square bg-white rounded-3xl shadow-2xl p-8">
+                  <Image
+                    src="/images/products/ナチュラルピュア_商品画像.png"
                     alt={PRODUCT_DATA.name}
                     fill
                     className="object-contain rounded-2xl"
-                  /> */}
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </FadeInSection>
 
@@ -280,31 +278,45 @@ export default function TonerProductPage() {
           </div>
         </section>
 
-        {/* Ingredients Section */}
+        {/* Fermentation & Microbiome Section */}
         <section className="py-24 bg-[#FAFAFA]">
           <div className={`mx-auto px-8 ${MAX_WIDTH_CLASS}`}>
             <FadeInSection className="text-center mb-12">
               <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
-                厳選された成分
+                発酵が育てる、肌の小さな生態系 ― 皮膚常在菌との共生という美しさ
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                すべて天然由来、オーガニック認証成分のみを使用
-              </p>
             </FadeInSection>
 
             <FadeInSection>
-              <div className="bg-white rounded-3xl p-10 shadow-lg">
-                <div className="grid md:grid-cols-3 gap-6">
-                  {PRODUCT_DATA.ingredients.map((ingredient, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-3 p-4 bg-green-50 rounded-xl"
-                    >
-                      <Check className={`w-5 h-5 ${ACCENT_COLOR_CLASS} flex-shrink-0`} />
-                      <span className="text-gray-800 font-medium">{ingredient}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="bg-white rounded-3xl p-10 shadow-lg space-y-6 text-gray-700 leading-relaxed">
+                <p>肌は、ただの表面ではありません。そこには、無数の“小さな命”が息づいています。表皮ブドウ球菌、アクネ菌、黄色ブドウ球菌… そのひとつひとつが、あなたの肌を守るために働いている。 それが 皮膚常在菌という存在です。</p>
+                <p>常在菌は、肌を弱酸性に整え、潤いを抱え込み、外からの刺激から守り、あなたの肌を毎日、静かに支え続けています。 しかしそのバランスは、洗浄しすぎ・乾燥・ストレス・生活習慣… ほんの少しの乱れで崩れてしまいます。 菌たちが不安定になれば、肌もまた敏感に揺らぐ。</p>
+                <p>そこで私たちが注目したのが、発酵です。</p>
+
+                <div className="my-8 h-px bg-gray-200" />
+
+                <h3 className="text-2xl font-bold text-gray-900">発酵は“菌がつくる、菌のための恵み”</h3>
+                <p>発酵とは、微生物が素材を分解し、変化させ、新しい価値を生みだす生命の働き。乳酸菌、酵母、麹菌。彼らがつくり出すアミノ酸、ペプチド、糖類、ビタミンは、肌の常在菌にとって理想的な栄養源になります。</p>
+                <p>発酵の力で生まれた成分は、常在菌が育つ“土壌”を整え、肌の上に健全でしなやかな生態系を作り出します。それはまるで、小さな菌たちに向けた「ごちそう」のように。発酵は、肌を外側から飾るのではなく、内側で働く菌たちを活かす美容なのです。</p>
+
+                <div className="my-8 h-px bg-gray-200" />
+
+                <h3 className="text-2xl font-bold text-gray-900">発酵 × 常在菌＝肌が自ら整う力</h3>
+                <p>発酵エキスが常在菌環境を豊かにすると、肌は本来の力を取り戻しはじめます。</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>バリア機能が整い、揺らぎにくくなる</li>
+                  <li>潤いが長く留まり、乾燥しにくい</li>
+                  <li>肌荒れしにくく、穏やかな透明感が生まれる</li>
+                  <li>刺激に負けない、しなやかな肌へ</li>
+                </ul>
+                <p>これは化粧品が肌を“変える”のではなく、肌自身が、自らを整えていくという現象。発酵が、あなたの肌に宿る菌たちの力を引き出し、肌の自然な美しさが息を吹き返すのです。</p>
+
+                <div className="my-8 h-px bg-gray-200" />
+
+                <h3 className="text-2xl font-bold text-gray-900">発酵が未来の美容にもたらすもの</h3>
+                <p>私たちは、肌と常在菌と発酵を「ひとつの生態系」として捉えています。人の手ではつくれない豊かな栄養を生み、肌を守る菌たちを整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。</p>
+
+                <p className="text-center font-semibold text-gray-900 mt-8">― 発酵がつくる美しさは、 肌と菌が生きていることへの讃歌です。 ―</p>
               </div>
             </FadeInSection>
           </div>
