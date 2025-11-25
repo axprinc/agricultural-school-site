@@ -206,6 +206,7 @@ export default function TonerProductPage() {
                       </span>
                     </div>
                     <p className="text-sm text-gray-500">容量: {PRODUCT_DATA.capacity}</p>
+                    <p className="text-xs text-gray-500 mt-1">※表示価格に送料は含まれておりません（送料別）。</p>
                   </div>
                 </FadeInSection>
 
