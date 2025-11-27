@@ -266,19 +266,24 @@ export default function NaturalPureLandingPage() {
         }
 
         .naturalpure-lp .fv-section {
+          position: relative;
           width: 100%;
-          background-color: var(--light-bg);
+          padding: 40px 0 60px;
+          background-color: #f5f7f8;
         }
 
         .naturalpure-lp .fv-image-container {
+          position: relative;
           max-width: 1200px;
           margin: 0 auto;
+          z-index: 1;
         }
 
         .naturalpure-lp .main-visual {
           width: 100%;
           display: block;
-          border-radius: 24px;
+          border-radius: 0;
+          box-shadow: none;
         }
 
         .naturalpure-lp h2.section-title {
