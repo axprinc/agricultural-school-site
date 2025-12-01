@@ -6,6 +6,7 @@ const CONCEPT_IMAGE = '/images/publicimagesnaturalpure-lp/feature-2.jpg'
 const MECHANISM_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-6.png'
 const CTA_FINAL_IMAGE = '/images/publicimagesnaturalpure-lp/feature-7.png'
 const BENEFITS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-3.jpg'
+const INGREDIENTS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-11.png'
 
 type Benefit =
   | {
@@ -32,6 +33,71 @@ const BENEFITS: Benefit[] = [
   },
 ]
 
+type Review = {
+  text: string
+  profile: string
+}
+
+const REVIEWS: Review[] = [
+  {
+    text: '使用して3日で肌が柔らかくなったのを感じました。香りも自然で癒やされます。',
+    profile: '30代 乾燥肌',
+  },
+  {
+    text: '子供がいるので成分が気になっていましたが、これなら安心して使えます。',
+    profile: '40代 敏感肌',
+  },
+  {
+    text: 'ベタつかないのに保湿力がすごい。メイクの上からも使っています。',
+    profile: '20代 混合肌',
+  },
+]
+
+const SAFETY_FREE_ITEMS: string[] = [
+  'パラベンフリー',
+  'アルコールフリー',
+  '合成香料不使用',
+  '合成着色料不使用',
+  '鉱物油フリー',
+  '石油系界面活性剤フリー',
+]
+
+type HowToStep = {
+  title: string
+  description: string
+}
+
+const HOW_TO_STEPS: HowToStep[] = [
+  {
+    title: '洗顔後すぐに、導入化粧水として',
+    description: 'いつものスキンケアの最初に、たっぷりと顔全体になじませてください。',
+  },
+  {
+    title: '日中の乾燥対策に、メイクの上から',
+    description: '乾燥やつっぱりを感じたら、顔から少し離してミストのようにやさしくオン。',
+  },
+  {
+    title: 'お風呂上がりのボディケアに',
+    description: '首もとやデコルテ、二の腕など、かさつきが気になる部分にもお使いいただけます。',
+  },
+]
+
+type QAItem = {
+  question: string
+  answer: string
+}
+
+const QA_ITEMS: QAItem[] = [
+  {
+    question: '敏感肌でも使えますか？',
+    answer: 'はい。食品由来のやさしい成分のみで作られており、敏感な肌の方にもお使いいただけるよう配慮しています。ご心配な場合は、腕の内側などでパッチテストを行ってからご使用ください。',
+  },
+  {
+    question: '1本でどれくらい持ちますか？',
+    answer: '朝晩のご使用で、約1.5ヶ月を目安にお使いいただけます。ご使用量や使用部位によって前後する場合があります。',
+  },
+]
+
 export default function NaturalPureLandingPage() {
   return (
     <div className="naturalpure-lp">
@@ -45,7 +111,7 @@ export default function NaturalPureLandingPage() {
           <div className="fv-image-container">
             <Image
               src="/images/publicimagesnaturalpure-lp/hero.png"
-              alt="ナチュラル・ピュア化粧水"
+              alt="ナチュラル・ピュア ライフスタイル・ウォーター"
               width={1200}
               height={900}
               className="main-visual"
@@ -58,7 +124,7 @@ export default function NaturalPureLandingPage() {
           <div className="container concept-grid">
             <div className="concept-copy">
               <h2 className="section-title">
-                発酵が育てる、肌の小さな生態系
+                発酵の力で、夕方まで乾かない&quot;水光肌&quot;へ。自然由来の成分が肌を整えます。
                 <span className="section-subtitle">皮膚常在菌との共生という美しさ</span>
               </h2>
               <div className="concept-body">
@@ -90,8 +156,8 @@ export default function NaturalPureLandingPage() {
         <section className="mechanism-section">
           <div className="mechanism-overlay" />
           <div className="container mechanism-content">
-            <h2 className="section-title section-title-white">発酵は“菌がつくる、菌のための恵み”</h2>
-            <p className="mechanism-lead">発酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
+            <h2 className="section-title section-title-white">発酵は“菌がつくる、自然の恵み”</h2>
+              <p className="mechanism-lead">発酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
             <div className="mechanism-body">
               <p>
                 乳酸菌、酵母、麹菌がつくり出す
@@ -110,7 +176,7 @@ export default function NaturalPureLandingPage() {
         <section className="section-padding benefits-section">
           <div className="container">
             <h2 className="section-title">
-              発酵 × 常在菌＝肌が自ら整う力
+              肌本来の力を引き出す、発酵と常在菌のバランス設計
               <span className="section-subtitle">
                 発酵エキスが常在菌環境を豊かにすると、肌は本来の力を取り戻し始めます。
               </span>
@@ -161,17 +227,108 @@ export default function NaturalPureLandingPage() {
           </div>
         </section>
 
+        <section className="section-padding reviews-section">
+          <div className="container">
+            <h2 className="section-title">
+              お客様の声
+              <span className="section-subtitle">実際にご利用いただいた方のご感想</span>
+            </h2>
+            <div className="reviews-grid">
+              {REVIEWS.map((review, index) => (
+                <article key={review.text + index} className="review-card">
+                  <p className="review-text">{review.text}</p>
+                  <p className="review-profile">{review.profile}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-padding ingredients-section">
+          <div className="container">
+            <div className="ingredients-box">
+              <h2 className="section-title">原材料と、からだへのやさしさ</h2>
+              <p className="ingredients-line">
+                原材料：湧水、オーガニック玄米、オーガニック大豆
+              </p>
+              <p>
+                原料はすべて、口に含めるほどの食品由来成分。万が一お口に入ってしまっても、心配ありません。
+              </p>
+              <p>小さなお子様やペットと暮らす毎日に、心からの安心をお届けします。</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-padding safety-section">
+          <div className="container">
+            <h2 className="section-title">
+              6つのフリーと、安全へのこだわり
+              <span className="section-subtitle">大切な人と一緒に使えるスキンケアのために</span>
+            </h2>
+            <p className="section-text">
+              100%食品由来成分の、ピュアな処方。赤ちゃんが触れても気にならない優しさで、家族みんなの空間を整えます。
+            </p>
+            <div className="safety-grid">
+              {SAFETY_FREE_ITEMS.map((item) => (
+                <div key={item} className="safety-pill">
+                  {item}
+                </div>
+              ))}
+            </div>
+            <p className="safety-note">※本品は食品ではありません。</p>
+          </div>
+        </section>
+
+        <section className="section-padding howto-section">
+          <div className="container">
+            <h2 className="section-title">
+              使い方
+              <span className="section-subtitle">ライフスタイルに合わせて、自由にプラス</span>
+            </h2>
+            <div className="howto-grid">
+              {HOW_TO_STEPS.map((step, index) => (
+                <div key={step.title} className="howto-card">
+                  <div className="howto-icon">{String(index + 1).padStart(2, '0')}</div>
+                  <h3 className="howto-title">{step.title}</h3>
+                  <p className="howto-description">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-padding qa-section">
+          <div className="container">
+            <h2 className="section-title">
+              よくあるご質問
+              <span className="section-subtitle">初めての方にも、安心してお使いいただくために</span>
+            </h2>
+            <dl className="qa-list">
+              {QA_ITEMS.map((item, index) => (
+                <div key={item.question} className="qa-item">
+                  <dt className="qa-question">
+                    <span className="qa-label">Q{index + 1}</span>
+                    {item.question}
+                  </dt>
+                  <dd className="qa-answer">{item.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
         <section className="cta-final-section">
           <div className="container cta-final-content">
             <div className="cta-final-text">
               <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
-              <h3 className="cta-final-title">ナチュラル・ピュア（化粧水）</h3>
+              <h3 className="cta-final-title">
+                ナチュラル・ピュア
+                <br />
+                ライフスタイル・ウォーター
+              </h3>
               <p className="cta-final-note">内容量：200ml</p>
               <div className="cta-final-price">
-                <span className="price-original">¥3,300</span>
-                <span className="price-arrow">→</span>
-                <span className="price-current">¥1,980</span>
-                <span className="price-badge">今だけ価格</span>
+                <span className="price-current">¥4,800（税込）</span>
               </div>
               <a
                 href="https://order.awaji-smilefarm.com/products/pd_2zs1guqpebsmqs3p/purchases/new"
@@ -182,6 +339,30 @@ export default function NaturalPureLandingPage() {
                 今すぐ購入する
               </a>
               <p className="cta-final-warning">※送料はお客様負担となります。納期などの詳細はご購入前にご確認ください。</p>
+            </div>
+            <div className="cta-final-text">
+              <p className="cta-final-eyebrow">ご家族やご友人と一緒に、お得に続けたい方へ。</p>
+              <h3 className="cta-final-title">
+                ナチュラル・ピュア
+                <br />
+                10本入りセット
+              </h3>
+              <p className="cta-final-note">内容量：200ml × 10本 ／ 送料無料</p>
+              <div className="cta-final-price">
+                <span className="price-current">¥48,000（税込）</span>
+                <span className="price-badge">10本入り・送料無料</span>
+              </div>
+              <a
+                href="https://order.awaji-smilefarm.com/products/pd_k6ncmxbmbpcnzfu5/purchases/new"
+                className="cta-final-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                10本入りを購入する
+              </a>
+              <p className="cta-final-warning">
+                ※こちらの10本入りセットは送料無料です。納期などの詳細はご購入前にご確認ください。
+              </p>
             </div>
           </div>
         </section>
@@ -308,20 +489,20 @@ export default function NaturalPureLandingPage() {
 
         .naturalpure-lp .cta-button {
           display: inline-block;
-          background-color: var(--primary-green);
+          background-color: #2f5f40;
           color: var(--white);
-          padding: 15px 40px;
-          border-radius: 50px;
+          padding: 15px 42px;
+          border-radius: 999px;
           font-size: 1.1rem;
           font-weight: bold;
           letter-spacing: 0.05em;
-          box-shadow: 0 4px 10px rgba(86, 140, 106, 0.3);
+          box-shadow: 0 12px 26px rgba(47, 95, 64, 0.36);
           transition: all 0.3s ease;
         }
 
         .naturalpure-lp .cta-button:hover {
-          background-color: var(--secondary-green);
-          box-shadow: 0 6px 15px rgba(86, 140, 106, 0.4);
+          background-color: #3d8158;
+          box-shadow: 0 16px 34px rgba(61, 129, 88, 0.42);
           transform: translateY(-2px);
           opacity: 1;
         }
@@ -363,6 +544,66 @@ export default function NaturalPureLandingPage() {
         .naturalpure-lp .concept-image img {
           border-radius: 24px;
           box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .naturalpure-lp .empathy-section {
+          background: #f7faf8;
+        }
+
+        .naturalpure-lp .empathy-body {
+          max-width: 720px;
+          margin-top: 1.5rem;
+          font-size: 1rem;
+          color: #4a5550;
+        }
+
+        .naturalpure-lp .empathy-body p + p {
+          margin-top: 0.75rem;
+        }
+
+        .naturalpure-lp .ingredients-section {
+          position: relative;
+          background: #ffffff;
+          overflow: hidden;
+        }
+
+        .naturalpure-lp .ingredients-section::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: url('${INGREDIENTS_BG_IMAGE}') 65% center / cover no-repeat;
+          opacity: 1;
+          z-index: 0;
+        }
+
+        .naturalpure-lp .ingredients-section .container {
+          position: relative;
+          z-index: 1;
+        }
+
+        .naturalpure-lp .ingredients-box {
+          background: #ffffff;
+          border-radius: 24px;
+          padding: 32px 28px;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+          border: 1px solid #edf2ef;
+          max-width: 520px;
+          margin-left: 0;
+          margin-right: auto;
+        }
+
+        .naturalpure-lp .ingredients-box .section-title {
+          margin-bottom: 1rem;
+        }
+
+        .naturalpure-lp .ingredients-line {
+          font-weight: 600;
+          margin-bottom: 0.75rem;
+          color: var(--primary-green);
+        }
+
+        .naturalpure-lp .ingredients-box p + p {
+          margin-top: 0.75rem;
         }
 
         .naturalpure-lp .mechanism-section {
@@ -527,6 +768,11 @@ export default function NaturalPureLandingPage() {
           font-size: 1.05rem;
           color: var(--primary-green);
           line-height: 1.6;
+          word-break: keep-all;
+        }
+
+        .naturalpure-lp .benefits-heading span {
+          white-space: nowrap;
         }
 
         .naturalpure-lp .benefits-heading-line {
@@ -539,6 +785,179 @@ export default function NaturalPureLandingPage() {
           text-align: center;
           color: #4a5550;
           font-size: 1rem;
+          display: inline-block;
+          padding: 10px 18px;
+          background: rgba(255, 255, 255, 0.85);
+          border-radius: 999px;
+        }
+
+        .naturalpure-lp .benefits-section .container {
+          text-align: center;
+        }
+
+        .naturalpure-lp .benefits-section .section-title {
+          display: inline-block;
+          padding: 12px 20px;
+          background: rgba(255, 255, 255, 0.9);
+          border-radius: 999px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .naturalpure-lp .reviews-section {
+          background: #f7faf8;
+        }
+
+        .naturalpure-lp .reviews-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 24px;
+          margin-top: 32px;
+        }
+
+        .naturalpure-lp .review-card {
+          background: #ffffff;
+          border-radius: 20px;
+          padding: 24px;
+          box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+          border: 1px solid #edf2ef;
+        }
+
+        .naturalpure-lp .review-text {
+          font-size: 0.95rem;
+          margin-bottom: 1rem;
+        }
+
+        .naturalpure-lp .review-profile {
+          font-size: 0.85rem;
+          color: #6c7a74;
+          text-align: right;
+        }
+
+        .naturalpure-lp .safety-section {
+          background: #ffffff;
+        }
+
+        .naturalpure-lp .safety-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 20px;
+        }
+
+        .naturalpure-lp .safety-pill {
+          padding: 8px 16px;
+          border-radius: 999px;
+          background: #f2f7f4;
+          color: #365746;
+          font-size: 0.9rem;
+          border: 1px solid rgba(86, 140, 106, 0.35);
+        }
+
+        .naturalpure-lp .safety-note {
+          margin-top: 12px;
+          font-size: 0.8rem;
+          color: #8a9490;
+        }
+
+        .naturalpure-lp .howto-section {
+          position: relative;
+          background: #f7faf8;
+          overflow: hidden;
+        }
+
+        .naturalpure-lp .howto-section::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: url('/images/publicimagesnaturalpure-lp/feature-12.png') center / cover no-repeat;
+          opacity: 0.45;
+          z-index: 0;
+        }
+
+        .naturalpure-lp .howto-section .container {
+          position: relative;
+          z-index: 1;
+        }
+
+        .naturalpure-lp .howto-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 20px;
+          margin-top: 32px;
+        }
+
+        .naturalpure-lp .howto-card {
+          background: #ffffff;
+          border-radius: 20px;
+          padding: 22px 20px;
+          box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+          border: 1px solid #eef2ef;
+        }
+
+        .naturalpure-lp .howto-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 999px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(86, 140, 106, 0.1);
+          color: var(--primary-green);
+          font-weight: 700;
+          font-size: 0.95rem;
+          margin-bottom: 10px;
+        }
+
+        .naturalpure-lp .howto-title {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+          color: var(--primary-green);
+        }
+
+        .naturalpure-lp .howto-description {
+          font-size: 0.95rem;
+          color: #4f5a55;
+        }
+
+        .naturalpure-lp .qa-section {
+          background: #ffffff;
+        }
+
+        .naturalpure-lp .qa-list {
+          margin-top: 28px;
+        }
+
+        .naturalpure-lp .qa-item + .qa-item {
+          margin-top: 18px;
+          padding-top: 18px;
+          border-top: 1px solid #e2e8e4;
+        }
+
+        .naturalpure-lp .qa-question {
+          display: flex;
+          align-items: baseline;
+          gap: 10px;
+          font-weight: 600;
+          color: var(--primary-green);
+          margin-bottom: 6px;
+        }
+
+        .naturalpure-lp .qa-label {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 26px;
+          height: 26px;
+          border-radius: 999px;
+          background: rgba(86, 140, 106, 0.1);
+          font-size: 0.8rem;
+        }
+
+        .naturalpure-lp .qa-answer {
+          font-size: 0.95rem;
+          color: #4a5550;
+          padding-left: 36px;
         }
 
         .naturalpure-lp .conclusion-section {
@@ -627,6 +1046,8 @@ export default function NaturalPureLandingPage() {
           z-index: 2;
           display: flex;
           justify-content: flex-start;
+          flex-wrap: wrap;
+          gap: 24px;
         }
 
         .naturalpure-lp .cta-final-text {
@@ -637,11 +1058,33 @@ export default function NaturalPureLandingPage() {
           box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
         }
 
+        .naturalpure-lp .cta-final-meta {
+          position: relative;
+          z-index: 2;
+          margin-top: 28px;
+          padding: 18px 20px;
+          max-width: 720px;
+          background: rgba(255, 255, 255, 0.96);
+          border-radius: 16px;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+          font-size: 0.9rem;
+          color: #4c5a55;
+        }
+
+        .naturalpure-lp .cta-final-meta-line + .cta-final-meta-line {
+          margin-top: 0.45rem;
+        }
+
+        .naturalpure-lp .cta-final-meta-line:first-child {
+          font-weight: 600;
+        }
+
         .naturalpure-lp .cta-final-eyebrow {
           font-size: 1.1rem;
           font-weight: 600;
           color: var(--primary-green);
           margin-bottom: 0.75rem;
+          white-space: nowrap;
         }
 
         .naturalpure-lp .cta-final-title {
@@ -693,15 +1136,22 @@ export default function NaturalPureLandingPage() {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          background: #3d8158;
+          background: #2f5f40;
           color: #fff;
-          padding: 16px 48px;
+          padding: 18px 52px;
           border-radius: 999px;
           font-weight: 700;
           letter-spacing: 0.05em;
-          box-shadow: 0 12px 24px rgba(61, 129, 88, 0.3);
+          box-shadow: 0 14px 28px rgba(47, 95, 64, 0.38);
           margin-bottom: 0.75rem;
           font-size: 1.05rem;
+        }
+
+        .naturalpure-lp .cta-final-button:hover {
+          background: #3d8158;
+          box-shadow: 0 18px 34px rgba(61, 129, 88, 0.45);
+          transform: translateY(-2px);
+          opacity: 1;
         }
 
         .naturalpure-lp .cta-final-warning {
@@ -760,6 +1210,11 @@ export default function NaturalPureLandingPage() {
 
           .naturalpure-lp .section-padding {
             padding: 60px 0;
+          }
+
+          .naturalpure-lp .ingredients-box {
+            margin-left: 0;
+            margin-right: auto;
           }
 
           .naturalpure-lp .cta-button {
@@ -837,7 +1292,7 @@ export default function NaturalPureLandingPage() {
                 </div>
             <div class="container">
                 <h2 class="section__title section__title--white">
-                    発酵は“菌がつくる、菌のための恵み”
+                    発酵は“菌がつくる、自然の恵み”
                 </h2>
                 <p class="mechanism__lead">発酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
                 <div class="mechanism__content">
