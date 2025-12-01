@@ -98,13 +98,6 @@ const QA_ITEMS: QAItem[] = [
     question: '1本でどれくらい持ちますか？',
     answer: '朝晩のご使用で、約1.5ヶ月を目安にお使いいただけます。ご使用量や使用部位によって前後する場合があります。',
   },
-  {
-    question: 'この商品のコンセプトに共感しました。活動に関わることはできますか？',
-    answer:
-      'ありがとうございます。私たちの想いに共感してくださる方に向けて、開発裏話やアンバサダー活動について共有するオンラインサロンを運営しています。一緒に広めてくださる仲間をお待ちしています。',
-    linkHref: '/online-school-garden-lp.html',
-    linkText: '▶ メンバー募集ページはこちら',
-  },
 ]
 
 export default function NaturalPureLandingPage() {
