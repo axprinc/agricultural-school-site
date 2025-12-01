@@ -101,6 +101,13 @@ export default function FAQ() {
         { href: "/naturalpure", text: "化粧水の詳細を見る" },
         { href: "/naturalpure-lp", text: "化粧水LPを見る" }
       ]
+    },
+    {
+      question: "この商品のコンセプトに共感しました。活動に関わることはできますか？",
+      answer: "ありがとうございます。私たちの想いに共感してくださる方に向けて、開発裏話やアンバサダー活動について共有するオンラインサロンを運営しています。一緒に広めてくださる仲間をお待ちしています。",
+      links: [
+        { href: "/online-school-garden-lp.html", text: "▶ メンバー募集ページはこちら" }
+      ]
     }
   ]
 

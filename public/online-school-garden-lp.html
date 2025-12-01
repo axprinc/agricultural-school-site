@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>優しい家庭菜園の学校 - LP</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+
+        /* 本文フォント：游明朝体（環境に応じてフォールバック） */
+        body {
+            font-family: 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', 'MS PMincho', serif;
+            font-weight: 400;
+        }
+
+        /* 見出しフォント：ヒラギノ明朝 ProN W6（なければ游明朝系にフォールバック） */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Hiragino Mincho ProN W6', 'Hiragino Mincho ProN', 'Yu Mincho', '游明朝', serif;
+            font-weight: 600;
+        }
+
+        .text-shadow {
+
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+        }
+
+        .bg-custom-green {
+
+            background-color: #4CAF50;
+
+        }
+
+        .bg-custom-orange {
+
+            background-color: #FF7043;
+
+        }
+
+        .bg-custom-beige {
+
+            background-color: #F5F5DC;
+
+        }
+
+        .bg-custom-gold {
+
+            background-color: #D4AF37;
+
+        }
+
+        /* Steps connector line */
+
+        .step-connector::after {
+
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 100%;
+
+            width: 100%;
+
+            height: 2px;
+
+            background-color: #CBD5E1;
+
+            transform: translateY(-50%);
+
+            z-index: -1;
+
+        }
+
+        .step-item:last-child .step-connector::after {
+
+            display: none;
+
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-emerald-50 text-slate-800 antialiased">
+  <div class="min-h-screen flex flex-col">
+    <!-- Hero / ファーストビュー -->
+    <header class="relative overflow-hidden bg-emerald-900 text-white">
+      <!-- 背景画像 -->
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('/images/online-school-garden-lp/hero.png');"
+      ></div>
+
+      <div class="relative max-w-5xl mx-auto px-4 pt-20 pb-24">
+        <p class="inline-block bg-emerald-100/90 text-emerald-900 px-4 py-1 rounded-full text-xs md:text-sm tracking-[0.2em] mb-4">
+          ベランダ1畳からはじめる、やさしい家庭菜園
+        </p>
+        <h1 class="text-3xl md:text-5xl font-bold leading-relaxed mb-6">
+          安全・安心な野菜を<br class="hidden md:block" />
+          家族の食卓から育ててみませんか。
+        </h1>
+        <p class="text-base md:text-lg max-w-xl text-emerald-50/90 mb-8">
+          土に触れる時間を増やしながら、家計にもやさしい。<br />
+          「優しい家庭菜園の学校」は、忙しい毎日の中でも無理なく続けられる、オンライン家庭菜園スクールです。
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#pricing"
+            class="inline-flex items-center justify-center rounded-full bg-amber-400 px-8 py-3 text-base md:text-lg font-semibold text-emerald-900 shadow-lg shadow-amber-900/30 hover:bg-amber-300 transition"
+          >
+            今すぐスクールの内容を見る
+          </a>
+          <a
+            href="#steps"
+            class="inline-flex items-center justify-center rounded-full border border-emerald-100/60 px-8 py-3 text-sm md:text-base font-semibold text-emerald-50/90 hover:bg-emerald-800/60 transition"
+          >
+            はじめ方を知りたい方はこちら
+          </a>
+        </div>
+      </div>
+
+      <!-- 下部の波型（次セクションの背景色と揃える） -->
+      <div class="text-amber-50">
+        <svg class="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path
+            fill="currentColor"
+            d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <!-- 選ばれる理由 -->
+      <section id="reasons" class="relative bg-amber-50 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">WHY</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              「優しい家庭菜園の学校」が選ばれる理由
+            </h2>
+            <p class="text-sm md:text-base text-slate-700">
+              ただ育てるだけでなく、「家族が安心して食べられる」野菜づくりにこだわっています。
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 items-stretch">
+            <article class="bg-white/90 rounded-3xl shadow-md overflow-hidden border border-amber-100 flex flex-col">
+              <img
+                src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80"
+                alt="うまく育たなかった野菜"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6 md:p-7 flex-1 flex flex-col">
+                <p class="text-xs font-semibold text-emerald-700 tracking-[0.2em] mb-2">REASON 01</p>
+                <p class="font-semibold text-base md:text-lg text-slate-800 leading-relaxed mb-3">
+                  「虫がついて、うまく育たない…」<br />
+                  そんな不安を、土づくりから一緒に解決します。
+                </p>
+                <p class="text-sm text-slate-600">
+                  狭いベランダや日当たりが心配な方でも大丈夫。環境に合わせた栽培方法や、自然の力を生かした害虫対策を基礎から丁寧にお伝えします。
+                </p>
+              </div>
+            </article>
+
+            <article class="bg-white/90 rounded-3xl shadow-md overflow-hidden border border-amber-100 flex flex-col">
+              <img
+                src="https://images.unsplash.com/photo-1615485925694-a69ea5bdd995?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80"
+                alt="肥料や土のイメージ"
+                class="w-full h-52 object-cover"
+              />
+              <div class="p-6 md:p-7 flex-1 flex flex-col">
+                <p class="text-xs font-semibold text-emerald-700 tracking-[0.2em] mb-2">REASON 02</p>
+                <h3 class="font-semibold text-base md:text-lg text-emerald-900 leading-relaxed mb-3">
+                  私たちが開発した「Nパワー」と、専用ブレンドの土
+                </h3>
+                <p class="text-sm text-slate-600 mb-2">
+                  残留農薬をゼロに近づけることを目指した栄養剤「Nパワー」と、野菜が元気に育つ専用ブレンドの土を軸にした栽培方法で、
+                  初心者でも失敗しにくい環境をつくります。
+                </p>
+                <p class="text-xs text-slate-500">
+                  ※化学的な農薬に頼らず、土と微生物の力を生かした「やさしい家庭菜園」です。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 下の波（次セクション：淡いブルー） -->
+        <div class="absolute inset-x-0 bottom-0 translate-y-full text-sky-50">
+          <svg class="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- この方法が特別な理由 -->
+      <section id="method" class="relative bg-sky-50 py-16 md:py-20 mt-12">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">FEATURE</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              この方法が特別な理由は――
+            </h2>
+            <p class="text-sm md:text-base text-slate-700">
+              土と微生物の力を最大限に活かすことで、狭いベランダでも「小さな畑」のような環境をつくります。
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-3xl shadow-md p-6 md:p-7 flex flex-col items-stretch">
+              <div class="h-36 w-full bg-emerald-50 rounded-2xl flex items-center justify-center mb-4">
+                <i class="fas fa-flask text-4xl md:text-5xl text-emerald-700"></i>
+              </div>
+              <h3 class="font-semibold text-base md:text-lg text-emerald-900 mb-3">
+                理由1：残留農薬を限りなくゼロに近づける栄養剤「Nパワー」
+              </h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                Nパワーは、土の中の微生物たちが元気に働けるように整えるための栄養剤です。
+                土の力を高めることで、野菜自体が本来持っている強さを引き出し、農薬に頼らない栽培をサポートします。
+              </p>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-md p-6 md:p-7 flex flex-col items-stretch">
+              <div class="h-36 w-full bg-amber-50 rounded-2xl flex items-center justify-center mb-4">
+                <i class="fas fa-seedling text-4xl md:text-5xl text-emerald-700"></i>
+              </div>
+              <h3 class="font-semibold text-base md:text-lg text-emerald-900 mb-3">
+                理由2：その土地の微生物群を味方につける土づくり
+              </h3>
+              <p class="text-sm text-slate-700 leading-relaxed">
+                その場にいる微生物たちを最大限に活用することで、根がしっかりと張り、病害虫に負けにくい環境をつくります。
+                「がんばりすぎないお世話」でも、季節ごとに元気な野菜が育つ仕組みです。
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 下の波（次セクション：やわらかな生成り） -->
+        <div class="absolute inset-x-0 bottom-0 translate-y-full text-amber-50">
+          <svg class="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 入会すると手に入るもの -->
+      <section id="benefits" class="relative bg-[#f7f1dd] py-16 md:py-20 mt-12">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">BENEFITS</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              「優しい家庭菜園の学校」に入会すると、<br class="hidden md:block" />
+              以下のすべてがあなたのものになります
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- 1 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <img
+                src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="色とりどりの野菜"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">01</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  安全・安心な野菜をご自宅で収穫できる
+                </h3>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <div class="w-full h-40 bg-slate-100 flex items-center justify-center">
+                <i class="fas fa-laptop text-3xl md:text-4xl text-slate-400"></i>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">02</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  月替わりのオンライン講座（録画でいつでも復習OK）
+                </h3>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <div class="w-full h-40 bg-slate-100 flex items-center justify-center">
+                <i class="fas fa-user-tie text-3xl md:text-4xl text-slate-400"></i>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">03</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  Nパワー開発者 花岡正侍先生や専門家に、いつでも質問できる環境
+                </h3>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <div class="w-full h-40 bg-blue-50 flex items-center justify-center">
+                <i class="fab fa-facebook text-5xl text-blue-600"></i>
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">04</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  会員専用コミュニティで、全国の仲間と育ちをシェア
+                </h3>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="配送の様子"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">05</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  収穫した野菜を贈り物にできる、パッケージ・配送サポート（別途費用）
+                </h3>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+              <img
+                src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="畑と家族"
+                class="w-full h-40 object-cover"
+              />
+              <div class="p-4 flex-1 flex flex-col justify-between">
+                <p class="text-xs text-emerald-700 font-semibold mb-1">06</p>
+                <h3 class="font-semibold text-sm md:text-base text-slate-800">
+                  全国各地の提携農家さんのオープンファームにご招待
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 下の波（次セクション：白） -->
+        <div class="absolute inset-x-0 bottom-0 translate-y-full text-white">
+          <svg class="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 入会までの4ステップ -->
+      <section id="steps" class="relative bg-white py-16 md:py-20 mt-12">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">STEP</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              入会までの4つのステップ
+            </h2>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-stretch gap-8">
+            <!-- Step 1 -->
+            <article class="flex-1 text-center relative">
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 bg-emerald-700 text-white rounded-full flex items-center justify-center text-base md:text-lg font-bold mx-auto mb-4 shadow-md"
+              >
+                1
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1591857177580-dc82b9e4e1aa?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+                alt="野菜の収穫"
+                class="w-full h-32 object-cover rounded-2xl mb-3 max-w-[220px] mx-auto"
+              />
+              <p class="font-semibold text-xs md:text-sm text-slate-800">
+                「安全・安心な野菜を自分の手で育てたい」と思ったら、まずはスクールの内容をチェック
+              </p>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="flex-1 text-center relative">
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 bg-emerald-700 text-white rounded-full flex items-center justify-center text-base md:text-lg font-bold mx-auto mb-4 shadow-md"
+              >
+                2
+              </div>
+              <div
+                class="bg-slate-100 h-32 w-full rounded-2xl mb-3 max-w-[220px] mx-auto flex items-center justify-center"
+              >
+                <i class="fas fa-video text-2xl md:text-3xl text-slate-400"></i>
+              </div>
+              <p class="font-semibold text-xs md:text-sm text-slate-800">
+                オンライン講座へのお申し込み＆マイページのご登録
+              </p>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="flex-1 text-center relative">
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 bg-emerald-700 text-white rounded-full flex items-center justify-center text-base md:text-lg font-bold mx-auto mb-4 shadow-md"
+              >
+                3
+              </div>
+              <div
+                class="bg-slate-100 h-32 w-full rounded-2xl mb-3 max-w-[220px] mx-auto flex items-center justify-center"
+              >
+                <i class="fas fa-comments text-2xl md:text-3xl text-slate-400"></i>
+              </div>
+              <p class="font-semibold text-xs md:text-sm text-slate-800">
+                オンラインサロンやコミュニティに参加し、分からないことは専門家に質問
+              </p>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="flex-1 text-center relative">
+              <div
+                class="w-12 h-12 md:w-14 md:h-14 bg-emerald-700 text-white rounded-full flex items-center justify-center text-base md:text-lg font-bold mx-auto mb-4 shadow-md"
+              >
+                4
+              </div>
+              <div class="h-32 flex items-center justify-center max-w-[220px] mx-auto mb-3">
+                <span class="text-3xl md:text-4xl">🥗</span>
+              </div>
+              <p class="font-semibold text-xs md:text-sm text-slate-800">
+                収穫した野菜を家族と一緒に味わいながら、「わが家の畑」が日常の一部になります
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- 下の波（次セクション：料金セクションの背景色） -->
+        <div class="absolute inset-x-0 bottom-0 translate-y-full text-emerald-900">
+          <svg class="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 料金・特典 -->
+      <section id="pricing" class="bg-emerald-900 text-emerald-50 py-16 md:py-20 mt-12">
+        <div class="max-w-4xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-12">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-200 mb-3">PRICE &amp; GIFT</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">
+              今だけの入会特典と料金プラン
+            </h2>
+          </div>
+
+          <div class="bg-white/95 text-slate-900 rounded-3xl shadow-2xl overflow-hidden border border-emerald-100">
+            <div class="bg-amber-50 px-6 md:px-10 py-8 text-center">
+              <h3 class="text-xl md:text-2xl font-bold text-emerald-900 mb-3">
+                ご入会の方全員に、はじめてセットをプレゼント
+              </h3>
+              <p class="text-sm md:text-base text-slate-700 mb-5">
+                ベランダ菜園をすぐに始められるように、専用の土・Nパワー・種をセットにしてお届けします。
+              </p>
+              <img
+                src="https://images.unsplash.com/photo-1622383563227-044011358d16?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="特典セット"
+                class="mx-auto rounded-2xl shadow-md w-64 max-w-full"
+              />
+            </div>
+
+            <div class="px-6 md:px-10 py-8 text-center">
+              <h3 class="text-xl md:text-2xl font-bold mb-4">料金プラン</h3>
+              <div class="bg-emerald-50 rounded-2xl px-6 md:px-10 py-6 inline-block text-left w-full md:w-auto">
+                <p class="text-base md:text-lg mb-2 text-slate-700">初回お支払い金額</p>
+                <p class="text-3xl md:text-4xl font-extrabold text-red-600 mb-3">
+                  41,300円 <span class="text-sm md:text-base text-slate-600 font-normal">(税込)</span>
+                </p>
+                <hr class="border-slate-200 my-4" />
+                <p class="text-base md:text-lg text-slate-700">
+                  2か月目以降：月額利用料 <span class="font-semibold">1,500円 (税込)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 驚きの特典 -->
+      <section class="bg-amber-400 text-emerald-900 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-900 mb-3">SPECIAL GIFT</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              驚きの特典「Nパワープラス®（非売品）」
+            </h2>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-10 bg-white/70 rounded-3xl px-6 md:px-10 py-8 shadow-xl"
+          >
+            <div class="relative">
+              <div
+                class="absolute -top-6 -left-6 bg-red-600 text-white px-4 py-1.5 transform -rotate-12 font-bold shadow-lg text-xs md:text-sm"
+              >
+                数量限定 無料プレゼント！
+              </div>
+              <img
+                src="https://images.unsplash.com/photo-1597916829826-71876711d9a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                alt="Nパワープラス"
+                class="rounded-2xl shadow-2xl w-40 md:w-52 mx-auto"
+              />
+              <p class="text-center font-semibold mt-3 text-sm md:text-base">
+                Nパワープラス®（非売品）
+              </p>
+            </div>
+
+            <div class="text-sm md:text-base space-y-3 text-slate-800">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-emerald-700 mt-1"></i>
+                <p>残留農薬ゼロを目指した栽培を、さらに後押ししてくれる特別なブレンド。</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-emerald-700 mt-1"></i>
+                <p>害虫の発生を抑え、野菜本来の香りや甘みを引き出す土づくりをサポートします。</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check text-emerald-700 mt-1"></i>
+                <p>スクール生だけが体験できる、特別な栽培プログラムの一部としてお届けします。</p>
+              </div>
+
+              <div class="mt-4 flex gap-4">
+                <img
+                  src="https://images.unsplash.com/photo-1626127122119-9404285f548d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                  alt="利用者の声1"
+                  class="w-14 h-14 rounded-full border-2 border-white object-cover shadow-md"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
+                  alt="利用者の声2"
+                  class="w-14 h-14 rounded-full border-2 border-white object-cover shadow-md"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 参加者の声 -->
+      <section id="voices" class="bg-slate-50 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">VOICES</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              参加者の皆さまの声
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <article class="bg-white rounded-3xl shadow-md p-6 md:p-7 relative">
+              <i class="fas fa-quote-left text-3xl text-emerald-100 absolute top-5 left-5"></i>
+              <p class="text-slate-700 mb-6 mt-4 text-sm leading-relaxed">
+                「スーパーで買う野菜よりも色が濃く、香りがしっかりしていて驚きました。ベランダが小さくても、工夫次第でこんなに育つんだと感動しています。
+                子どもたちも、自分たちで育てた野菜だとよく食べてくれるようになりました。」
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="参加者1"
+                  class="w-12 h-12 rounded-full"
+                />
+                <p class="font-semibold text-sm text-slate-800">40代・Aさん</p>
+              </div>
+            </article>
+
+            <article class="bg-white rounded-3xl shadow-md p-6 md:p-7 relative">
+              <i class="fas fa-quote-left text-3xl text-emerald-100 absolute top-5 left-5"></i>
+              <p class="text-slate-700 mb-6 mt-4 text-sm leading-relaxed">
+                「オンライン講座なので、仕事の後に少しずつ動画で学べるのが助かっています。分からないところはコミュニティで質問できるので、
+                一人で悩まずに続けられました。今では季節ごとに、家のベランダがちいさな畑のようになっています。」
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="参加者2"
+                  class="w-12 h-12 rounded-full"
+                />
+                <p class="font-semibold text-sm text-slate-800">30代・Bさん</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- アクセス・オープンファーム -->
+      <section id="access" class="bg-emerald-50 py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="text-center mb-10 md:mb-14">
+            <p class="text-xs md:text-sm tracking-[0.25em] text-emerald-700 mb-3">OPEN FARM</p>
+            <h2 class="text-2xl md:text-3xl font-bold mb-3">
+              アクセス・オープンファーム
+            </h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 items-stretch">
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80"
+                alt="農園の風景"
+                class="w-full h-64 object-cover"
+              />
+            </div>
+            <div class="bg-white rounded-3xl shadow-md overflow-hidden relative">
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80"
+                alt="地図のイメージ"
+                class="w-full h-64 object-cover opacity-60"
+              />
+              <div class="absolute inset-0 flex items-center justify-center">
+                <i class="fas fa-map-marker-alt text-4xl text-red-500 drop-shadow-md"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 最終CTA -->
+      <section id="cta" class="bg-white py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center gap-10 md:gap-12 mb-10">
+            <img
+              src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=80"
+              alt="家族の笑顔"
+              class="w-full md:w-1/2 rounded-3xl shadow-xl object-cover"
+            />
+            <div class="flex-1">
+              <h3 class="text-2xl md:text-3xl font-bold mb-4">P.S.（追伸）</h3>
+              <p class="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
+                家族の健康や安心を守りながら、日々の食卓に小さな豊かさを増やしていくこと。
+                それは大きな投資ではなく、「少しの手間と、ほんの少しの勇気」から始まります。
+              </p>
+              <p class="text-sm md:text-base text-slate-700 leading-relaxed">
+                土に触れる時間が、忙しい毎日の中で心を整えてくれる——。<br />
+                そんな体験を、あなたとご家族にも味わっていただけたら嬉しいです。
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-center gap-4 max-w-2xl mx-auto mb-10">
+            <a
+              href="https://line.me/R/ti/p/@650hmqnu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 md:py-4 px-8 rounded-full text-base md:text-lg shadow-lg hover:shadow-xl transition flex items-center justify-center w-full md:w-auto"
+            >
+              <i class="fab fa-line mr-2"></i> LINEで相談する
+            </a>
+            <a
+              href="#pricing"
+              class="bg-amber-400 hover:bg-amber-300 text-emerald-900 font-semibold py-3 md:py-4 px-8 rounded-full text-base md:text-lg shadow-lg hover:shadow-xl transition flex items-center justify-center w-full md:w-auto"
+            >
+              今すぐ申し込む内容を確認する
+            </a>
+          </div>
+
+          <p class="text-xs md:text-sm text-slate-500 text-center">
+            安全・安心なお野菜を、ベランダや小さなお庭から育てられるスクールです。<br />
+            Copyright © 優しい家庭菜園の学校 All Rights Reserved.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
