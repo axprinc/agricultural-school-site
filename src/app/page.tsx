@@ -768,7 +768,11 @@ export default function Home() {
                 <p className="text-2xl">🌱今だけのおトクな入会キャンペーン！</p>
                 <p className="text-lg">通常 入会金 55,000円 のところ、</p>
                 <p className="text-xl font-bold text-red-600">✨今なら 39,800円（税込）でスタート！✨</p>
-                <p className="text-lg">さらに、毎月のご利用料はたったの <span className="font-semibold">1,500円（税込）</span>。<br />始めやすく、続けやすい価格です。</p>
+                <p className="text-lg">
+                  さらに、毎月のご利用料はたったの{' '}
+                  <span className="font-semibold text-base">1,500円（税込）</span>。<br />
+                  始めやすく、続けやすい価格です。
+                </p>
                 <p className="text-xl font-semibold">🎁 入会特典</p>
                 <p className="text-lg">ご入会の方全員に、<br />土・Nパワー（100ml）・種の3点セットをプレゼント！</p>
                 <p className="text-lg">いま始める絶好のチャンスです。あなたもぜひ、この機会にご参加ください🌿</p>
@@ -787,7 +791,7 @@ export default function Home() {
                   </div>
                   <div className="bg-white border border-gray-200 rounded-lg p-4 text-center">
                     <p className="text-gray-600 text-sm mb-1">月額</p>
-                    <p className="text-3xl font-extrabold text-farm-green-700">1,500円</p>
+                    <p className="text-2xl font-extrabold text-farm-green-700">1,500円</p>
                     <p className="text-xs text-gray-500">税込</p>
                   </div>
                 </div>
