@@ -780,12 +780,20 @@ export default function HomeGardenPage() {
             <div className="grid md:grid-cols-4 gap-4">
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                 <p className="text-sm text-gray-500 font-semibold mb-2">STEP 1</p>
-                <p className="text-gray-800 font-semibold mb-1">「今すぐ申し込む」をクリック</p>
+                <p className="text-gray-800 font-semibold mb-1">
+                  「今すぐ申し込む」を
+                  <br />
+                  クリック
+                </p>
                 <p className="text-gray-600 text-sm">お申し込みページへ移動します</p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
                 <p className="text-sm text-gray-500 font-semibold mb-2">STEP 2</p>
-                <p className="text-gray-800 font-semibold mb-1">お客様情報と決済情報の入力</p>
+                <p className="text-gray-800 font-semibold mb-1">
+                  お客様情報と決済情報
+                  <br />
+                  の入力
+                </p>
                 <p className="text-gray-600 text-sm">内容をご確認のうえ送信</p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">

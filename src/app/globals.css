@@ -7,26 +7,29 @@
   :root {
     --font-sans: var(--font-noto-sans-jp), var(--font-inter), system-ui, sans-serif;
     --font-serif: var(--font-playfair), Georgia, serif;
+    --font-zenmaru: var(--font-zen-maru);
   }
   
   body {
-    font-family: var(--font-noto-sans-jp), var(--font-inter), system-ui, sans-serif;
+    /* やわらかい丸ゴシックベースの本文フォント */
+    font-family: var(--font-zen-maru), 'Zen Maru Gothic', 'Yu Mincho', '游明朝', 'Hiragino Mincho ProN', 'MS PMincho', system-ui, sans-serif;
+    font-weight: 400;
+    @apply text-gray-900 bg-white;
+    overflow-x: hidden; /* 横スクロールによる右側の余白対策 */
   }
   
-  .font-elegant {
-    font-family: var(--font-playfair), Georgia, serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-zen-maru), 'Zen Maru Gothic', 'Hiragino Mincho ProN W6', 'Yu Mincho', '游明朝', serif;
+    font-weight: 600;
   }
-}
-
-/* 日本語フォント対応 */
-@layer base {
+  
   html {
-    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+    font-family: inherit;
     scroll-behavior: smooth;
   }
   
-  body {
-    @apply text-gray-900 bg-white;
+  .font-elegant {
+    font-family: var(--font-zen-maru), 'Zen Maru Gothic', 'Hiragino Mincho ProN W6', 'Yu Mincho', serif;
   }
 }
 
@@ -158,5 +161,71 @@
     animation: 
       typewriter 3s steps(40, end),
       blink-caret 0.75s step-end infinite;
+  }
+
+  /* ================================
+   * スマホ専用 追従フッターメニュー
+   * ============================== */
+  @media screen and (max-width: 768px) {
+    .fixed-footer-menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px; /* 指で押しやすい高さ */
+      background: #ffffff;
+      display: flex;
+      z-index: 9999; /* 一番手前に */
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 16px 16px 0 0;
+      overflow: hidden;
+    }
+
+    .fixed-footer-menu .footer-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: bold;
+      color: #ffffff;
+      flex-direction: column; /* 文字サイズ調整用 */
+      font-size: 15px;
+    }
+
+    /* LINEボタン（左側） */
+    .fixed-footer-menu .line-btn {
+      flex: 1; /* 同じ幅 */
+      background-color: #16a34a; /* farm-green-600 と同じ */
+      font-size: 16px;
+      flex-direction: row;
+      gap: 6px;
+    }
+
+    /* 入会ボタン（右側メイン） */
+    .fixed-footer-menu .cta-btn {
+      flex: 1; /* 同じ幅 */
+      background-color: #f97316; /* harvest-orange-500 と同じ */
+      font-size: 16px;
+      background-image: linear-gradient(to right, #f97316, #ea580c); /* harvest-orange 500→600 で立体感 */
+    }
+
+    .fixed-footer-menu .small {
+      font-size: 12px;
+      font-weight: normal;
+    }
+  }
+
+  /* PCでは非表示 */
+  @media screen and (min-width: 769px) {
+    .fixed-footer-menu {
+      display: none;
+    }
+  }
+
+  /* スマホでは通常フッターを非表示にする */
+  @media screen and (max-width: 768px) {
+    .main-footer {
+      display: none;
+    }
   }
 } 

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import React from 'react'
-import { Inter, Noto_Sans_JP, Playfair_Display } from 'next/font/google'
+import { Inter, Noto_Sans_JP, Playfair_Display, Zen_Maru_Gothic } from 'next/font/google'
 import './globals.css'
 
 // Google Fonts設定
@@ -24,6 +24,13 @@ const playfairDisplay = Playfair_Display({
   display: "swap"
 })
 
+const zenMaruGothic = Zen_Maru_Gothic({
+  subsets: ['latin'],
+  variable: '--font-zen-maru',
+  weight: ['400', '500', '700'],
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: '優しい家庭菜園の学校 | 小さなスペースで大きな収穫を',
   description: '1畳のスペースで家族4人分の野菜を育てる新しい家庭菜園の学校。狭小スペース集約栽培法で、誰でも簡単に野菜作りが始められます。',
@@ -37,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${inter.variable} ${notoSansJP.variable} ${playfairDisplay.variable} antialiased`}>
+      <body className={`${inter.variable} ${notoSansJP.variable} ${playfairDisplay.variable} ${zenMaruGothic.variable} antialiased`}>
         {children}
       </body>
     </html>

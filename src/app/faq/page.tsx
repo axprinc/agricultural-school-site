@@ -153,8 +153,8 @@ export default function FAQ() {
         ></div>
       </div>
 
-      {/* ヘッダー */}
-      <nav className="bg-white/90 backdrop-blur-sm shadow-md sticky top-0 z-40 border-b border-farm-green-200">
+      {/* ヘッダー（TOPページと同じ構成） */}
+      <nav className="bg-white shadow-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* ロゴ */}
@@ -174,20 +174,17 @@ export default function FAQ() {
                 <Link href="/#programs" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   入会特典
                 </Link>
+                <Link href="/#offer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                  料金・お申し込み
+                </Link>
                 <Link href="/#gallery" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   ギャラリー
                 </Link>
-                <Link href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  よくあるご質問
-                </Link>
-                <Link href="/home-garden" className="text-harvest-orange-600 hover:text-harvest-orange-800 px-3 py-2 rounded-md text-sm font-medium transition-colors font-semibold flex items-center">
-                  <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                  </svg>
-                  家庭菜園講座
-                </Link>
                 <Link href="/#access" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                   アクセス
+                </Link>
+                <Link href="/faq" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+                  よくあるご質問
                 </Link>
                 <a href="https://line.me/R/ti/p/@650hmqnu" target="_blank" rel="noopener noreferrer" className="text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors flex items-center">
                   <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
@@ -237,20 +234,17 @@ export default function FAQ() {
               <Link href="/#programs" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                 入会特典
               </Link>
+              <Link href="/#offer" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                料金・お申し込み
+              </Link>
               <Link href="/#gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                 ギャラリー
               </Link>
-              <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
-                よくあるご質問
-              </Link>
-              <Link href="/home-garden" onClick={() => setIsMobileMenuOpen(false)} className="text-harvest-orange-600 hover:text-harvest-orange-800 block px-3 py-2 rounded-md text-base font-medium font-semibold flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                </svg>
-                家庭菜園講座
-              </Link>
               <Link href="/#access" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                 アクセス
+              </Link>
+              <Link href="/faq" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                よくあるご質問
               </Link>
               <a href="https://line.me/R/ti/p/@650hmqnu" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -373,21 +367,59 @@ export default function FAQ() {
                 </svg>
                 優しい家庭菜園の学校
               </h3>
-              <p className="text-gray-300">自然と触れ合い、農業の楽しさを体験できるスクールです。</p>
+              <p className="text-gray-300">安全・安心なお野菜をベランダや小さなお庭から作れるスクールです。</p>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4 text-harvest-orange-300">リンク</h4>
               <div className="grid grid-cols-2 gap-x-4 gap-y-2">
                 <ul className="space-y-2 text-gray-300">
-                  <li><Link href="/#home" className="hover:text-harvest-orange-300 transition-colors duration-200">ホーム</Link></li>
-                  <li><Link href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">入会特典</Link></li>
-                  <li><Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">よくあるご質問</Link></li>
-                  <li><Link href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">アクセス</Link></li>
+                  <li>
+                    <Link href="/#home" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      ホーム
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#programs" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      入会特典
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#offer" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      料金・お申し込み
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#gallery" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      ギャラリー
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/#access" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      アクセス
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/faq" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      よくあるご質問
+                    </Link>
+                  </li>
                 </ul>
                 <ul className="space-y-2 text-gray-300">
-                  <li><Link href="/tokuteishyou" className="hover:text-harvest-orange-300 transition-colors duration-200">特定商取引法に基づく表示</Link></li>
-                  <li><Link href="/privacy" className="hover:text-harvest-orange-300 transition-colors duration-200">プライバシーポリシー</Link></li>
-                  <li><Link href="/terms" className="hover:text-harvest-orange-300 transition-colors duration-200">利用規約</Link></li>
+                  <li>
+                    <Link href="/tokuteishyou" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      特定商取引法に基づく表示
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/privacy" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      プライバシーポリシー
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/terms" className="hover:text-harvest-orange-300 transition-colors duration-200">
+                      利用規約
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
