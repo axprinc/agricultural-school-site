@@ -361,7 +361,7 @@ export default function FAQ() {
           <div className="text-center mt-12">
             <Link 
               href="/" 
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-farm-green-500 to-farm-green-600 text-white font-semibold rounded-lg hover:from-farm-green-600 hover:to-farm-green-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="inline-flex items-center px-6 py-3 border border-farm-green-400 text-farm-green-800 font-semibold rounded-lg bg-white hover:bg-farm-green-50 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
