@@ -106,7 +106,9 @@ export default function TokuteishyouPage() {
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">5</span>
                   支払い方法・時期
                 </h2>
-                <p className="text-gray-700 ml-9">銀行振込：商品到着後7日以内</p>
+                <p className="text-gray-700 ml-9">
+                  現在のお支払い方法はクレジットカード決済のみとなります。お支払い時期は、ご利用のカード会社の規定に準じます。
+                </p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
