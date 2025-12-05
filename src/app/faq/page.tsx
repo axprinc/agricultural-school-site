@@ -378,6 +378,16 @@ export default function FAQ() {
 
       {/* フッター */}
       <footer className="bg-farm-green-900 text-white py-12 relative z-10">
+        {/* 上の波（トップページと同じ形状） */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 -translate-y-full text-farm-green-900">
+          <svg className="w-full h-12 md:h-16" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0,288L48,272C96,256,192,224,288,202.7C384,181,480,171,576,181.3C672,192,768,224,864,240C960,256,1056,256,1152,234.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            />
+          </svg>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
