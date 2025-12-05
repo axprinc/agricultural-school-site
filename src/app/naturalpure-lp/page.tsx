@@ -407,7 +407,8 @@ export default function NaturalPureLandingPage() {
           --deep-green: #1f3b2c;
           --white: #ffffff;
           --gold: #c7b299;
-          font-family: var(--font-noto-sans-jp), var(--font-inter), system-ui, sans-serif;
+          /* 本番と同じ Zen Maru 系フォントに統一 */
+          font-family: var(--font-zen-maru), 'Zen Maru Gothic', 'Hiragino Mincho ProN W6', 'Yu Mincho', '游明朝', serif;
           line-height: 1.7;
           color: var(--text-color);
           background-color: var(--white);

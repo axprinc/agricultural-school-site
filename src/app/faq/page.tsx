@@ -43,8 +43,8 @@ export default function FAQ() {
       answer: "はい、可能です！ベランダ菜園に適した野菜やハーブの育て方を詳しくご指導いたします。限られたスペースでも効率的に収穫できる方法や、コンテナ栽培のコツなども学べます。"
     },
     {
-      question: "必要な道具は全て揃っていますか？",
-      answer: "基本的な道具（シャベル、じょうろ、手袋など）はスクールで用意しております。ご自宅で栽培を始める際に必要な道具の選び方や、おすすめの道具についても詳しくご説明いたします。"
+      question: "必要な道具をおしえてほしいです。",
+      answer: "ご自宅で栽培を始める際に必要な道具の選び方や、おすすめの道具についても詳しくご説明いたします。"
     },
     {
       question: "季節によって育てられる野菜は変わりますか？",
@@ -52,7 +52,8 @@ export default function FAQ() {
     },
     {
       question: "スクールの開催時間は？",
-      answer: "基本的な開催時間は平日10:00-16:00、土日祝日9:00-17:00となっております。また、季節や天候に応じて、早朝や夕方の特別クラスも開催しております。詳細なスケジュールはお問い合わせください。"
+      answer:
+        "当スクールはオンラインで学べるコンテンツとなっており、ご都合の良いタイミングでいつでも学んでいただけます。オープンファームなど対面での開催につきましては日程や時間が都度異なりますので、詳しいスケジュールはお問い合わせください。"
     },
     {
       question: "支払い方法は何がありますか？",
@@ -60,19 +61,21 @@ export default function FAQ() {
     },
     {
       question: "駐車場はありますか？",
-      answer: "はい、スクール敷地内に無料駐車場を完備しております。お車でのご来校も可能です。駐車場のご利用方法については、お申し込み時にご案内いたします。"
+      answer:
+        "はい、淡路スマイルファーム敷地内に無料駐車場を完備しております。お車でのご来園も可能です。駐車場のご利用方法については、お申し込み時にご案内いたします。"
     },
     {
       question: "家族で参加できますか？",
       answer: "はい、家族でのご参加を大歓迎いたします！専用のキッズスペースはありませんが、お子様も一緒に畑や作業スペースに入っていただけます。安全面に配慮しながら、家族みんなで野菜づくりを楽しんでいただけます。"
     },
     {
-      question: "雨天の場合はどうなりますか？",
-      answer: "雨天の場合は、屋内の実習スペースで栽培の基礎知識や技術を学んでいただきます。また、天候に左右されない栽培方法（水耕栽培など）についても学べる機会となります。"
-    },
-    {
       question: "Nパワープラスの希釈水はどのくらいの期間で使い切ったらいいですか？",
       answer: "１ヶ月は常温保存で使えます。"
+    },
+    {
+      question: "Nパワーの消費期限はどのくらいですか？",
+      answer:
+        "使用期限の目安は3ヶ月となっておりますが、残ってしまった場合でも、保管状態が良ければ約1年ほどは問題なくお使いいただけます。"
     },
     {
       question: "N パワープラスの畑に撒く以外の使い方はありますか？",
@@ -120,7 +123,8 @@ export default function FAQ() {
     },
     {
       question: "Nパワーの成分が入った化粧水ありますか？",
-      answer: "はい、ございます！Nパワーの成分を配合した化粧水をご用意しております。自然の力を、最も純粋な形で肌に届けるスキンケア製品です。詳しくは製品ページや特設LPをご覧ください。",
+      answer:
+        "はい、ございます！Nパワーは土壌用のお水でございますのでNパワーとは少し異なりますが、表皮常在菌が育ちやすくなるように設計したオリジナルの化粧水をご用意しております。自然の力を、最も純粋な形で肌に届けるスキンケア製品です。詳しくは製品ページをご覧ください。",
       links: [
         { href: "/naturalpure-lp", text: "化粧水の詳細を見る" }
       ]
@@ -361,7 +365,7 @@ export default function FAQ() {
           <div className="text-center mt-12">
             <Link 
               href="/" 
-              className="inline-flex items-center px-6 py-3 border border-farm-green-400 text-farm-green-800 font-semibold rounded-lg bg-white hover:bg-farm-green-50 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-green-50 transition-colors duration-200"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
