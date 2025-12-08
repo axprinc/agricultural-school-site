@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import MainFooter from '@/components/MainFooter'
 
 export default function TokuteishyouPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -266,6 +267,8 @@ export default function TokuteishyouPage() {
         </div>
         </div>
       </div>
+
+      <MainFooter />
     </div>
   )
-} 
+}
