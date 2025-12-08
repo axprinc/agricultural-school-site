@@ -266,7 +266,7 @@ export default function PrivacyPage() {
                   <p className="font-semibold text-farm-green-800">優しい家庭菜園の学校</p>
                   <p>〒656-0021 兵庫県洲本市五色町鮎原小山田1065番地</p>
                   <p>メール：info@awaji-smilefarm.com</p>
-                  <p>電話番号：050-1794-8888</p>
+                  <p>運営責任者：石川 貴子</p>
                 </div>
               </div>
 
@@ -283,18 +283,6 @@ export default function PrivacyPage() {
             </div>
           </div>
 
-          {/* フッター */}
-          <div className="text-center mt-12">
-            <Link
-              href="/"
-              className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-green-50 transition-colors duration-200"
-            >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              ホームに戻る
-            </Link>
-          </div>
         </div>
       </div>
 

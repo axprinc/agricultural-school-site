@@ -25,10 +25,12 @@ const playfairDisplay = Playfair_Display({
 })
 
 const zenMaruGothic = Zen_Maru_Gothic({
-  subsets: ['latin'],
-  variable: '--font-zen-maru',
-  weight: ['400', '500', '700'],
-  display: 'swap',
+  // Next.js 14.2.5 では 'japanese' subset が未定義のため latin を指定。
+  // 実フォントは globals.css の @import でロードし、日本語グリフを担保。
+  subsets: ["latin"],
+  variable: "--font-zenmaru",
+  weight: ["400", "500", "700"],
+  display: "swap"
 })
 
 export const metadata: Metadata = {

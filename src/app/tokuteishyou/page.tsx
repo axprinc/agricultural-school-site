@@ -217,15 +217,29 @@ export default function TokuteishyouPage() {
                   返品・キャンセルについて
                 </h2>
                 <div className="ml-9 space-y-3 text-gray-700">
-                  <p>
-                    万が一、入会から3ヶ月以内に「思ったような成果が得られない」「ご自身に合わない」と感じられた場合は、以下の条件を満たすことで、年会費を全額返金させていただきます。
-                  </p>
-                  <p>返金をご希望の場合は、入会日から90日以内にその旨をメールまたはお電話にてご連絡ください。</p>
-                  <p>お申し込み時にお渡しする「Nパワープラス®」が未開封であることを確認の上、指定の住所へご返送ください（送料はお客様負担）。</p>
-                  <p>返送確認後、速やかにご指定の口座へ年会費を全額返金いたします（振込手数料を差し引いた額となります）。</p>
-                  <div className="bg-farm-green-50 p-4 rounded-lg border-l-4 border-farm-green-400">
-                    <p className="text-sm text-farm-green-800 font-semibold">※返金制度のご利用は、おひとり様一度限りとさせていただきます。</p>
-                    <p className="text-sm text-farm-green-700 mt-2">※開封済みの商品や、90日を過ぎてのご申請には対応いたしかねます。</p>
+                  <div className="space-y-4 text-sm md:text-base">
+                    <div className="space-y-1">
+                      <p className="font-semibold text-farm-green-800">● 解約について</p>
+                      <p>
+                        本サービスは月額制の有料サービスであり、お支払いは自動更新となります。日割計算による返金は行っておりません。
+                      </p>
+                      <p>
+                        解約をご希望の場合は、次回決済日の3日前までに、メールまたはお問い合わせフォームより所定の退会手続きをお申し込みください。退会手続き完了後は、翌月以降の料金は発生いたしません。
+                      </p>
+                      <p>なお、料金は事前の告知により改定される場合があります。</p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-farm-green-800">● 返金について</p>
+                      <p>
+                        オンライン講座およびデジタル教材というサービスの性質上、すでにお支払いいただいた月額料金および入会金（39,800円）の返金には対応しておりません。
+                      </p>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="font-semibold text-farm-green-800">● クーリングオフについて</p>
+                      <p>
+                        本サービスは、特定商取引法における「特定継続的役務提供」には該当しないため、クーリングオフ制度の適用対象外となります。
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -252,19 +266,6 @@ export default function TokuteishyouPage() {
               </div>
             </div>
           </div>
-
-          {/* フッター */}
-        <div className="text-center mt-12">
-          <Link 
-            href="/" 
-            className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-green-50 transition-colors duration-200"
-          >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            ホームに戻る
-          </Link>
-        </div>
         </div>
       </div>
 

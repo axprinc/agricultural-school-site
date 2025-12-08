@@ -50,7 +50,7 @@ export default function Home() {
       subtitle: '収穫の喜びを分かち合う'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.png',
       alt: 'オープンファーム - 農場での実習',
       title: '土に触れ',
       subtitle: '自然とのつながりを感じる'
@@ -484,7 +484,9 @@ export default function Home() {
               src={image.src}
               alt={image.alt}
               fill
-              className="object-cover transition-transform duration-[10000ms] ease-in-out animate-ken-burns-in-strong"
+              className={`object-cover transition-transform duration-[10000ms] ease-in-out animate-ken-burns-in-strong ${
+                index === 3 ? 'object-bottom' : ''
+              }`}
               priority={index === 0}
             />
             
@@ -710,7 +712,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">
               <Image
                 src="/images/gallery/LINE_ALBUM1 (5).jpg"
                 alt="収穫した色とりどりの野菜"
@@ -799,7 +801,12 @@ export default function Home() {
                 className="w-full h-40 object-cover"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <p className="text-xs text-emerald-700 font-semibold mb-0">05</p>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs text-emerald-700 font-semibold">05</p>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-semibold">
+                    準備中
+                  </span>
+                </div>
                 <h3 className="font-semibold text-base md:text-lg text-emerald-900 mt-1">
                   野菜のパッケージ・配送サービス
                   <br />
@@ -811,7 +818,7 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
+            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">
               <Image
                 src="/images/gallery/LINE_ALBUM1 (8).jpg"
                 alt="オープンファームの様子"
@@ -820,7 +827,12 @@ export default function Home() {
                 className="w-full h-40 object-cover"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
-                <p className="text-xs text-emerald-700 font-semibold mb-0">06</p>
+                <div className="flex items-center justify-between">
+                  <p className="text-xs text-emerald-700 font-semibold">06</p>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-semibold">
+                    準備中
+                  </span>
+                </div>
                 <h3 className="font-semibold text-base md:text-lg text-emerald-900 mt-1">
                   全国各地の提携農家さんの
                   <br />
@@ -995,7 +1007,7 @@ export default function Home() {
                     従来の「外から微生物を入れる」という考え方ではなく、「すでにその土地に住む微生物に栄養を与えて活性化させる」という画期的な発想で開発されました。
                   </p>
                   <p className="text-sm md:text-base text-[#5A4D41] leading-7">
-                    大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心してお使いいただけます。
+                    大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やご高齢の方のいるご家庭でも安心してお使いいただけます。
                   </p>
                   <p className="text-sm md:text-base text-[#5A4D41] leading-7">
                     使い方も驚くほど簡単。500倍に薄めて（100mlボトルなら500L水に対応）、通常の水やりの代わりに月に1〜2回使用するだけです。家庭菜園なら約6ヶ月分、プランター10個分に対応できます。
@@ -1054,20 +1066,23 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 mb-6">
-            <div className="flex-1 bg-white rounded-3xl p-6 shadow-lg border-2 border-orange-50 relative transform transition-transform hover:-translate-y-1">
+            <div className="flex-1 bg-white rounded-3xl p-6 md:p-7 shadow-lg border-2 border-orange-50 relative transform transition-transform hover:-translate-y-1">
               <div className="absolute -top-6 -right-6 md:-right-4 bg-[#FFF9E5] text-[#8B5E3C] px-4 py-4 rounded-full shadow-md border-2 border-[#E6D5B8] flex flex-col items-center justify-center transform rotate-12 w-24 h-24">
                 <span className="text-xs font-bold">今だけ</span>
                 <span className="text-sm font-bold text-orange-600">お得！</span>
                 <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#E6D5B8]" />
               </div>
-              <h3 className="text-center text-gray-500 font-bold mb-2">入会金</h3>
+              <h3 className="text-center text-gray-600 font-bold mb-3 text-base md:text-lg tracking-wide">入会金</h3>
               <div className="text-center">
                 <div className="flex items-end justify-center gap-1 text-[#D97757]">
                   <span className="text-3xl md:text-4xl font-extrabold tracking-tight">39,800</span>
                   <span className="text-lg font-bold mb-1.5">円</span>
                   <span className="text-sm text-gray-500 mb-2 font-normal">（税込）</span>
                 </div>
-                <p className="text-gray-400 text-xs md:text-sm line-through mt-1">通常 55,000円</p>
+                <p className="mt-2 inline-flex items-baseline gap-1 text-sm md:text-base text-gray-700">
+                  <span className="font-bold text-base md:text-lg text-[#8B5E3C] tracking-wide">通常</span>
+                  <span className="line-through text-base md:text-lg font-semibold text-gray-600">55,000円</span>
+                </p>
               </div>
             </div>
 
