@@ -36,6 +36,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install Heroku CLI
+        # Ensure heroku command is available for deploy step
+        run: |
+          curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
