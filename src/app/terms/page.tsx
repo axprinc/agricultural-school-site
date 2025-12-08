@@ -4,6 +4,13 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import MainFooter from '@/components/MainFooter'
 
+export default function TermsPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const desktopLinkClass =
+    'text-farm-green-700 hover:text-farm-green-900 px-3 py-2 rounded-md text-sm font-medium transition-colors'
+  const mobileLinkClass =
+    'text-farm-green-700 hover:text-farm-green-900 block px-3 py-2 rounded-md text-base font-medium transition-colors'
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-farm-green-50 via-white to-harvest-orange-50 relative overflow-hidden">
       {/* 装飾的な背景要素 */}
