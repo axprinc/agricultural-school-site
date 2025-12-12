@@ -361,7 +361,9 @@ export default function NaturalPureLandingPage() {
                 >
                   今すぐ購入する
                 </a>
-                <p className="cta-final-warning">※送料はお客様負担となります。納期などの詳細はご購入前にご確認ください。</p>
+                <p className="cta-final-warning">
+                  ※送料はお客様負担となります。着払いでお送りしますので、受け取り時に、お支払いをお願いします。ご注文後、3日から1週間以内にお届けします。
+                </p>
               </div>
               <div className="cta-final-text">
                 <p className="cta-final-eyebrow">ご家族やご友人と一緒に、お得に続けたい方へ。</p>
@@ -384,7 +386,7 @@ export default function NaturalPureLandingPage() {
                   10本入りを購入する
                 </a>
                 <p className="cta-final-warning">
-                  ※こちらの10本入りセットは送料無料です。納期などの詳細はご購入前にご確認ください。
+                  ※こちらの10本入りセットは送料無料です。ご注文後、3日から1週間以内にお届けします。
                 </p>
               </div>
             </div>
