@@ -336,6 +336,23 @@ export default function NaturalPureLandingPage() {
           </section>
 
           <section className="cta-final-section">
+            <div className="container">
+              <div className="cta-member-banner">
+                <p>
+                  「優しい家庭菜園の学校」のメンバーになると、会員特別価格で
+                  <span className="cta-member-discount">約25％OFF</span>
+                  でご購入いただけます。
+                </p>
+                <a
+                  href="https://school.awaji-smilefarm.com/"
+                  className="cta-member-banner-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  詳細はこちら
+                </a>
+              </div>
+            </div>
             <div className="container cta-final-content">
               <div className="cta-final-text">
                 <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
@@ -1052,6 +1069,70 @@ export default function NaturalPureLandingPage() {
           overflow: hidden;
         }
 
+        .naturalpure-lp .cta-member-banner {
+          position: relative;
+          z-index: 2;
+          background: linear-gradient(90deg, #7fb092, #568c6a);
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 16px;
+          text-align: center;
+          font-weight: 700;
+          margin-bottom: 28px;
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+          letter-spacing: 0.01em;
+          display: grid;
+          gap: 12px;
+          justify-items: center;
+        }
+
+        .naturalpure-lp .cta-member-banner a {
+          color: #ffffff;
+          text-decoration: underline;
+          font-weight: 800;
+          margin-left: 4px;
+        }
+
+        .naturalpure-lp .cta-member-banner-break {
+          display: none;
+        }
+
+        .naturalpure-lp .cta-member-discount {
+          display: inline-block;
+          margin-left: 4px;
+          padding: 2px 10px;
+          border-radius: 999px;
+          background: #fff4d4;
+          color: #8a5a22;
+          font-weight: 800;
+        }
+
+        .naturalpure-lp .cta-member-banner-btn {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          background: #ffffff;
+          color: #2f5f40 !important;
+          border-radius: 999px;
+          padding: 9px 16px;
+          font-weight: 800;
+          font-size: 0.9rem;
+          text-decoration: none !important;
+          border: 1px solid #e0ebdf;
+          white-space: nowrap;
+          box-shadow: 0 12px 26px rgba(0, 0, 0, 0.14);
+          transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+          width: auto;
+          max-width: 200px;
+        }
+
+        .naturalpure-lp .cta-member-banner-btn:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+          opacity: 0.95;
+        }
+
         .naturalpure-lp .cta-final-section::before {
           content: '';
           position: absolute;
@@ -1286,6 +1367,13 @@ export default function NaturalPureLandingPage() {
 
           .naturalpure-lp .cta-final-text {
             max-width: 100%;
+          }
+
+          .naturalpure-lp .cta-member-banner {
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 18px;
           }
         }
         `}</style>
