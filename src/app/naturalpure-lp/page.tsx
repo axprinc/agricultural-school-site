@@ -258,7 +258,11 @@ export default function NaturalPureLandingPage() {
           <section className="section-padding ingredients-section">
             <div className="container ingredients-grid">
               <div className="ingredients-box">
-                <h2 className="section-title">原材料と、からだへのやさしさ</h2>
+                <h2 className="section-title">
+                  原材料と、からだへの
+                  <br />
+                  やさしさ
+                </h2>
                 <p className="ingredients-line">
                   原材料：湧水、オーガニック玄米、オーガニック大豆
                 </p>
@@ -646,10 +650,6 @@ export default function NaturalPureLandingPage() {
           max-width: 520px;
           margin-left: 0;
           margin-right: auto;
-        }
-
-        .naturalpure-lp .ingredients-box .section-title {
-          white-space: nowrap;
         }
 
         .naturalpure-lp .ingredients-grid {
@@ -1323,10 +1323,6 @@ export default function NaturalPureLandingPage() {
         @media (max-width: 640px) {
           .naturalpure-lp .mobile-break {
             display: block;
-          }
-
-          .naturalpure-lp .ingredients-box .section-title {
-            white-space: nowrap;
           }
 
           .naturalpure-lp .ingredients-visual img {
