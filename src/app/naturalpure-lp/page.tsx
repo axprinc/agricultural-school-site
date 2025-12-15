@@ -359,7 +359,11 @@ export default function NaturalPureLandingPage() {
           <section className="cta-final-section">
             <div className="container cta-final-content">
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
+                <p className="cta-final-eyebrow">
+                  あなたの肌で、ピュアな
+                  <br className="eyebrow-mobile-break" />
+                  透明感を感じてください。
+                </p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -387,7 +391,11 @@ export default function NaturalPureLandingPage() {
                 </p>
               </div>
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">ご家族やご友人と一緒に、お得に続けたい方へ。</p>
+                <p className="cta-final-eyebrow">
+                  ご家族やご友人と一緒に、
+                  <br className="eyebrow-mobile-break" />
+                  お得に続けたい方へ。
+                </p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -1231,6 +1239,10 @@ export default function NaturalPureLandingPage() {
           white-space: nowrap;
         }
 
+        .naturalpure-lp .eyebrow-mobile-break {
+          display: none;
+        }
+
         .naturalpure-lp .cta-final-title {
           font-size: 1.6rem;
           font-weight: 700;
@@ -1323,9 +1335,19 @@ export default function NaturalPureLandingPage() {
             display: block;
           }
 
+          .naturalpure-lp .eyebrow-mobile-break {
+            display: block;
+          }
+
+          .naturalpure-lp .cta-final-eyebrow {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            white-space: normal;
+          }
+
           .naturalpure-lp .cta-member-text {
-            font-size: 0.9rem;
-            line-height: 1.5;
+            font-size: 0.88rem;
+            line-height: 1.45;
           }
 
           .naturalpure-lp .cta-member-break {
