@@ -48,7 +48,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        'sans': ['Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', 'sans-serif'],
+        // サイト全体を本番と同じ Zen Maru 系に統一
+        'sans': ['Zen Maru Gothic', 'Hiragino Mincho ProN W6', 'Yu Mincho', '游明朝', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

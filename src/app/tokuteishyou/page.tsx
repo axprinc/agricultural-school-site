@@ -168,9 +168,9 @@ export default function TokuteishyouPage() {
               <div className="border-b border-farm-green-200 pb-6">
                 <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">2</span>
-                  営業所所在地
+                  本店所在地
                 </h2>
-                <p className="text-gray-700 ml-9">〒656-1317<br />兵庫県洲本市五色町鮎原小山田1065番地</p>
+                <p className="text-gray-700 ml-9">東京都渋谷区代々木２丁目１０番１２号ＪＡ東京南新宿ビル８階</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">

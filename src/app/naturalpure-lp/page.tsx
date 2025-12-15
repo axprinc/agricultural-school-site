@@ -336,23 +336,6 @@ export default function NaturalPureLandingPage() {
           </section>
 
           <section className="cta-final-section">
-            <div className="container">
-              <div className="cta-member-banner">
-                <p>
-                  「優しい家庭菜園の学校」のメンバーになると、会員特別価格で
-                  <span className="cta-member-discount">約25％OFF</span>
-                  でご購入いただけます。
-                </p>
-                <a
-                  href="https://school.awaji-smilefarm.com/"
-                  className="cta-member-banner-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  詳細はこちら
-                </a>
-              </div>
-            </div>
             <div className="container cta-final-content">
               <div className="cta-final-text">
                 <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
@@ -405,6 +388,23 @@ export default function NaturalPureLandingPage() {
                 <p className="cta-final-warning">
                   ※こちらの10本入りセットは送料無料です。ご注文後、3日から1週間以内にお届けします。
                 </p>
+              </div>
+            </div>
+            <div className="container">
+              <div className="cta-member-banner">
+                <p>
+                  「優しい家庭菜園の学校」のメンバーになると、会員特別価格で
+                  <span className="cta-member-discount">約25％OFF</span>
+                  でご購入いただけます。
+                </p>
+                <a
+                  href="https://school.awaji-smilefarm.com/"
+                  className="cta-member-banner-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  詳細はこちら
+                </a>
               </div>
             </div>
           </section>
@@ -1078,7 +1078,7 @@ export default function NaturalPureLandingPage() {
           border-radius: 16px;
           text-align: center;
           font-weight: 700;
-          margin-bottom: 28px;
+          margin-top: 28px;
           box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
           letter-spacing: 0.01em;
           display: grid;
@@ -1193,7 +1193,7 @@ export default function NaturalPureLandingPage() {
           font-weight: 600;
           color: var(--primary-green);
           margin-bottom: 0.75rem;
-          white-space: nowrap;
+          white-space: normal;
         }
 
         .naturalpure-lp .cta-final-title {
