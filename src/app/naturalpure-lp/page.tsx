@@ -359,11 +359,7 @@ export default function NaturalPureLandingPage() {
           <section className="cta-final-section">
             <div className="container cta-final-content">
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">
-                  あなたの肌で、ピュアな
-                  <br className="mobile-break" />
-                  透明感を感じてください。
-                </p>
+                <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -391,11 +387,7 @@ export default function NaturalPureLandingPage() {
                 </p>
               </div>
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">
-                  ご家族やご友人と一緒に、
-                  <br className="mobile-break" />
-                  お得に続けたい方へ。
-                </p>
+                <p className="cta-final-eyebrow">ご家族やご友人と一緒に、お得に続けたい方へ。</p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -421,9 +413,9 @@ export default function NaturalPureLandingPage() {
             </div>
             <div className="container">
               <div className="cta-member-banner">
-                <p>
+                <p className="cta-member-text">
                   「優しい家庭菜園の学校」のメンバーになると、
-                  <br className="mobile-break" />
+                  <br className="cta-member-break" />
                   会員特別価格で
                   <span className="cta-member-discount">約25％OFF</span>
                   でご購入いただけます。
@@ -1123,6 +1115,11 @@ export default function NaturalPureLandingPage() {
           justify-items: center;
         }
 
+        .naturalpure-lp .cta-member-text {
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+
         .naturalpure-lp .cta-member-banner a {
           color: #ffffff;
           text-decoration: underline;
@@ -1226,11 +1223,12 @@ export default function NaturalPureLandingPage() {
         }
 
         .naturalpure-lp .cta-final-eyebrow {
-          font-size: 1.1rem;
+          font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+          line-height: 1.35;
           font-weight: 600;
           color: var(--primary-green);
-          margin-bottom: 0.75rem;
-          white-space: normal;
+          margin-bottom: 0.65rem;
+          white-space: nowrap;
         }
 
         .naturalpure-lp .cta-final-title {
@@ -1322,6 +1320,15 @@ export default function NaturalPureLandingPage() {
 
         @media (max-width: 640px) {
           .naturalpure-lp .mobile-break {
+            display: block;
+          }
+
+          .naturalpure-lp .cta-member-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+          }
+
+          .naturalpure-lp .cta-member-break {
             display: block;
           }
 
