@@ -159,7 +159,11 @@ export default function NaturalPureLandingPage() {
           <section className="mechanism-section">
             <div className="mechanism-overlay" />
             <div className="container mechanism-content">
-              <h2 className="section-title section-title-white">発酵は“菌がつくる、自然の恵み”</h2>
+              <h2 className="section-title section-title-white">
+                発酵は“菌がつくる、
+                <br className="mobile-break" />
+                自然の恵み”
+              </h2>
               <p className="mechanism-lead">発酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
               <div className="mechanism-body">
                 <p>
@@ -221,7 +225,11 @@ export default function NaturalPureLandingPage() {
             <div className="conclusion-overlay" />
             <div className="container conclusion-content">
               <div className="conclusion-text-box">
-                <h2 className="section-title">発酵が未来の美容にもたらすもの</h2>
+                <h2 className="section-title">
+                  発酵が未来の美容に
+                  <br className="mobile-break" />
+                  もたらすもの
+                </h2>
                 <p>
                   私たちは、肌と常在菌と発酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。
                 </p>
@@ -248,7 +256,7 @@ export default function NaturalPureLandingPage() {
           </section>
 
           <section className="section-padding ingredients-section">
-            <div className="container">
+            <div className="container ingredients-grid">
               <div className="ingredients-box">
                 <h2 className="section-title">原材料と、からだへのやさしさ</h2>
                 <p className="ingredients-line">
@@ -257,17 +265,22 @@ export default function NaturalPureLandingPage() {
                 <p>
                   原料はすべて、口に含めるほどの食品由来成分。万が一お口に入ってしまっても、心配ありません。
                 </p>
-              <p>小さなお子様と暮らす毎日に、心からの安心をお届けします。</p>
+                <p>小さなお子様と暮らす毎日に、心からの安心をお届けします。</p>
+              </div>
+              <div className="ingredients-visual">
+                <Image src={INGREDIENTS_BG_IMAGE} alt="原材料のイメージ" width={900} height={580} />
               </div>
             </div>
           </section>
 
           <section className="section-padding safety-section">
             <div className="container">
-              <h2 className="section-title">
-                6つのフリーと、安全へのこだわり
-                <span className="section-subtitle">大切な人と一緒に使えるスキンケアのために</span>
-              </h2>
+                <h2 className="section-title">
+                  6つのフリーと、
+                  <br className="mobile-break" />
+                  安全へのこだわり
+                  <span className="section-subtitle">大切な人と一緒に使えるスキンケアのために</span>
+                </h2>
               <p className="section-text">
                 100%食品由来成分の、ピュアな処方。赤ちゃんが触れても気にならない優しさで、家族みんなの空間を整えます。
               </p>
@@ -304,7 +317,11 @@ export default function NaturalPureLandingPage() {
             <div className="container">
               <h2 className="section-title">
                 よくあるご質問
-                <span className="section-subtitle">初めての方にも、安心してお使いいただくために</span>
+                <span className="section-subtitle">
+                  初めての方にも、安心して
+                  <br className="mobile-break" />
+                  お使いいただくために
+                </span>
               </h2>
               <dl className="qa-list">
                 {QA_ITEMS.map((item, index) => (
@@ -338,7 +355,11 @@ export default function NaturalPureLandingPage() {
           <section className="cta-final-section">
             <div className="container cta-final-content">
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">あなたの肌で、ピュアな透明感を感じてください。</p>
+                <p className="cta-final-eyebrow">
+                  あなたの肌で、ピュアな
+                  <br className="mobile-break" />
+                  透明感を感じてください。
+                </p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -366,7 +387,11 @@ export default function NaturalPureLandingPage() {
                 </p>
               </div>
               <div className="cta-final-text">
-                <p className="cta-final-eyebrow">ご家族やご友人と一緒に、お得に続けたい方へ。</p>
+                <p className="cta-final-eyebrow">
+                  ご家族やご友人と一緒に、
+                  <br className="mobile-break" />
+                  お得に続けたい方へ。
+                </p>
                 <h3 className="cta-final-title">
                   ナチュラル・ピュア
                   <br />
@@ -393,7 +418,9 @@ export default function NaturalPureLandingPage() {
             <div className="container">
               <div className="cta-member-banner">
                 <p>
-                  「優しい家庭菜園の学校」のメンバーになると、会員特別価格で
+                  「優しい家庭菜園の学校」のメンバーになると、
+                  <br className="mobile-break" />
+                  会員特別価格で
                   <span className="cta-member-discount">約25％OFF</span>
                   でご購入いただけます。
                 </p>
@@ -440,6 +467,10 @@ export default function NaturalPureLandingPage() {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
+        }
+
+        .naturalpure-lp .mobile-break {
+          display: none;
         }
 
         .naturalpure-lp .serif-font,
@@ -602,22 +633,8 @@ export default function NaturalPureLandingPage() {
 
         .naturalpure-lp .ingredients-section {
           position: relative;
-          background: #ffffff;
+          background: linear-gradient(180deg, #e7f8f2 0%, #f2fbf7 60%, #ffffff 100%);
           overflow: hidden;
-        }
-
-        .naturalpure-lp .ingredients-section::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          background: url('${INGREDIENTS_BG_IMAGE}') 65% center / cover no-repeat;
-          opacity: 1;
-          z-index: 0;
-        }
-
-        .naturalpure-lp .ingredients-section .container {
-          position: relative;
-          z-index: 1;
         }
 
         .naturalpure-lp .ingredients-box {
@@ -629,6 +646,26 @@ export default function NaturalPureLandingPage() {
           max-width: 520px;
           margin-left: 0;
           margin-right: auto;
+        }
+
+        .naturalpure-lp .ingredients-box .section-title {
+          white-space: nowrap;
+        }
+
+        .naturalpure-lp .ingredients-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 36px;
+          align-items: center;
+        }
+
+        .naturalpure-lp .ingredients-visual img {
+          width: 100%;
+          height: 100%;
+          max-height: 520px;
+          object-fit: cover;
+          border-radius: 24px;
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
         }
 
         .naturalpure-lp .ingredients-box .section-title {
@@ -1281,6 +1318,21 @@ export default function NaturalPureLandingPage() {
         .naturalpure-lp .cta-final-warning {
           font-size: 0.85rem;
           color: #6c7a74;
+        }
+
+        @media (max-width: 640px) {
+          .naturalpure-lp .mobile-break {
+            display: block;
+          }
+
+          .naturalpure-lp .ingredients-box .section-title {
+            white-space: nowrap;
+          }
+
+          .naturalpure-lp .ingredients-visual img {
+            max-height: 360px;
+            object-position: center;
+          }
         }
 
         @keyframes pulse {
