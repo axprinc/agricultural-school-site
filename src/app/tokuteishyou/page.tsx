@@ -198,9 +198,10 @@ export default function TokuteishyouPage() {
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">5</span>
                   支払い方法・時期
                 </h2>
-                <p className="text-gray-700 ml-9">
-                  現在のお支払い方法はクレジットカード決済のみとなります。お支払い時期は、ご利用のカード会社の規定に準じます。
-                </p>
+                <div className="text-gray-700 ml-9 space-y-3">
+                  <p>現在のお支払い方法はクレジットカード決済のみとなります。初回のお申し込み時に、初回分の料金を決済いたします。</p>
+                  <p>2回目以降の決済につきましては、お申し込み日を基準日とし、毎月同日に自動的に決済されます。ただし、基準日が当月に存在しない場合（例：1月31日にお申し込みの場合の2月など）は、当該月の末日を決済日とさせていただきます。</p>
+                </div>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
