@@ -488,6 +488,7 @@ export default function Home() {
                 index === 3 ? 'object-bottom' : ''
               }`}
               priority={index === 0}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
             
             {/* オーバーレイ */}
@@ -651,6 +652,7 @@ export default function Home() {
                       width={800}
                       height={400}
                       className="w-full h-52 md:h-60 object-cover rounded-2xl mb-4"
+                      sizes="(max-width: 768px) 100vw, 1000px"
                     />
                     <h4 className="font-semibold text-base md:text-lg text-emerald-900 mb-3">
                       理由1：残留農薬を限りなくゼロに近づける栄養剤「Nパワー」
@@ -668,6 +670,7 @@ export default function Home() {
                       width={800}
                       height={400}
                       className="w-full h-52 md:h-60 object-cover rounded-2xl mb-4"
+                      sizes="(max-width: 768px) 100vw, 1000px"
                     />
                     <h4 className="font-semibold text-base md:text-lg text-emerald-900 mb-3">
                       理由2：その土地の微生物群を味方につける土づくり
@@ -719,6 +722,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <p className="text-xs text-emerald-700 font-semibold mb-0">01</p>
@@ -738,6 +742,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <p className="text-xs text-emerald-700 font-semibold mb-0">02</p>
@@ -757,6 +762,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <p className="text-xs text-emerald-700 font-semibold mb-0">03</p>
@@ -778,6 +784,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <p className="text-xs text-emerald-700 font-semibold mb-0">04</p>
@@ -799,6 +806,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div className="flex items-center justify-between">
@@ -825,6 +833,7 @@ export default function Home() {
                 width={800}
                 height={320}
                 className="w-full h-40 object-cover"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
               <div className="p-4 flex-1 flex flex-col justify-between">
                 <div className="flex items-center justify-between">
@@ -891,6 +900,7 @@ export default function Home() {
                       alt="Nパワープラスのイメージ"
                       fill
                       className="object-cover transform transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-black/10" />
                   </div>
@@ -1292,6 +1302,7 @@ export default function Home() {
                   fill
                   className="object-cover scale-110 object-top"
                   style={{ objectPosition: '50% 20%' }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -1314,6 +1325,7 @@ export default function Home() {
                   alt="鈴木さんの写真"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -1336,6 +1348,7 @@ export default function Home() {
                   alt="佐藤さんの写真"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -1461,6 +1474,7 @@ export default function Home() {
                       fill
                       className="object-cover"
                       priority={index === 0}
+                      sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                 ))}
@@ -1520,6 +1534,7 @@ export default function Home() {
                   alt={image.alt}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-all duration-300"></div>
               </div>

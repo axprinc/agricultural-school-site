@@ -189,6 +189,7 @@ export default function HomeGardenPage() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
           {/* カラーオーバーレイは削除し、自然な色味に */}
         </div>
@@ -525,6 +526,7 @@ export default function HomeGardenPage() {
                   fill
                   className="object-cover scale-110 object-top"
                   style={{ objectPosition: '50% 20%' }}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -546,6 +548,7 @@ export default function HomeGardenPage() {
                   alt="山田さんの写真"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -567,6 +570,7 @@ export default function HomeGardenPage() {
                   alt="鈴木さんの写真"
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-white">
@@ -603,6 +607,7 @@ export default function HomeGardenPage() {
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
               />
 
 
@@ -644,6 +649,7 @@ export default function HomeGardenPage() {
                   alt={image.alt}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-all duration-300"></div>
               </div>

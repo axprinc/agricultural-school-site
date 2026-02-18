@@ -1,0 +1,1018 @@
+.naturalpure-lp {
+  --primary-green: #568c6a;
+  --secondary-green: #7fb092;
+  --text-color: #333333;
+  --light-bg: #f7faf8;
+  --deep-green: #1f3b2c;
+  --white: #ffffff;
+  --gold: #c7b299;
+  font-family: var(--font-zen-maru), 'Zen Maru Gothic', 'Hiragino Mincho ProN W6', 'Yu Mincho', '游明朝', serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+.naturalpure-lp *,
+.naturalpure-lp *::before,
+.naturalpure-lp *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.naturalpure-lp .mobile-break {
+  display: none;
+}
+
+.naturalpure-lp .serif-font,
+.naturalpure-lp h2.section-title {
+  font-family: inherit;
+}
+
+.naturalpure-lp img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.naturalpure-lp a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.naturalpure-lp a:hover {
+  opacity: 0.8;
+}
+
+.naturalpure-lp .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.naturalpure-lp .section-padding {
+  padding: 80px 0;
+}
+
+.naturalpure-lp .site-header {
+  padding: 20px;
+  text-align: center;
+  background: var(--white);
+  border-bottom: 1px solid #eee;
+}
+
+.naturalpure-lp .logo {
+  font-size: 1.5rem;
+  color: var(--primary-green);
+  letter-spacing: 0.1em;
+}
+
+.naturalpure-lp .fv-section {
+  position: relative;
+  width: 100%;
+  padding: 40px 0 60px;
+  background-color: #f5f7f8;
+}
+
+.naturalpure-lp .fv-image-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.naturalpure-lp .main-visual {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.naturalpure-lp h2.section-title {
+  font-size: 2rem;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.naturalpure-lp .section-subtitle {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #6d7a74;
+  margin-top: 0.75rem;
+}
+
+.naturalpure-lp .section-text {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.naturalpure-lp .cta-button {
+  display: inline-block;
+  background-color: #2f5f40;
+  color: var(--white);
+  padding: 15px 42px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  box-shadow: 0 12px 26px rgba(47, 95, 64, 0.36);
+  transition: all 0.3s ease;
+}
+
+.naturalpure-lp .cta-button:hover {
+  background-color: #3d8158;
+  box-shadow: 0 16px 34px rgba(61, 129, 88, 0.42);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.naturalpure-lp .cta-button.large {
+  padding: 20px 60px;
+  font-size: 1.3rem;
+}
+
+.naturalpure-lp .concept-section {
+  background: #fff;
+}
+
+.naturalpure-lp .concept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.naturalpure-lp .concept-body p {
+  margin-bottom: 1rem;
+}
+
+.naturalpure-lp .concept-highlight {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.naturalpure-lp .concept-cta {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.naturalpure-lp .concept-cta .cta-final-button {
+  margin-bottom: 0;
+}
+
+.naturalpure-lp .concept-image img {
+  border-radius: 24px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.naturalpure-lp .empathy-section {
+  background: #f7faf8;
+}
+
+.naturalpure-lp .empathy-body {
+  max-width: 720px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #4a5550;
+}
+
+.naturalpure-lp .empathy-body p + p {
+  margin-top: 0.75rem;
+}
+
+.naturalpure-lp .ingredients-section {
+  position: relative;
+  background: linear-gradient(180deg, #e7f8f2 0%, #f2fbf7 60%, #ffffff 100%);
+  overflow: hidden;
+}
+
+.naturalpure-lp .ingredients-box {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+  border: 1px solid #edf2ef;
+  max-width: 520px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.naturalpure-lp .ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 36px;
+  align-items: center;
+}
+
+.naturalpure-lp .ingredients-visual img {
+  width: 100%;
+  height: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.naturalpure-lp .ingredients-box .section-title {
+  margin-bottom: 1rem;
+}
+
+.naturalpure-lp .ingredients-line {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--primary-green);
+}
+
+.naturalpure-lp .ingredients-box p + p {
+  margin-top: 0.75rem;
+}
+
+.naturalpure-lp .mechanism-section {
+  position: relative;
+  background: #000;
+  color: var(--white);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.naturalpure-lp .mechanism-overlay {
+  position: absolute;
+  inset: 0;
+  background: url('/images/publicimagesnaturalpure-lp/feature-6.webp') center / cover no-repeat;
+  opacity: 1;
+  z-index: 0;
+}
+
+.naturalpure-lp .mechanism-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.naturalpure-lp .mechanism-section .section-title,
+.naturalpure-lp .mechanism-section .mechanism-lead,
+.naturalpure-lp .mechanism-section .mechanism-body {
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.naturalpure-lp .section-title.section-title-white {
+  color: var(--white);
+}
+
+.naturalpure-lp .mechanism-lead {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.naturalpure-lp .mechanism-body {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.naturalpure-lp .gold-text {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.naturalpure-lp .nutrient-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem 0.75rem;
+  margin: 0 0.15rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f2a24;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.naturalpure-lp .nutrient-amino {
+  background: rgba(255, 236, 202, 0.95);
+  color: #8a5d14;
+}
+
+.naturalpure-lp .nutrient-peptide {
+  background: rgba(209, 237, 242, 0.95);
+  color: #0b5a6a;
+}
+
+.naturalpure-lp .nutrient-sugar {
+  background: rgba(233, 219, 255, 0.95);
+  color: #5c2b96;
+}
+
+.naturalpure-lp .nutrient-vitamin {
+  background: rgba(221, 245, 210, 0.95);
+  color: #2d6a1e;
+}
+
+.naturalpure-lp .mechanism-highlight {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.naturalpure-lp .benefits-section {
+  position: relative;
+  padding: 90px 0;
+  background-image: url('/images/publicimagesnaturalpure-lp/feature-3.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-top: 1px solid rgba(86, 140, 106, 0.1);
+  border-bottom: 1px solid rgba(86, 140, 106, 0.08);
+}
+
+.naturalpure-lp .benefits-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.55) 65%, rgba(255, 255, 255, 0.82) 100%),
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.65), transparent 60%),
+    radial-gradient(circle at 75% 0%, rgba(255, 255, 255, 0.5), transparent 55%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.naturalpure-lp .benefits-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.55) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+  background-size: 120px 120px, 80px 80px;
+  background-position: 0 0, 40px 40px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.naturalpure-lp .benefits-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.naturalpure-lp .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.naturalpure-lp .benefits-item {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eef2ef;
+}
+
+.naturalpure-lp .benefits-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(86, 140, 106, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.naturalpure-lp .benefits-heading {
+  font-size: 1.05rem;
+  color: var(--primary-green);
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.naturalpure-lp .benefits-heading span {
+  white-space: nowrap;
+}
+
+.naturalpure-lp .benefits-heading-line {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.naturalpure-lp .benefits-footer {
+  margin-top: 32px;
+  text-align: center;
+  color: #4a5550;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+}
+
+.naturalpure-lp .benefits-section .container {
+  text-align: center;
+}
+
+.naturalpure-lp .benefits-section .section-title {
+  display: inline-block;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.naturalpure-lp .reviews-section {
+  background: #f7faf8;
+}
+
+.naturalpure-lp .reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.naturalpure-lp .review-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid #edf2ef;
+}
+
+.naturalpure-lp .review-text {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.naturalpure-lp .review-profile {
+  font-size: 0.85rem;
+  color: #6c7a74;
+  text-align: right;
+}
+
+.naturalpure-lp .safety-section {
+  background: #ffffff;
+}
+
+.naturalpure-lp .safety-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.naturalpure-lp .safety-pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #f2f7f4;
+  color: #365746;
+  font-size: 0.9rem;
+  border: 1px solid rgba(86, 140, 106, 0.35);
+}
+
+.naturalpure-lp .safety-note {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: #8a9490;
+}
+
+.naturalpure-lp .howto-section {
+  position: relative;
+  background: #f7faf8;
+  overflow: hidden;
+}
+
+.naturalpure-lp .howto-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/publicimagesnaturalpure-lp/feature-12.webp') center / cover no-repeat;
+  opacity: 0.45;
+  z-index: 0;
+}
+
+.naturalpure-lp .howto-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.naturalpure-lp .howto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.naturalpure-lp .howto-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px 20px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2ef;
+}
+
+.naturalpure-lp .howto-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(86, 140, 106, 0.1);
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.naturalpure-lp .howto-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--primary-green);
+}
+
+.naturalpure-lp .howto-description {
+  font-size: 0.95rem;
+  color: #4f5a55;
+}
+
+.naturalpure-lp .qa-section {
+  background: #ffffff;
+}
+
+.naturalpure-lp .qa-list {
+  margin-top: 28px;
+}
+
+.naturalpure-lp .qa-item + .qa-item {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e2e8e4;
+}
+
+.naturalpure-lp .qa-question {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--primary-green);
+  margin-bottom: 6px;
+}
+
+.naturalpure-lp .qa-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: rgba(86, 140, 106, 0.1);
+  font-size: 0.8rem;
+}
+
+.naturalpure-lp .qa-answer {
+  font-size: 0.95rem;
+  color: #4a5550;
+  padding-left: 36px;
+}
+
+.naturalpure-lp .qa-link {
+  color: var(--primary-green);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.naturalpure-lp .conclusion-section {
+  position: relative;
+  padding: 110px 0;
+  background: linear-gradient(180deg, #e7f8f2 0%, #dff0ff 55%, #e5f7ff 100%);
+  overflow: hidden;
+}
+
+.naturalpure-lp .conclusion-section::before {
+  content: '';
+  position: absolute;
+  inset: -30% -5% auto -5%;
+  height: 70%;
+  background: radial-gradient(circle at 20% 25%, rgba(255, 255, 255, 0.85), transparent 55%),
+    radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.65), transparent 60%);
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.naturalpure-lp .conclusion-section::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 45%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.naturalpure-lp .conclusion-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.5;
+}
+
+.naturalpure-lp .conclusion-content {
+  position: relative;
+}
+
+.naturalpure-lp .conclusion-text-box {
+  background: var(--white);
+  border-radius: 32px;
+  padding: 40px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.08);
+}
+
+.naturalpure-lp .conclusion-text-box p {
+  margin-bottom: 1rem;
+}
+
+.naturalpure-lp .conclusion-message {
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-green);
+  margin-top: 1.5rem;
+}
+
+.naturalpure-lp .cta-final-section {
+  position: relative;
+  padding: 120px 0;
+  color: #1e2a21;
+  overflow: hidden;
+}
+
+.naturalpure-lp .cta-member-banner {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(90deg, #7fb092, #568c6a);
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  letter-spacing: 0.01em;
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.naturalpure-lp .cta-member-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.naturalpure-lp .cta-member-banner a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+.naturalpure-lp .cta-member-banner-break {
+  display: none;
+}
+
+.naturalpure-lp .cta-member-discount {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #fff4d4;
+  color: #8a5a22;
+  font-weight: 800;
+}
+
+.naturalpure-lp .cta-member-banner-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #2f5f40 !important;
+  border-radius: 999px;
+  padding: 9px 16px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  border: 1px solid #e0ebdf;
+  white-space: nowrap;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  width: auto;
+  max-width: 200px;
+}
+
+.naturalpure-lp .cta-member-banner-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
+  opacity: 0.95;
+}
+
+.naturalpure-lp .cta-final-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/images/publicimagesnaturalpure-lp/feature-7.webp') center/cover no-repeat;
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.naturalpure-lp .cta-final-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.65) 55%, rgba(255, 255, 255, 0.15) 100%);
+  z-index: 1;
+}
+
+.naturalpure-lp .cta-final-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.naturalpure-lp .cta-final-text {
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.naturalpure-lp .cta-final-meta {
+  position: relative;
+  z-index: 2;
+  margin-top: 28px;
+  padding: 18px 20px;
+  max-width: 720px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  font-size: 0.9rem;
+  color: #4c5a55;
+}
+
+.naturalpure-lp .cta-final-meta-line + .cta-final-meta-line {
+  margin-top: 0.45rem;
+}
+
+.naturalpure-lp .cta-final-meta-line:first-child {
+  font-weight: 600;
+}
+
+.naturalpure-lp .cta-final-eyebrow {
+  font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  line-height: 1.35;
+  font-weight: 600;
+  color: var(--primary-green);
+  margin-bottom: 0.65rem;
+  white-space: nowrap;
+}
+
+.naturalpure-lp .eyebrow-mobile-break {
+  display: none;
+}
+
+.naturalpure-lp .cta-final-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.naturalpure-lp .cta-final-note {
+  color: #5c6d66;
+  margin-bottom: 1.5rem;
+}
+
+.naturalpure-lp .cta-member-note {
+  display: none;
+}
+
+.naturalpure-lp .cta-member-highlight {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: #f7e1c4;
+  color: #8a5a22;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 1rem;
+}
+
+.naturalpure-lp .cta-final-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.naturalpure-lp .price-original {
+  font-size: 1.1rem;
+  color: #7a857f;
+  text-decoration: line-through;
+}
+
+.naturalpure-lp .price-arrow {
+  font-size: 1.2rem;
+  color: #5d6a63;
+}
+
+.naturalpure-lp .price-current {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2f6b48;
+}
+
+.naturalpure-lp .price-badge {
+  background: #f7e1c4;
+  color: #8a5a22;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+.naturalpure-lp .cta-final-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #2f5f40;
+  color: #fff;
+  padding: 18px 52px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 14px 28px rgba(47, 95, 64, 0.38);
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.naturalpure-lp .cta-final-button:hover {
+  background: #3d8158;
+  box-shadow: 0 18px 34px rgba(61, 129, 88, 0.45);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.naturalpure-lp .cta-final-warning {
+  font-size: 0.85rem;
+  color: #6c7a74;
+}
+
+.naturalpure-lp .cta-product-image {
+  margin: 0 0 1.25rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.naturalpure-lp .cta-product-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .naturalpure-lp .mobile-break {
+    display: block;
+  }
+
+  .naturalpure-lp .eyebrow-mobile-break {
+    display: block;
+  }
+
+  .naturalpure-lp .cta-final-eyebrow {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .naturalpure-lp .cta-member-text {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .naturalpure-lp .cta-member-break {
+    display: block;
+  }
+
+  .naturalpure-lp .ingredients-visual img {
+    max-height: 360px;
+    object-position: center;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.naturalpure-lp .animate-pulse {
+  animation: pulse 2s infinite;
+}
+
+.naturalpure-lp .site-footer {
+  background: var(--deep-green);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 40px 0 20px 0;
+}
+
+.naturalpure-lp .footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.naturalpure-lp .footer-logo {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+  text-align: center;
+  width: 100%;
+}
+
+.naturalpure-lp .footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 768px) {
+  .naturalpure-lp h2.section-title {
+    font-size: 1.6rem;
+  }
+
+  .naturalpure-lp .section-padding {
+    padding: 60px 0;
+  }
+
+  .naturalpure-lp .ingredients-box {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .naturalpure-lp .cta-button {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .naturalpure-lp .benefits-heading br {
+    display: none;
+  }
+
+  .naturalpure-lp .conclusion-text-box {
+    padding: 28px;
+  }
+
+  .naturalpure-lp .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .naturalpure-lp .cta-final-content {
+    justify-content: center;
+  }
+
+  .naturalpure-lp .cta-final-text {
+    max-width: 100%;
+  }
+
+  .naturalpure-lp .cta-member-banner {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 18px;
+  }
+}

@@ -177,6 +177,7 @@ export default function GalleryPage() {
                   src={image.src}
                   alt={image.alt}
                   fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 
@@ -208,6 +209,7 @@ export default function GalleryPage() {
               alt={galleryImages[selectedImage].alt}
               width={1000}
               height={800}
+              sizes="100vw"
               className="object-contain max-h-[90vh] w-auto"
             />
             <button 
