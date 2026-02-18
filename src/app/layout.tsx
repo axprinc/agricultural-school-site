@@ -1,32 +1,9 @@
 import type { Metadata } from 'next'
 import React from 'react'
-import { Inter, Noto_Sans_JP, Playfair_Display, Zen_Maru_Gothic } from 'next/font/google'
+import { Zen_Maru_Gothic } from 'next/font/google'
 import './globals.css'
 
-// Google Fonts設定
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap"
-})
-
-const notoSansJP = Noto_Sans_JP({ 
-  subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap"
-})
-
-const playfairDisplay = Playfair_Display({ 
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "500", "600", "700"],
-  display: "swap"
-})
-
 const zenMaruGothic = Zen_Maru_Gothic({
-  // Next.js 14.2.5 では 'japanese' subset が未定義のため latin を指定。
-  // 実フォントは globals.css の @import でロードし、日本語グリフを担保。
   subsets: ["latin"],
   variable: "--font-zenmaru",
   weight: ["400", "500", "700"],
@@ -46,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${inter.variable} ${notoSansJP.variable} ${playfairDisplay.variable} ${zenMaruGothic.variable} antialiased`}>
+      <body className={`${zenMaruGothic.variable} antialiased`}>
         {children}
       </body>
     </html>
