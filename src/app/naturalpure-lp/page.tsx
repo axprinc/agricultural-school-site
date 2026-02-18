@@ -418,6 +418,33 @@ export default function NaturalPureLandingPage() {
                   ※こちらの10本入りセットは送料無料です。ご注文後、3日から1週間以内にお届けします。
                 </p>
               </div>
+              <div className="cta-final-text">
+                <p className="cta-final-eyebrow">
+                  詰め替え用を買って、エコでお得に
+                  <br className="eyebrow-mobile-break" />
+                  続けたい方へ。
+                </p>
+                <h3 className="cta-final-title">
+                  ナチュラル・ピュア
+                  <br />
+                  3本入りセット
+                </h3>
+                <p className="cta-final-note">内容量：500ml × 3本 ／ 送料 通常1,000円、離島2,000円</p>
+                <div className="cta-final-price">
+                  <span className="price-current">¥15,000（税込）</span>
+                </div>
+                <a
+                  href="https://order.awaji-smilefarm.com/products/pd_kfm9b5rowqdcugwy/purchases/new"
+                  className="cta-final-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  詰め替え3本セットを購入する
+                </a>
+                <p className="cta-final-warning">
+                  ※送料は通常1,000円、離島2,000円となります。ご注文後、3日から1週間以内にお届けします。
+                </p>
+              </div>
             </div>
             <div className="container">
               <div className="cta-member-banner">
