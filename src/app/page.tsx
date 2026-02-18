@@ -32,31 +32,31 @@ export default function Home() {
   // ヒーロー画像のスライド管理
   const heroImages = [
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_1.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_1.webp',
       alt: 'オープンファーム - 農業体験の様子',
       title: '小さなスペースで',
       subtitle: '大きな収穫を'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27250728_2.webp',
       alt: 'オープンファーム - 家庭菜園指導',
       title: '家族の食卓に',
       subtitle: '安心・安全な自家製野菜を届ける',
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_3.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27 _250728_3.webp',
       alt: 'オープンファーム - 参加者との交流',
       title: '家族みんなで',
       subtitle: '収穫の喜びを分かち合う'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.png',
+      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.webp',
       alt: 'オープンファーム - 農場での実習',
       title: '土に触れ',
       subtitle: '自然とのつながりを感じる'
     },
     {
-      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_17.jpg',
+      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_17.webp',
       alt: 'オープンファーム - イベントの様子',
       title: 'みんなで学び',
       subtitle: '一緒に成長する'
@@ -215,49 +215,49 @@ export default function Home() {
   // メインページ用ギャラリー画像（厳選8枚）
   const galleryImages = [
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_1.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_1.webp',
       alt: 'オープンファーム - 野菜栽培の様子',
       title: '野菜栽培',
       bgColor: 'bg-farm-green-400'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_3.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_3.webp',
       alt: 'オープンファーム - 農場風景',
       title: '農場風景',
       bgColor: 'bg-earth-brown-300'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_5.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27_250728_5.webp',
       alt: 'オープンファーム - 農業体験',
       title: '農業体験',
       bgColor: 'bg-harvest-orange-500'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_7.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_7.webp',
       alt: 'オープンファーム - 野菜の成長',
       title: '野菜の成長',
       bgColor: 'bg-earth-brown-400'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_9.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_9.webp',
       alt: 'オープンファーム - 収穫の喜び',
       title: '収穫の喜び',
       bgColor: 'bg-farm-green-600'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_11.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_11.webp',
       alt: 'オープンファーム - 家族での参加',
       title: '家族での参加',
       bgColor: 'bg-earth-brown-600'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_13.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_13.webp',
       alt: 'オープンファーム - 講師による指導',
       title: '講師による指導',
       bgColor: 'bg-harvest-orange-700'
     },
     {
-      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_15.jpg',
+      src: '/images/gallery-preview/LINE_ALBUM_2025.7.27 _250728_15.webp',
       alt: 'オープンファーム - 農作業実践',
       title: '農作業実践',
       bgColor: 'bg-farm-green-800'
@@ -646,7 +646,7 @@ export default function Home() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <article className="bg-white rounded-3xl shadow-md p-6 md:p-7 flex flex-col items-stretch">
                     <Image
-                      src="/images/online-school-garden-lp/online-school-garden-lp_5.png"
+                      src="/images/online-school-garden-lp/online-school-garden-lp_5.webp"
                       alt="Nパワーのイメージ"
                       width={800}
                       height={400}
@@ -663,7 +663,7 @@ export default function Home() {
 
                   <article className="bg-white rounded-3xl shadow-md p-6 md:p-7 flex flex-col items-stretch">
                     <Image
-                      src="/images/online-school-garden-lp/online-school-garden-lp_6.png"
+                      src="/images/online-school-garden-lp/online-school-garden-lp_6.webp"
                       alt="土づくりのイメージ"
                       width={800}
                       height={400}
@@ -714,7 +714,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">
               <Image
-                src="/images/gallery/LINE_ALBUM1 (5).jpg"
+                src="/images/gallery/LINE_ALBUM1 (5).webp"
                 alt="収穫した色とりどりの野菜"
                 width={800}
                 height={320}
@@ -733,7 +733,7 @@ export default function Home() {
 
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
               <Image
-                src="/images/online-school-garden-lp/online-school-garden-lp_2.jpeg"
+                src="/images/online-school-garden-lp/online-school-garden-lp_2.webp"
                 alt="オンライン講座のイメージ"
                 width={800}
                 height={320}
@@ -752,7 +752,7 @@ export default function Home() {
 
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
               <Image
-                src="/images/gallery/123.jpg"
+                src="/images/gallery/123.webp"
                 alt="優しい家庭菜園の学校のサービスイメージ"
                 width={800}
                 height={320}
@@ -773,7 +773,7 @@ export default function Home() {
 
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
               <Image
-                src="/images/online-school-garden-lp/online-school-garden-lp_3.jpeg"
+                src="/images/online-school-garden-lp/online-school-garden-lp_3.webp"
                 alt="会員専用コミュニティのイメージ"
                 width={800}
                 height={320}
@@ -794,7 +794,7 @@ export default function Home() {
 
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">
               <Image
-                src="/images/online-school-garden-lp/online-school-garden-lp_4.jpeg"
+                src="/images/online-school-garden-lp/online-school-garden-lp_4.webp"
                 alt="野菜のパッケージと配送のイメージ"
                 width={800}
                 height={320}
@@ -820,7 +820,7 @@ export default function Home() {
 
             <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">
               <Image
-                src="/images/gallery/LINE_ALBUM1 (8).jpg"
+                src="/images/gallery/LINE_ALBUM1 (8).webp"
                 alt="オープンファームの様子"
                 width={800}
                 height={320}
@@ -887,7 +887,7 @@ export default function Home() {
                 <div className="relative group mx-auto w-full max-w-[520px] md:max-w-[580px]">
                   <div className="relative w-full rounded-lg overflow-hidden shadow-lg aspect-[4/3]">
                     <Image
-                      src="/images/online-school-garden-lp/online-school-garden-lp_10.png"
+                      src="/images/online-school-garden-lp/online-school-garden-lp_10.webp"
                       alt="Nパワープラスのイメージ"
                       fill
                       className="object-cover transform transition-transform duration-700 group-hover:scale-105"
@@ -1287,7 +1287,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/testimonials/AdobeStock_516239930_Preview.jpeg"
+                  src="/images/testimonials/AdobeStock_516239930_Preview.webp"
                   alt="佐藤さんの写真"
                   fill
                   className="object-cover scale-110 object-top"
@@ -1310,7 +1310,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/testimonials/iStock-1322995729.jpg"
+                  src="/images/testimonials/iStock-1322995729.webp"
                   alt="鈴木さんの写真"
                   fill
                   className="object-cover"
@@ -1332,7 +1332,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <div className="relative h-48">
                 <Image
-                  src="/images/testimonials/iStock-1334059416.jpg"
+                  src="/images/testimonials/iStock-1334059416.webp"
                   alt="佐藤さんの写真"
                   fill
                   className="object-cover"
@@ -1382,7 +1382,7 @@ export default function Home() {
               <div className="w-full md:w-1/2 space-y-4">
                 <div className="w-64 h-44 md:w-80 md:h-56 rounded-3xl overflow-hidden shadow-xl mx-auto border-4 border-harvest-orange-100">
                   <Image
-                    src="/images/teacher/hanooka-sensei.jpg"
+                    src="/images/teacher/hanooka-sensei.webp"
                     alt="花岡正侍"
                     width={800}
                     height={500}

@@ -162,7 +162,7 @@ export default function TonerProductPage() {
               <FadeInSection>
                 <div className="relative aspect-square bg-white rounded-3xl shadow-2xl p-8">
                   <Image
-                    src="/images/products/ナチュラルピュア_商品画像.png"
+                    src="/images/products/ナチュラルピュア_商品画像.webp"
                     alt={PRODUCT_DATA.name}
                     fill
                     className="object-contain rounded-2xl"

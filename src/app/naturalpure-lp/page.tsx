@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 
-const CONCEPT_IMAGE = '/images/publicimagesnaturalpure-lp/feature-2.jpg'
-const MECHANISM_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-6.png'
-const CTA_FINAL_IMAGE = '/images/publicimagesnaturalpure-lp/feature-7.png'
-const BENEFITS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-3.jpg'
-const INGREDIENTS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-11.png'
+const CONCEPT_IMAGE = '/images/publicimagesnaturalpure-lp/feature-2.webp'
+const MECHANISM_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-6.webp'
+const CTA_FINAL_IMAGE = '/images/publicimagesnaturalpure-lp/feature-7.webp'
+const BENEFITS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-3.webp'
+const INGREDIENTS_BG_IMAGE = '/images/publicimagesnaturalpure-lp/feature-11.webp'
 
 type Benefit =
   | {
@@ -113,7 +113,7 @@ export default function NaturalPureLandingPage() {
           <section className="fv-section">
             <div className="fv-image-container">
               <Image
-                src="/images/publicimagesnaturalpure-lp/hero.png"
+                src="/images/publicimagesnaturalpure-lp/hero.webp"
                 alt="ナチュラル・ピュア ライフスタイル・ウォーター"
                 width={1200}
                 height={900}
@@ -972,7 +972,7 @@ export default function NaturalPureLandingPage() {
           content: '';
           position: absolute;
           inset: 0;
-          background: url('/images/publicimagesnaturalpure-lp/feature-12.png') center / cover no-repeat;
+          background: url('/images/publicimagesnaturalpure-lp/feature-12.webp') center / cover no-repeat;
           opacity: 0.45;
           z-index: 0;
         }

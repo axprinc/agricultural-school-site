@@ -1,0 +1,228 @@
+[1mdiff --git a/public/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg b/public/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg[m
+[1mindex eed571b..f6c7a2d 100644[m
+Binary files a/public/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg and b/public/images/hero/LINE_ALBUM_2025.7.27250728_2.jpg differ
+[1mdiff --git a/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg b/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg[m
+[1mdeleted file mode 100644[m
+[1mindex 384d2b0..0000000[m
+Binary files a/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg and /dev/null differ
+[1mdiff --git a/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.png b/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c6b19d0[m
+Binary files /dev/null and b/public/images/hero/LINE_ALBUM_2025.7.27_250728_4.png differ
+[1mdiff --git a/public/images/online-school-garden-lp/online-school-garden-lp_5.png b/public/images/online-school-garden-lp/online-school-garden-lp_5.png[m
+[1mindex 0dfd70c..4dce9d3 100644[m
+Binary files a/public/images/online-school-garden-lp/online-school-garden-lp_5.png and b/public/images/online-school-garden-lp/online-school-garden-lp_5.png differ
+[1mdiff --git a/src/app/page.tsx b/src/app/page.tsx[m
+[1mindex 4e6ec7b..265868b 100644[m
+[1m--- a/src/app/page.tsx[m
+[1m+++ b/src/app/page.tsx[m
+[36m@@ -50,7 +50,7 @@[m [mexport default function Home() {[m
+       subtitle: '収穫の喜びを分かち合う'[m
+     },[m
+     {[m
+[31m-      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.jpg',[m
+[32m+[m[32m      src: '/images/hero/LINE_ALBUM_2025.7.27_250728_4.png',[m
+       alt: 'オープンファーム - 農場での実習',[m
+       title: '土に触れ',[m
+       subtitle: '自然とのつながりを感じる'[m
+[36m@@ -484,7 +484,9 @@[m [mexport default function Home() {[m
+               src={image.src}[m
+               alt={image.alt}[m
+               fill[m
+[31m-              className="object-cover transition-transform duration-[10000ms] ease-in-out animate-ken-burns-in-strong"[m
+[32m+[m[32m              className={`object-cover transition-transform duration-[10000ms] ease-in-out animate-ken-burns-in-strong ${[m
+[32m+[m[32m                index === 3 ? 'object-bottom' : ''[m
+[32m+[m[32m              }`}[m
+               priority={index === 0}[m
+             />[m
+             [m
+[36m@@ -710,7 +712,7 @@[m [mexport default function Home() {[m
+           </div>[m
+ [m
+           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">[m
+[31m-            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">[m
+[32m+[m[32m            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">[m
+               <Image[m
+                 src="/images/gallery/LINE_ALBUM1 (5).jpg"[m
+                 alt="収穫した色とりどりの野菜"[m
+[36m@@ -799,7 +801,12 @@[m [mexport default function Home() {[m
+                 className="w-full h-40 object-cover"[m
+               />[m
+               <div className="p-4 flex-1 flex flex-col justify-between">[m
+[31m-                <p className="text-xs text-emerald-700 font-semibold mb-0">05</p>[m
+[32m+[m[32m                <div className="flex items-center justify-between">[m
+[32m+[m[32m                  <p className="text-xs text-emerald-700 font-semibold">05</p>[m
+[32m+[m[32m                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-semibold">[m
+[32m+[m[32m                    準備中[m
+[32m+[m[32m                  </span>[m
+[32m+[m[32m                </div>[m
+                 <h3 className="font-semibold text-base md:text-lg text-emerald-900 mt-1">[m
+                   野菜のパッケージ・配送サービス[m
+                   <br />[m
+[36m@@ -811,7 +818,7 @@[m [mexport default function Home() {[m
+               </div>[m
+             </article>[m
+ [m
+[31m-            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col">[m
+[32m+[m[32m            <article className="bg-white rounded-3xl shadow-md overflow-hidden flex flex-col relative">[m
+               <Image[m
+                 src="/images/gallery/LINE_ALBUM1 (8).jpg"[m
+                 alt="オープンファームの様子"[m
+[36m@@ -820,7 +827,12 @@[m [mexport default function Home() {[m
+                 className="w-full h-40 object-cover"[m
+               />[m
+               <div className="p-4 flex-1 flex flex-col justify-between">[m
+[31m-                <p className="text-xs text-emerald-700 font-semibold mb-0">06</p>[m
+[32m+[m[32m                <div className="flex items-center justify-between">[m
+[32m+[m[32m                  <p className="text-xs text-emerald-700 font-semibold">06</p>[m
+[32m+[m[32m                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 text-[10px] font-semibold">[m
+[32m+[m[32m                    準備中[m
+[32m+[m[32m                  </span>[m
+[32m+[m[32m                </div>[m
+                 <h3 className="font-semibold text-base md:text-lg text-emerald-900 mt-1">[m
+                   全国各地の提携農家さんの[m
+                   <br />[m
+[36m@@ -995,7 +1007,7 @@[m [mexport default function Home() {[m
+                     従来の「外から微生物を入れる」という考え方ではなく、「すでにその土地に住む微生物に栄養を与えて活性化させる」という画期的な発想で開発されました。[m
+                   </p>[m
+                   <p className="text-sm md:text-base text-[#5A4D41] leading-7">[m
+[31m-                    大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やペットのいるご家庭でも安心してお使いいただけます。[m
+[32m+[m[32m                    大豆、米糠、糖蜜などすべて天然原料から作られており、化学合成物質は一切使用していません。お子様やご高齢の方のいるご家庭でも安心してお使いいただけます。[m
+                   </p>[m
+                   <p className="text-sm md:text-base text-[#5A4D41] leading-7">[m
+                     使い方も驚くほど簡単。500倍に薄めて（100mlボトルなら500L水に対応）、通常の水やりの代わりに月に1〜2回使用するだけです。家庭菜園なら約6ヶ月分、プランター10個分に対応できます。[m
+[36m@@ -1054,20 +1066,23 @@[m [mexport default function Home() {[m
+           </div>[m
+ [m
+           <div className="flex flex-col md:flex-row justify-center items-stretch gap-4 mb-6">[m
+[31m-            <div className="flex-1 bg-white rounded-3xl p-6 shadow-lg border-2 border-orange-50 relative transform transition-transform hover:-translate-y-1">[m
+[32m+[m[32m            <div className="flex-1 bg-white rounded-3xl p-6 md:p-7 shadow-lg border-2 border-orange-50 relative transform transition-transform hover:-translate-y-1">[m
+               <div className="absolute -top-6 -right-6 md:-right-4 bg-[#FFF9E5] text-[#8B5E3C] px-4 py-4 rounded-full shadow-md border-2 border-[#E6D5B8] flex flex-col items-center justify-center transform rotate-12 w-24 h-24">[m
+                 <span className="text-xs font-bold">今だけ</span>[m
+                 <span className="text-sm font-bold text-orange-600">お得！</span>[m
+                 <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-[#E6D5B8]" />[m
+               </div>[m
+[31m-              <h3 className="text-center text-gray-500 font-bold mb-2">入会金</h3>[m
+[32m+[m[32m              <h3 className="text-center text-gray-600 font-bold mb-3 text-base md:text-lg tracking-wide">入会金</h3>[m
+               <div className="text-center">[m
+                 <div className="flex items-end justify-center gap-1 text-[#D97757]">[m
+                   <span className="text-3xl md:text-4xl font-extrabold tracking-tight">39,800</span>[m
+                   <span className="text-lg font-bold mb-1.5">円</span>[m
+                   <span className="text-sm text-gray-500 mb-2 font-normal">（税込）</span>[m
+                 </div>[m
+[31m-                <p className="text-gray-400 text-xs md:text-sm line-through mt-1">通常 55,000円</p>[m
+[32m+[m[32m                <p className="mt-2 inline-flex items-baseline gap-1 text-sm md:text-base text-gray-700">[m
+[32m+[m[32m                  <span className="font-bold text-base md:text-lg text-[#8B5E3C] tracking-wide">通常</span>[m
+[32m+[m[32m                  <span className="line-through text-base md:text-lg font-semibold text-gray-600">55,000円</span>[m
+[32m+[m[32m                </p>[m
+               </div>[m
+             </div>[m
+ [m
+[1mdiff --git a/src/app/privacy/page.tsx b/src/app/privacy/page.tsx[m
+[1mindex 7174758..4b0f920 100644[m
+[1m--- a/src/app/privacy/page.tsx[m
+[1m+++ b/src/app/privacy/page.tsx[m
+[36m@@ -266,7 +266,7 @@[m [mexport default function PrivacyPage() {[m
+                   <p className="font-semibold text-farm-green-800">優しい家庭菜園の学校</p>[m
+                   <p>〒656-0021 兵庫県洲本市五色町鮎原小山田1065番地</p>[m
+                   <p>メール：info@awaji-smilefarm.com</p>[m
+[31m-                  <p>電話番号：050-1794-8888</p>[m
+[32m+[m[32m                  <p>運営責任者：石川 貴子</p>[m
+                 </div>[m
+               </div>[m
+ [m
+[36m@@ -283,18 +283,6 @@[m [mexport default function PrivacyPage() {[m
+             </div>[m
+           </div>[m
+ [m
+[31m-          {/* フッター */}[m
+[31m-          <div className="text-center mt-12">[m
+[31m-            <Link[m
+[31m-              href="/"[m
+[31m-              className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-green-50 transition-colors duration-200"[m
+[31m-            >[m
+[31m-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">[m
+[31m-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />[m
+[31m-              </svg>[m
+[31m-              ホームに戻る[m
+[31m-            </Link>[m
+[31m-          </div>[m
+         </div>[m
+       </div>[m
+ [m
+[1mdiff --git a/src/app/terms/page.tsx b/src/app/terms/page.tsx[m
+[1mindex 9f26811..b8edae4 100644[m
+[1m--- a/src/app/terms/page.tsx[m
+[1m+++ b/src/app/terms/page.tsx[m
+[36m@@ -300,18 +300,6 @@[m [mexport default function TermsPage() {[m
+             </div>[m
+           </div>[m
+ [m
+[31m-          {/* フッター */}[m
+[31m-          <div className="text-center mt-12">[m
+[31m-            <Link [m
+[31m-              href="/" [m
+[31m-              className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-green-50 transition-colors duration-200"[m
+[31m-            >[m
+[31m-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">[m
+[31m-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />[m
+[31m-              </svg>[m
+[31m-              ホームに戻る[m
+[31m-            </Link>[m
+[31m-          </div>[m
+         </div>[m
+       </div>[m
+ [m
+[1mdiff --git a/src/app/tokuteishyou/page.tsx b/src/app/tokuteishyou/page.tsx[m
+[1mindex 1b4f914..b4fd9a7 100644[m
+[1m--- a/src/app/tokuteishyou/page.tsx[m
+[1m+++ b/src/app/tokuteishyou/page.tsx[m
+[36m@@ -217,15 +217,29 @@[m [mexport default function TokuteishyouPage() {[m
+                   返品・キャンセルについて[m
+                 </h2>[m
+                 <div className="ml-9 space-y-3 text-gray-700">[m
+[31m-                  <p>[m
+[31m-                    万が一、入会から3ヶ月以内に「思ったような成果が得られない」「ご自身に合わない」と感じられた場合は、以下の条件を満たすことで、年会費を全額返金させていただきます。[m
+[31m-                  </p>[m
+[31m-                  <p>返金をご希望の場合は、入会日から90日以内にその旨をメールまたはお電話にてご連絡ください。</p>[m
+[31m-                  <p>お申し込み時にお渡しする「Nパワープラス®」が未開封であることを確認の上、指定の住所へご返送ください（送料はお客様負担）。</p>[m
+[31m-                  <p>返送確認後、速やかにご指定の口座へ年会費を全額返金いたします（振込手数料を差し引いた額となります）。</p>[m
+[31m-                  <div className="bg-farm-green-50 p-4 rounded-lg border-l-4 border-farm-green-400">[m
+[31m-                    <p className="text-sm text-farm-green-800 font-semibold">※返金制度のご利用は、おひとり様一度限りとさせていただきます。</p>[m
+[31m-                    <p className="text-sm text-farm-green-700 mt-2">※開封済みの商品や、90日を過ぎてのご申請には対応いたしかねます。</p>[m
+[32m+[m[32m                  <div className="space-y-4 text-sm md:text-base">[m
+[32m+[m[32m                    <div className="space-y-1">[m
+[32m+[m[32m                      <p className="font-semibold text-farm-green-800">● 解約について</p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        本サービスは月額制の有料サービスであり、お支払いは自動更新となります。日割計算による返金は行っておりません。[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        解約をご希望の場合は、次回決済日の3日前までに、メールまたはお問い合わせフォームより所定の退会手続きをお申し込みください。退会手続き完了後は、翌月以降の料金は発生いたしません。[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                      <p>なお、料金は事前の告知により改定される場合があります。</p>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div className="space-y-1">[m
+[32m+[m[32m                      <p className="font-semibold text-farm-green-800">● 返金について</p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        オンライン講座およびデジタル教材というサービスの性質上、すでにお支払いいただいた月額料金および入会金（39,800円）の返金には対応しておりません。[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                    </div>[m
+[32m+[m[32m                    <div className="space-y-1">[m
+[32m+[m[32m                      <p className="font-semibold text-farm-green-800">● クーリングオフについて</p>[m
+[32m+[m[32m                      <p>[m
+[32m+[m[32m                        本サービスは、特定商取引法における「特定継続的役務提供」には該当しないため、クーリングオフ制度の適用対象外となります。[m
+[32m+[m[32m                      </p>[m
+[32m+[m[32m                    </div>[m
+                   </div>[m
+                 </div>[m
+               </div>[m
+[36m@@ -252,19 +266,6 @@[m [mexport default function TokuteishyouPage() {[m
+               </div>[m
+             </div>[m
+           </div>[m
+[31m-[m
+[31m-          {/* フッター */}[m
+[31m-        <div className="text-center mt-12">[m
+[31m-          <Link [m
+[31m-            href="/" [m
+[31m-            className="inline-flex items-center px-6 py-3 border border-farm-green-300 text-farm-green-700 font-medium rounded-lg hover:bg-farm-gree
