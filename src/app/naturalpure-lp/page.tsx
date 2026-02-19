@@ -126,7 +126,8 @@ export default function NaturalPureLandingPage() {
             <div className="container concept-grid">
               <div className="concept-copy">
                 <h2 className="section-title">
-                  発酵の力で、夕方まで乾かない<br className="mobile-break" />&quot;水光肌&quot;へ。<br className="mobile-break" />自然由来の成分が肌を整えます。
+                  <span className="concept-title-pc">発酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
+                  <span className="concept-title-mobile">発酵の力で、水光肌へ。</span>
                   <span className="section-subtitle">皮膚常在菌との共生という美しさ</span>
                 </h2>
                 <div className="concept-body">
@@ -182,7 +183,8 @@ export default function NaturalPureLandingPage() {
           <section className="section-padding benefits-section">
             <div className="container">
               <h2 className="section-title">
-                肌本来の力を引き出す、<br className="mobile-break" />発酵と常在菌のバランス設計
+                <span className="benefits-title-pc">肌本来の力を引き出す、<br className="mobile-break" />発酵と常在菌のバランス設計</span>
+                <span className="benefits-title-mobile">発酵×常在菌バランス設計</span>
                 <span className="section-subtitle">
                   発酵エキスが常在菌環境を豊かにすると、肌は本来の力を取り戻し始めます。
                 </span>
@@ -232,7 +234,7 @@ export default function NaturalPureLandingPage() {
                 <p>
                   私たちは、肌と常在菌と発酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。
                 </p>
-                <p className="conclusion-message">― 発酵がつくる美しさは、<br className="mobile-break" />肌と菌が生きていることへの讃歌です。 ―</p>
+                <p className="conclusion-message">発酵がつくる美しさは、<br className="mobile-break" />肌と菌が生きていることへの讃歌です。</p>
               </div>
             </div>
           </section>
@@ -258,9 +260,7 @@ export default function NaturalPureLandingPage() {
             <div className="container ingredients-grid">
               <div className="ingredients-box">
                 <h2 className="section-title">
-                  原材料と、からだへの
-                  <br />
-                  やさしさ
+                  自然由来の、やさしさ。
                 </h2>
                 <p className="ingredients-line">
                   原材料：湧水、オーガニック玄米、オーガニック大豆
