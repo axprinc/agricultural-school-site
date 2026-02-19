@@ -217,7 +217,7 @@ export default function NaturalPureLandingPage() {
                 これは化粧品が肌を“変える”のではなく、<br className="mobile-break" />肌自身が自らを整えるという現象。
               </p>
               <p className="benefits-footer">
-                発酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返します。
+                発酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返す。
               </p>
             </div>
           </section>
