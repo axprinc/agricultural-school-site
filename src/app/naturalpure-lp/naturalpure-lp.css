@@ -674,23 +674,104 @@
 .naturalpure-lp .cta-member-banner {
   position: relative;
   z-index: 2;
-  background: linear-gradient(90deg, #7fb092, #568c6a);
+  background: linear-gradient(135deg, #1f3b2c 0%, #2d5a3d 50%, #1a3326 100%);
   color: #ffffff;
-  padding: 20px;
-  border-radius: 16px;
+  padding: 48px 40px;
+  border-radius: 24px;
   text-align: center;
-  font-weight: 700;
-  margin-top: 28px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  letter-spacing: 0.01em;
-  display: grid;
-  gap: 12px;
-  justify-items: center;
+  margin-top: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
 }
 
-.naturalpure-lp .cta-member-text {
+.naturalpure-lp .cta-member-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(199, 178, 153, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.naturalpure-lp .cta-member-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(127, 176, 146, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.naturalpure-lp .cta-member-banner-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background: linear-gradient(90deg, #c7b299, #e0c9aa);
+  color: #3a2510;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  padding: 5px 18px;
+  border-radius: 999px;
+}
+
+.naturalpure-lp .cta-member-banner-headline {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+}
+
+.naturalpure-lp .cta-member-banner-body {
+  position: relative;
+  z-index: 1;
   font-size: 1rem;
-  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.naturalpure-lp .cta-member-banner-price {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.naturalpure-lp .cta-member-banner-off {
+  display: inline-block;
+  background: linear-gradient(90deg, #f5e09a, #e8c84a);
+  color: #3a2510;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 6px 24px;
+  border-radius: 12px;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 16px rgba(232, 200, 74, 0.4);
+}
+
+.naturalpure-lp .cta-member-banner-price-sub {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
 }
 
 .naturalpure-lp .cta-member-banner a {
@@ -715,29 +796,30 @@
 }
 
 .naturalpure-lp .cta-member-banner-btn {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background: #ffffff;
-  color: #2f5f40 !important;
+  background: linear-gradient(90deg, #7fb092, #568c6a);
+  color: #ffffff !important;
   border-radius: 999px;
-  padding: 9px 16px;
+  padding: 16px 36px;
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-decoration: none !important;
-  border: 1px solid #e0ebdf;
-  white-space: nowrap;
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.14);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-  width: auto;
-  max-width: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  letter-spacing: 0.03em;
+  margin-top: 8px;
 }
 
 .naturalpure-lp .cta-member-banner-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
-  opacity: 0.95;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(90deg, #8fc4a0, #6aab80);
 }
 
 .naturalpure-lp .cta-final-section::before {
@@ -997,6 +1079,33 @@
   width: 100%;
 }
 
+.naturalpure-lp .footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.naturalpure-lp .footer-nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.naturalpure-lp .footer-nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.naturalpure-lp .footer-nav-divider {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.85rem;
+}
+
 .naturalpure-lp .footer-copy {
   text-align: center;
   margin-top: 20px;
@@ -1047,9 +1156,28 @@
   }
 
   .naturalpure-lp .cta-member-banner {
-    margin-bottom: 20px;
-    font-size: 15px;
-    line-height: 1.6;
-    padding: 18px;
+    padding: 36px 24px;
+    gap: 16px;
+    border-radius: 18px;
+  }
+
+  .naturalpure-lp .cta-member-banner-headline {
+    font-size: 1.2rem;
+  }
+
+  .naturalpure-lp .cta-member-banner-off {
+    font-size: 1.6rem;
+    padding: 5px 18px;
+  }
+
+  .naturalpure-lp .cta-member-banner-btn {
+    font-size: 0.9rem;
+    padding: 14px 24px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .naturalpure-lp .cta-member-banner-break {
+    display: block;
   }
 }

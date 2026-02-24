@@ -154,30 +154,33 @@ export default function TokuteishyouPage() {
             </p>
           </div>
 
-          {/* コンテンツカード */}
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-farm-green-100 p-8 md:p-12">
+          {/* 学校サービス カード */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-farm-green-100 p-8 md:p-12 mb-10">
+            <h2 className="text-2xl font-bold text-farm-green-800 mb-8 pb-4 border-b-2 border-farm-green-200">
+              優しい家庭菜園の学校（会員サービス）
+            </h2>
             <div className="space-y-8">
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">1</span>
                   会社名
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">株式会社グリーンハーベスト</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">2</span>
                   本店所在地
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">東京都渋谷区代々木２丁目１０番１２号ＪＡ東京南新宿ビル８階</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">3</span>
                   販売価格以外でお客様に発生する費用
-                </h2>
+                </h3>
                 <div className="text-gray-700 ml-9 space-y-2">
                   <p>
                     当サイトのページ閲覧、コンテンツ購入、ソフトウェアのダウンロード等に必要となるインターネット接続料金や通信料金はお客様のご負担となります。料金の詳細は、ご利用のインターネットプロバイダまたは携帯電話会社にお問い合わせください。
@@ -186,18 +189,18 @@ export default function TokuteishyouPage() {
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">4</span>
                   交換の方法、引渡し時期
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">お申し込み後、1週間以内に商品をお届けいたします。</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">5</span>
                   支払い方法・時期
-                </h2>
+                </h3>
                 <div className="text-gray-700 ml-9 space-y-3">
                   <p>現在のお支払い方法はクレジットカード決済のみとなります。初回のお申し込み時に、初回分の料金を決済いたします。</p>
                   <p>2回目以降の決済につきましては、お申し込み日を基準日とし、毎月同日に自動的に決済されます。ただし、基準日が当月に存在しない場合（例：1月31日にお申し込みの場合の2月など）は、当該月の末日を決済日とさせていただきます。</p>
@@ -205,18 +208,18 @@ export default function TokuteishyouPage() {
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">6</span>
                   販売価格
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">入会金：39,800円（税込）<br />月額：1,500円（税込）</p>
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">7</span>
                   返品・キャンセルについて
-                </h2>
+                </h3>
                 <div className="ml-9 space-y-3 text-gray-700">
                   <div className="space-y-4 text-sm md:text-base">
                     <div className="space-y-1">
@@ -246,18 +249,18 @@ export default function TokuteishyouPage() {
               </div>
 
               <div className="border-b border-farm-green-200 pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">8</span>
                   サービス内容
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">家庭菜園指導、オンライン講座、会員コミュニティ、農業体験ツアー等</p>
               </div>
 
               <div className="pb-6">
-                <h2 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
+                <h3 className="text-xl font-semibold text-farm-green-800 mb-4 flex items-center">
                   <span className="w-6 h-6 bg-farm-green-100 rounded-full flex items-center justify-center mr-3 text-farm-green-600 text-sm font-bold">9</span>
                   利用規約・プライバシーポリシー
-                </h2>
+                </h3>
                 <p className="text-gray-700 ml-9">
                   詳細は<Link href="/terms" className="text-farm-green-700 underline ml-1 mr-1">利用規約</Link>
                   と
@@ -267,6 +270,7 @@ export default function TokuteishyouPage() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
 

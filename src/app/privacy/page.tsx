@@ -160,7 +160,7 @@ export default function PrivacyPage() {
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-farm-green-100 p-8 md:p-12">
             <div className="space-y-8 text-gray-700 leading-relaxed">
               <p>
-                本プライバシーポリシー（以下「本ポリシー」といいます）は、<strong>株式会社グリーンハーベスト</strong>（以下「当社」といいます）が提供する農業スクール関連サービス（以下「本サービス」といいます）における、お客様の個人情報の取扱い指針を定めるものです。
+                本プライバシーポリシー（以下「本ポリシー」といいます）は、<strong>株式会社グリーンハーベスト</strong>（以下「当社」といいます）が提供する農業スクール関連サービスおよびナチュラル・ピュア ライフスタイル・ウォーターをはじめとする化粧品の通信販売（以下、これらを総称して「本サービス」といいます）における、お客様の個人情報の取扱い指針を定めるものです。
               </p>
 
               <div className="border-t border-farm-green-200 pt-8">
@@ -173,19 +173,32 @@ export default function PrivacyPage() {
               <div className="border-t border-farm-green-200 pt-8">
                 <h2 className="text-2xl font-bold text-farm-green-800 mb-4">2. 個人情報の取得と利用目的</h2>
                 
-                <h3 className="text-xl font-semibold text-farm-green-700 mb-3">(1) 取得方法</h3>
-                <p>
-                  当社は、利用登録・資料請求・お問い合わせ・イベント申込・SNS 連携等の適法かつ公正な手段により、必要最小限の個人情報を取得します。
+                <h3 className="text-xl font-semibold text-farm-green-700 mb-3">(1) 取得方法と取得する情報</h3>
+                <p className="mb-3">
+                  当社は、利用登録・資料請求・お問い合わせ・イベント申込・商品購入・SNS 連携等の適法かつ公正な手段により、必要最小限の個人情報を取得します。
                 </p>
+                <p className="mb-2">主な取得情報は以下のとおりです。</p>
+                <ul className="list-disc list-inside space-y-1 ml-4 text-sm">
+                  <li>氏名、住所、電話番号、メールアドレス等の連絡先情報</li>
+                  <li>クレジットカード情報等の決済関連情報（外部決済サービスを経由して取得）</li>
+                  <li>商品の配送先住所・配送希望情報</li>
+                  <li>商品の購入履歴・利用履歴</li>
+                  <li>お問い合わせ・ご相談の内容</li>
+                  <li>Cookie・アクセスログ・端末識別情報等</li>
+                </ul>
 
                 <h3 className="text-xl font-semibold text-farm-green-700 mb-3 mt-6">(2) 利用目的</h3>
                 <p className="mb-4">取得した個人情報は、以下の目的で利用します。</p>
                 <ol className="list-decimal list-inside space-y-2 ml-4">
                   <li>本サービスの登録手続き、本人確認、講座・コミュニティの提供</li>
                   <li>お問い合わせ対応、サポート連絡</li>
-                  <li>受講料・年会費等の決済・請求・領収書発行</li>
+                  <li>受講料・年会費・商品代金等の決済・請求・領収書発行</li>
                   <li>オンライン講座・教材・コミュニティ運営の改善・向上</li>
                   <li>農業体験ツアー・オフ会等イベント案内、キャンペーン情報提供</li>
+                  <li>化粧品その他商品のご注文処理、配送手配、配送状況のご連絡</li>
+                  <li>購入履歴の管理および関連商品・サービスのご案内</li>
+                  <li>商品の品質・安全に関するご連絡（成分・使用上の注意等）</li>
+                  <li>返品・交換・不良品対応等のアフターサービス</li>
                   <li>マーケティングデータ分析（属性情報・行動履歴等）</li>
                   <li>不正利用・規約違反の調査および対応</li>
                   <li>契約・利用規約等に基づく権利行使・義務履行</li>

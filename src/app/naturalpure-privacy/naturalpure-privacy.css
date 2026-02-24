@@ -1,0 +1,118 @@
+.np-privacy-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(86, 140, 106, 0.15);
+  padding: 48px 52px;
+}
+
+.np-privacy-intro {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: #555;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #eef2ee;
+  margin-bottom: 0;
+}
+
+.np-privacy-intro strong {
+  color: #1f3b2c;
+}
+
+.np-privacy-section {
+  padding: 32px 0;
+  border-bottom: 1px solid #eef2ee;
+}
+
+.np-privacy-section:last-of-type {
+  border-bottom: none;
+}
+
+.np-privacy-h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1f3b2c;
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 3px solid #568c6a;
+}
+
+.np-privacy-h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #568c6a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.np-privacy-p {
+  margin-bottom: 10px;
+}
+
+.np-privacy-list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.93rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.np-privacy-list li {
+  padding-left: 4px;
+}
+
+.np-privacy-list-ol {
+  list-style-type: decimal;
+}
+
+.np-privacy-list:not(.np-privacy-list-ol) {
+  list-style-type: disc;
+}
+
+.np-privacy-contact {
+  background: #f4f8f5;
+  border-left: 4px solid #568c6a;
+  border-radius: 0 8px 8px 0;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.93rem;
+  color: #444;
+}
+
+.np-privacy-contact-name {
+  font-weight: 700;
+  color: #1f3b2c;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.np-privacy-mail {
+  color: #568c6a;
+  text-decoration: none;
+}
+
+.np-privacy-mail:hover {
+  text-decoration: underline;
+}
+
+.np-privacy-closing {
+  text-align: center;
+  font-weight: 700;
+  color: #1f3b2c;
+  padding-top: 28px;
+  font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+  .np-privacy-card {
+    padding: 28px 20px;
+  }
+
+  .np-privacy-h2 {
+    font-size: 1rem;
+  }
+}

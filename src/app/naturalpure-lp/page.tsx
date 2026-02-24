@@ -67,7 +67,7 @@ type HowToStep = {
 
 const HOW_TO_STEPS: HowToStep[] = [
   {
-    title: '洗顔後すぐに、導入化粧水として',
+    title: '洗顔後すぐに、ライフスタイル・ウォーターとして',
     description: 'いつものスキンケアの最初に、たっぷりと顔全体になじませてください。',
   },
   {
@@ -266,9 +266,9 @@ export default function NaturalPureLandingPage() {
                   原材料：湧水、オーガニック玄米、オーガニック大豆
                 </p>
                 <p>
-                  原料はすべて、口に含めるほどの食品由来成分。万が一お口に入ってしまっても、心配ありません。
+                  使用しているのは、すべて食物由来の原料のみ。もし誤って試飲してしまった場合でも、心配のいらないやさしい処方です。
                 </p>
-                <p>小さなお子様と暮らす毎日に、心からの安心をお届けします。</p>
+                <p>ご家族みなさまが安心してお使いいただける品質を大切にしています。</p>
               </div>
               <div className="ingredients-visual">
                 <Image src={INGREDIENTS_BG_IMAGE} alt="原材料のイメージ" width={900} height={580} sizes="(max-width: 768px) 100vw, 50vw" />
@@ -424,7 +424,7 @@ export default function NaturalPureLandingPage() {
                   続けたい方へ。
                 </p>
                 <h3 className="cta-final-title">
-                  ナチュラル・ピュア
+                  ナチュラル・ピュア詰替え用
                   <br />
                   3本入りセット
                 </h3>
@@ -460,12 +460,17 @@ export default function NaturalPureLandingPage() {
             </div>
             <div className="container">
               <div className="cta-member-banner">
-                <p className="cta-member-text">
-                  「優しい家庭菜園の学校」のメンバーになると、
-                  <br className="cta-member-break" />
-                  会員特別価格で
-                  <span className="cta-member-discount">約30〜40％OFF</span>
-                  でご購入いただけます。
+                <div className="cta-member-banner-badge">会員限定特典</div>
+                <p className="cta-member-banner-headline">
+                  もっとお得に、もっと長く続けたい方へ
+                </p>
+                <p className="cta-member-banner-body">
+                  「優しい家庭菜園の学校」のメンバーになると、<br className="cta-member-break" />
+                  化粧品をはじめとする対象商品が
+                </p>
+                <p className="cta-member-banner-price">
+                  <span className="cta-member-banner-off">約30〜40％OFF</span>
+                  <span className="cta-member-banner-price-sub">の会員特別価格でご購入いただけます</span>
                 </p>
                 <a
                   href="https://school.awaji-smilefarm.com/"
@@ -473,7 +478,7 @@ export default function NaturalPureLandingPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  詳細はこちら
+                  優しい家庭菜園の学校について詳しく見る →
                 </a>
               </div>
             </div>
@@ -483,6 +488,11 @@ export default function NaturalPureLandingPage() {
         <footer className="site-footer">
           <div className="container footer-inner">
             <div className="footer-logo">Natural Pure</div>
+            <nav className="footer-nav">
+              <a href="/naturalpure-tokuteishyou" className="footer-nav-link" target="_blank" rel="noopener noreferrer">特定商取引法に基づく表記</a>
+              <span className="footer-nav-divider">|</span>
+              <a href="/naturalpure-privacy" className="footer-nav-link" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>
+            </nav>
           </div>
           <p className="footer-copy">© {new Date().getFullYear()} Natural Pure. All rights reserved.</p>
         </footer>
