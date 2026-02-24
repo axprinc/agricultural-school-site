@@ -31,7 +31,7 @@ export default function NaturalPureTokuteishyouPage() {
               <div className="np-tokusho-item">
                 <div className="np-tokusho-label">
                   <span className="np-tokusho-num">2</span>
-                  代表者名
+                  運営責任者
                 </div>
                 <div className="np-tokusho-value">石川 貴子</div>
               </div>
