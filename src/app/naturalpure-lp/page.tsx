@@ -111,10 +111,10 @@ export default function NaturalPureLandingPage() {
           <section className="fv-section">
             <div className="fv-image-container">
               <Image
-                src="/images/publicimagesnaturalpure-lp/hero_web_3840x1400_retina.webp"
+                src="/images/publicimagesnaturalpure-lp/hero_final_white_cross.webp"
                 alt="ナチュラル・ピュア ライフスタイル・ウォーター"
-                width={3845}
-                height={1400}
+                width={2752}
+                height={1537}
                 className="main-visual"
                 sizes="100vw"
                 priority
