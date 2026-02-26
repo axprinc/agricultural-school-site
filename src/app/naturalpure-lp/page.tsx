@@ -111,10 +111,10 @@ export default function NaturalPureLandingPage() {
           <section className="fv-section">
             <div className="fv-image-container">
               <Image
-                src="/images/publicimagesnaturalpure-lp/hero.webp"
+                src="/images/publicimagesnaturalpure-lp/hero_web_3840x1400_retina.webp"
                 alt="ナチュラル・ピュア ライフスタイル・ウォーター"
-                width={1200}
-                height={900}
+                width={3845}
+                height={1400}
                 className="main-visual"
                 sizes="100vw"
                 priority
@@ -126,8 +126,8 @@ export default function NaturalPureLandingPage() {
             <div className="container concept-grid">
               <div className="concept-copy">
                 <h2 className="section-title">
-                  <span className="concept-title-pc">発酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
-                  <span className="concept-title-mobile">発酵の力で、水光肌へ。</span>
+                  <span className="concept-title-pc">醗酵＝発光<br />醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
+                  <span className="concept-title-mobile">醗酵＝発光<br />醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
                   <span className="section-subtitle">皮膚常在菌との共生という美しさ</span>
                 </h2>
                 <div className="concept-body">
@@ -137,7 +137,7 @@ export default function NaturalPureLandingPage() {
                   <p>
                     常在菌は、肌を弱酸性に整え、潤いを抱え込み、外的刺激から守り、あなたの肌を静かに支え続けています。しかし、このバランスは洗浄のしすぎ・乾燥・ストレス・生活習慣など、ほんの些細なきっかけで崩れてしまいます。
                   </p>
-                  <p className="concept-highlight">だからこそ、私たちは“発酵”の力に着目しました。</p>
+                  <p className="concept-highlight">だからこそ、私たちは“醗酵”の力に着目しました。</p>
                 </div>
                 <div className="concept-cta">
                   <a
@@ -160,11 +160,11 @@ export default function NaturalPureLandingPage() {
             <div className="mechanism-overlay" />
             <div className="container mechanism-content">
               <h2 className="section-title section-title-white">
-                発酵は菌がつくる
+                醗酵は菌がつくる
                 <br className="mobile-break" />
                 自然の恵み
               </h2>
-              <p className="mechanism-lead">発酵とは、微生物が素材を分解し、<br className="mobile-break" />新しい価値を生みだす生命の営み。</p>
+              <p className="mechanism-lead">醗酵とは、微生物が素材を分解し、<br className="mobile-break" />新しい価値を生みだす生命の営み。</p>
               <div className="mechanism-body">
                 <p>
                   乳酸菌、酵母、麹菌がつくり出す
@@ -174,7 +174,7 @@ export default function NaturalPureLandingPage() {
                   、<span className="nutrient-pill nutrient-vitamin">ビタミン</span>
                   は、肌の常在菌にとって理想的な栄養源となります。
                 </p>
-                <p>発酵の力で生まれた成分は、常在菌が健やかに育つ“土壌”を整え、肌の上にしなやかな生態系を築きます。</p>
+                <p>醗酵の力で生まれた成分は、常在菌が健やかに育つ“土壌”を整え、肌の上にしなやかな生態系を築きます。</p>
                 <p className="mechanism-highlight">それはまるで、小さな菌たちのための「ごちそう」のよう。</p>
               </div>
             </div>
@@ -183,10 +183,10 @@ export default function NaturalPureLandingPage() {
           <section className="section-padding benefits-section">
             <div className="container">
               <h2 className="section-title">
-                <span className="benefits-title-pc">肌本来の力を引き出す、<br className="mobile-break" />発酵と常在菌のバランス設計</span>
-                <span className="benefits-title-mobile">発酵×常在菌バランス設計</span>
+                <span className="benefits-title-pc">肌本来の力を引き出す、<br className="mobile-break" />醗酵と常在菌のバランス設計</span>
+                <span className="benefits-title-mobile">醗酵×常在菌バランス設計</span>
                 <span className="section-subtitle">
-                  発酵エキスが常在菌環境を整え、肌本来の力を引き出します。
+                  醗酵エキスが常在菌環境を整え、肌本来の力を引き出します。
                 </span>
               </h2>
               <div className="benefits-grid">
@@ -217,7 +217,7 @@ export default function NaturalPureLandingPage() {
                 これは化粧品が肌を“変える”のではなく、<br className="mobile-break" />肌自身が自らを整えるという現象。
               </p>
               <p className="benefits-footer">
-                発酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返す。
+                醗酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返す。
               </p>
             </div>
           </section>
@@ -227,14 +227,14 @@ export default function NaturalPureLandingPage() {
             <div className="container conclusion-content">
               <div className="conclusion-text-box">
                 <h2 className="section-title">
-                  発酵が未来の美容に
+                  醗酵が未来の美容に
                   <br className="mobile-break" />
                   もたらすもの
                 </h2>
                 <p>
-                  私たちは、肌と常在菌と発酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。
+                  私たちは、肌と常在菌と醗酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。
                 </p>
-                <p className="conclusion-message">発酵がつくる美しさは、<br className="mobile-break" />肌と菌が生きていることへの讃歌です。</p>
+                <p className="conclusion-message">醗酵がつくる美しさは、<br className="mobile-break" />肌と菌が生きていることへの讃歌です。</p>
               </div>
             </div>
           </section>
@@ -509,7 +509,7 @@ export default function NaturalPureLandingPage() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ナチュラル・ピュア | 発酵が育てる、肌の小さな生態系</title>
+    <title>ナチュラル・ピュア | 醗酵が育てる、肌の小さな生態系</title>
     <link rel="stylesheet" href="style.css">
     </head>
 <body>
@@ -518,7 +518,7 @@ export default function NaturalPureLandingPage() {
             </div>
         <div class="first-view__content">
             <h1 class="first-view__title">
-                発酵が育てる、肌の小さな生態系。
+                醗酵が育てる、肌の小さな生態系。
                 <span class="first-view__subtitle">皮膚常在菌との共生という美しさ</span>
             </h1>
             </div>
@@ -527,13 +527,13 @@ export default function NaturalPureLandingPage() {
         <section class="section concept">
             <div class="container">
                 <h2 class="section__title">
-                    発酵が育てる、肌の小さな生態系
+                    醗酵が育てる、肌の小さな生態系
                     <span class="section__subtitle">皮膚常在菌との共生という美しさ</span>
                 </h2>
                 <div class="concept__body">
                     <p>肌は、ただの表面ではありません。そこには無数の“小さな命”が息づいています。表皮ブドウ球菌、アクネ菌、黄色ブドウ球菌…それぞれが、あなたの肌を守るために働く大切な存在。それが「皮膚常在菌」です。</p>
                     <p>常在菌は、肌を弱酸性に整え、潤いを抱え込み、外的刺激から守り、あなたの肌を静かに支え続けています。しかし、このバランスは洗浄のしすぎ・乾燥・ストレス・生活習慣など、ほんの些細なきっかけで崩れてしまいます。</p>
-                    <p class="concept__highlight">だからこそ、私たちは“発酵”の力に着目しました。</p>
+                    <p class="concept__highlight">だからこそ、私たちは“醗酵”の力に着目しました。</p>
                 </div>
                 <div class="concept__image">
                     <img src="images/concept-illustration.png" alt="皮膚常在菌のイラスト">
@@ -545,12 +545,12 @@ export default function NaturalPureLandingPage() {
                 </div>
             <div class="container">
                 <h2 class="section__title section__title--white">
-                    発酵は“菌がつくる、自然の恵み”
+                    醗酵は“菌がつくる、自然の恵み”
                 </h2>
-                <p class="mechanism__lead">発酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
+                <p class="mechanism__lead">醗酵とは、微生物が素材を分解し、新しい価値を生みだす生命の営み。</p>
                 <div class="mechanism__content">
                     <p>乳酸菌、酵母、麹菌がつくり出す<span class="gold-text">アミノ酸</span>、<span class="gold-text">ペプチド</span>、<span class="gold-text">糖類</span>、<span class="gold-text">ビタミン</span>は、肌の常在菌にとって理想的な栄養源となります。</p>
-                    <p>発酵の力で生まれた成分は、常在菌が健やかに育つ“土壌”を整え、肌の上にしなやかな生態系を築きます。</p>
+                    <p>醗酵の力で生まれた成分は、常在菌が健やかに育つ“土壌”を整え、肌の上にしなやかな生態系を築きます。</p>
                     <p class="mechanism__highlight">それはまるで、小さな菌たちのための「ごちそう」のよう。</p>
                 </div>
                 </div>
@@ -558,8 +558,8 @@ export default function NaturalPureLandingPage() {
         <section class="section benefits">
             <div class="container">
                 <h2 class="section__title">
-                    発酵 × 常在菌＝肌が自ら整う力
-                    <span class="section__subtitle">発酵エキスが常在菌環境を豊かにすると、肌は本来の力を取り戻し始めます。</span>
+                    醗酵 × 常在菌＝肌が自ら整う力
+                    <span class="section__subtitle">醗酵エキスが常在菌環境を豊かにすると、肌は本来の力を取り戻し始めます。</span>
                 </h2>
                 <ul class="benefits__list">
                     <li class="benefits__item">
@@ -581,7 +581,7 @@ export default function NaturalPureLandingPage() {
                 </ul>
                 <p class="benefits__footer">
                     これは化粧品が肌を“変える”のではなく、肌自身が自らを整えるという現象。<br>
-                    発酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返します。
+                    醗酵が、あなたの肌に宿る菌たちの力を引き出し、自然な美しさが息を吹き返します。
                 </p>
             </div>
         </section>
@@ -590,10 +590,10 @@ export default function NaturalPureLandingPage() {
                 </div>
             <div class="container conclusion__content">
                 <div class="conclusion__text-box">
-                    <h2 class="section__title">発酵が未来の美容にもたらすもの</h2>
-                    <p>私たちは、肌と常在菌と発酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。</p>
+                    <h2 class="section__title">醗酵が未来の美容にもたらすもの</h2>
+                    <p>私たちは、肌と常在菌と醗酵を「ひとつの生態系」として捉えています。微生物が生み出す豊かな栄養が常在菌を整え、その結果として肌が美しくなる。この循環こそが、自然と寄り添い、肌自身を尊重する新しいスキンケアの形だと考えています。</p>
                     <p class="conclusion__message">
-                        ― 発酵がつくる美しさは、肌と菌が生きていることへの讃歌です。 ―
+                        ― 醗酵がつくる美しさは、肌と菌が生きていることへの讃歌です。 ―
                     </p>
                 </div>
             </div>
