@@ -126,8 +126,8 @@ export default function NaturalPureLandingPage() {
             <div className="container concept-grid">
               <div className="concept-copy">
                 <h2 className="section-title">
-                  <span className="concept-title-pc">醗酵＝発光<br />醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
-                  <span className="concept-title-mobile">醗酵＝発光<br />醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
+                  <span className="concept-title-pc">醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
+                  <span className="concept-title-mobile">醗酵の力で&quot;水光肌&quot;へ。<br />自然由来の成分が肌を整えます。</span>
                   <span className="section-subtitle">皮膚常在菌との共生という美しさ</span>
                 </h2>
                 <div className="concept-body">
