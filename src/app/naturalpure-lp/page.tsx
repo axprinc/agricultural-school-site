@@ -294,7 +294,6 @@ export default function NaturalPureLandingPage() {
                   </div>
                 ))}
               </div>
-              <p className="safety-note">※本品は食品ではありません。</p>
             </div>
           </section>
 
