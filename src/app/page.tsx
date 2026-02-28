@@ -1109,15 +1109,6 @@ export default function Home() {
           </div>
 
           <div className="relative mb-12 mx-auto max-w-3xl scroll-mt-24">
-            <div className="bg-[#FFF4E0] border-2 border-[#E6D5B8] text-center py-4 px-4 relative shadow-sm mx-4 md:mx-0 rounded-[12px]">
-              <div className="absolute top-0 left-0 -ml-2 w-4 h-full border-r-2 border-dashed border-[#E6D5B8]" />
-              <div className="absolute top-0 right-0 -mr-2 w-4 h-full border-l-2 border-dashed border-[#E6D5B8]" />
-              <p className="text-lg md:text-xl font-bold text-[#5A4D41] mb-1">
-                初回お支払い総額 <span className="text-[#D97757]">41,300円</span>{' '}
-                <span className="text-sm font-normal">（税込）</span>
-              </p>
-              <p className="text-sm text-gray-600">（内訳：入会金 ＋ 初月利用料）</p>
-            </div>
             <p className="text-center text-gray-600 mt-3 text-sm md:text-base">
               1か月後からは、月額利用料1,500円のみでご利用いただけます。
             </p>
